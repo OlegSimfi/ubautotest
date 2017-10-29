@@ -1,0 +1,119 @@
+﻿{
+    "caption": "Список фізичних осіб",
+    "description": "Довідник фізичних осіб",
+    "documentation": "У цьому довіднику зберігається перелік персон (фізичних осіб)",
+    "attributes": {
+        "lastName": {
+            "caption": "Прізвище",
+            "description": "Прізвище персони"
+        },
+        "firstName": {
+            "caption": "Ім'я",
+            "description": "Ім'я персони"
+        },
+        "middleName": {
+            "caption": "По-батькові",
+            "description": "По-батькові"
+        },
+        "birthDate": {
+            "caption": "Дата народження",
+            "description": "Дата народження"
+        },
+        "description": {
+            "caption": "Опис",
+            "description": "Опис персони"
+        },
+        "sexType": {
+            "caption": "Стать",
+            "description": "Стать персони"
+        },
+        "suffix": {
+            "caption": "Суфікс",
+            "description": "Суфікс"
+        },
+        "shortFIO": {
+            "caption": "Скорочений ПІБ",
+            "description": "Приклад: Петренко П.П"
+        },
+        "fullFIO": {
+            "caption": "Повний ПІБ",
+            "description": "Приклад: Петренко Петро Петрович"
+        },
+        "apply": {
+            "caption": "Звертання",
+            "description": "Як звертатися до цієї особи"
+        },
+        "photo": {
+            "caption": "Фото",
+            "description": "Фотографія персони"
+        },
+        "lastNameGen": {
+            "caption": "Прізвище в род. відмінку",
+            "description": "Прізвище персони в родовому відмінку"
+        },
+        "lastNameDat": {
+            "caption": "Прізвище в дав. відмінку",
+            "description": "Прізвище персони в давальному відмінку"
+        },
+        "firstNameGen": {
+            "caption": "Ім'я в род. відмінку",
+            "description": "Ім'я персони в родовому відмінку"
+        },
+        "firstNameDat": {
+            "caption": "Ім'я в дав. відмінку",
+            "description": "Ім'я персони в давальному відмінку"
+        },
+        "middleNameGen": {
+            "caption": "По-батькові в род. відмінку",
+            "description": "По-батькові в родовому відмінку"
+        },
+        "middleNameDat": {
+            "caption": "По-батькові в дав. відмінку",
+            "description": "По-батькові в давальному відмінку"
+        },
+        "shortFIOGen": {
+            "caption": "Скорочений ПІБ в род. відмінку",
+            "description": "Скорочений ПІБ персони в родовому відмінку"
+        },
+        "shortFIODat": {
+            "caption": "Скорочений ПІБ в дав. відмінку",
+            "description": "Скорочений ПІБ персони в давальному відмінку"
+        },
+        "fullFIOGen": {
+            "caption": "Повний ПІБ в род. відмінку",
+            "description": "Повний ПІБ персони в родовому відмінку"
+        },
+        "fullFIODat": {
+            "caption": "Повний ПІБ в дав. відмінку",
+            "description": "Повний ПІБ персони в давальному відмінку"
+        },
+        "applyGen": {
+            "caption": "Звертання в род. відмінку",
+            "description": "Як звертатися до цієї особи в родовому відмінку"
+        },
+        "applyDat": {
+            "caption": "Звертання в дав. відмінку",
+            "description": "Як звертатися до цієї особи в давальному відмінку"
+        },
+        "regionID": {
+            "caption": "Регіон",
+            "description": "Регіон мешкання персони"
+        },
+        "identCard": {
+            "caption": "Посвідчення особи",
+            "description": "Посвідчення особи"
+        },
+        "workPlacePos": {
+            "caption": "Місце роботи, посада",
+            "description": "Місце роботи, посада"
+        },
+        "socialstatusID": {
+            "caption": "Соціальний статус",
+            "description": "Соціальний статус"
+        },
+        "categoryID": {
+            "caption": "Категорія",
+            "description": "Категорія"
+        }
+    }
+}

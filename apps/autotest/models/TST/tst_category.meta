@@ -1,0 +1,42 @@
+{
+  "caption": "COD docs kind",
+  "description": "Kind of documents, stored in COD",
+  "connectionName": "",
+  "descriptionAttribute": "code",
+  "documentation": "",
+  "attributes": [
+    {
+      "name": "code",
+      "dataType": "String",
+      "size": 32,
+      "caption": "Code",
+      "description": "Internal code of document kind",
+      "allowNull": false
+    },
+    {
+      "name": "instanceID",
+      "dataType": "BigInt",
+      "caption": "InstanceID",
+      "allowNull": false
+    },
+    {
+      "name": "ubUser",
+      "dataType": "Entity",
+      "associatedEntity": "uba_user",
+      "caption": "Allow for user",
+      "allowNull": false
+    }
+  ],
+  "dbKeys": {
+    "UIDX_tcategory_UsrInstance": {
+      "instanceID": {},
+      "ubUser": {}
+    }
+  },
+  "mixins": {
+    "mStorage": {
+      "simpleAudit": false,
+      "safeDelete": false
+    }
+  }
+}

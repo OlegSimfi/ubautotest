@@ -1,0 +1,70 @@
+﻿{
+    "caption": "organisasi eksternal",
+    "description": "Daftar organisasi eksternal",
+    "attributes": {
+        "code": {
+            "caption": "kode internal",
+            "description": "kode internal organisasi"
+        },
+        "OKPOCode": {
+            "caption": "CCEO",
+            "description": "classifier umum perusahaan dan organisasi (CCEO)"
+        },
+        "taxCode": {
+            "caption": "Nomor pajak",
+            "description": "Nomor pajak"
+        },
+        "vatCode": {
+            "caption": "jumlah PPN",
+            "description": "PPN (pajak pertambahan nilai) nomor sertifikat pendaftaran"
+        },
+        "name": {
+            "caption": "Nama Organisasi",
+            "description": "Nama organisasi tanpa tanda kutip dan singkatan"
+        },
+        "fullName": {
+            "caption": "Organisasi nama lengkap",
+            "description": "nama lengkap organisasi, seperti yang ditentukan dalam sertifikat pendaftaran"
+        },
+        "nameGen": {
+            "caption": "Nama dalam kasus genitif",
+            "description": "nama organisasi dalam kasus genitif"
+        },
+        "nameDat": {
+            "caption": "Nama di dativus",
+            "description": "nama organisasi di dativus"
+        },
+        "fullNameGen": {
+            "caption": "nama lengkap dalam kasus genitif",
+            "description": "nama lengkap organisasi, seperti yang ditentukan dalam sertifikat pendaftaran, dalam kasus genitif"
+        },
+        "fullNameDat": {
+            "caption": "nama lengkap di dativus",
+            "description": "nama lengkap organisasi, seperti yang ditentukan dalam sertifikat pendaftaran, di dativus"
+        },
+        "description": {
+            "caption": "deskripsi organisasi",
+            "description": "deskripsi organisasi"
+        },
+        "orgBusinessTypeID": {
+            "caption": "jenis organisasi",
+            "description": "jenis organisasi"
+        },
+        "orgOwnershipTypeID": {
+            "caption": "Jenis kepemilikan",
+            "description": "Jenis kepemilikan"
+        },
+        "corrIndexID": {
+            "caption": "Indeks dari koresponden",
+            "description": "Indeks dari koresponden"
+        },
+        "addrText": {
+            "caption": "formulasi alamat",
+            "description": "Perumusan penerima, yang akan muncul dalam pembentukan dokumen keluar PDF"
+        },
+        "caption": {
+            "caption": "Заголовок",
+            "description": "Заголовок"
+        }
+    }
+}

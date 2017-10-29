@@ -1,0 +1,36 @@
+﻿{
+    "caption": "Населені пункти",
+    "description": "Довідник населених пунктів",
+    "attributes": {
+        "parentAdminUnitID": {
+            "caption": "Предок"
+        },
+        "code": {
+            "caption": "Код",
+            "description": "Код населеного пункту"
+        },
+        "name": {
+            "caption": "Назва",
+            "description": "Назва населеного пункту"
+        },
+        "caption": {
+            "caption": "Заголовок"
+        },
+        "description": {
+            "caption": "Опис",
+            "description": "Опис населеного пункту"
+        },
+        "postalCode": {
+            "caption": "Поштовий код",
+            "description": "Поштовий код населеного пункту"
+        },
+        "phoneCode": {
+            "caption": "Телефонний код",
+            "description": "Телефонний код населеного пункту"
+        },
+        "cityTypeID": {
+            "caption": "Тип населеного пункту",
+            "description": "Тип населеного пункту"
+        }
+    }
+}

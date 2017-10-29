@@ -1,0 +1,47 @@
+﻿{
+	"caption": "Диаграммы",
+	"description": "Диаграммы",
+	"connectionName": "",
+	"sqlAlias": "odiagram",
+	"cacheType": "SessionEntity",
+	"descriptionAttribute": "caption",
+	"documentation": "",
+	"attributes": {
+		"orgunitID":
+		{
+			"dataType": "Entity",
+			"associatedEntity": "org_unit",
+			"caption": "root",
+			"allowNull": true
+		},
+        "caption":
+        {
+            "dataType": "String",
+            "size": 256,
+            "caption": "Name",
+            "description": "Name",
+            "allowNull": true
+        },
+		"isdefault": 
+		{
+			"dataType": "Boolean",
+			"caption": "Default",
+			"description": "Default",
+			"defaultValue": "0"
+		},
+		"document":									
+		{
+			"dataType": "Document",
+			"caption": "Organizational chart",
+			"description": "Organizational chart",
+			"allowNull": true	
+		}
+	},
+	"mixins": {
+		"mStorage":
+		{
+			"simpleAudit": true,
+			"safeDelete" : true
+		}
+	}
+}

@@ -1,0 +1,30 @@
+﻿{
+    "caption": "tugas internal organisasi",
+    "description": "Daftar tugas internal organisasi",
+    "attributes": {
+        "tabNo": {
+            "caption": "№ karyawan",
+            "description": "Nomor pegawai"
+        },
+        "employeeID": {
+            "caption": "Karyawan",
+            "description": "Karyawan"
+        },
+        "staffUnitID": {
+            "caption": "Unit staf",
+            "description": "Unit staf internal organisasi"
+        },
+        "employeeOnStaffType": {
+            "caption": "Jenis tugas",
+            "description": "Jenis tugas"
+        },
+        "description": {
+            "caption": "Deskripsi",
+            "description": "deskripsi tugas"
+        },
+        "caption": {
+            "caption": "caption",
+            "description": "caption"
+        }
+    }
+}

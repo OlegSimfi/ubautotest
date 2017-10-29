@@ -1,0 +1,119 @@
+﻿{
+    "caption": "Fiziki şəxslərin siyahısı",
+    "description": "Fiziki şəxslər üzrə siyahı",
+    "documentation": "Bu sorğu kitabçasında şəxslərin (fiziki şəxslərin) siyahısı saxlanılır",
+    "attributes": {
+        "lastName": {
+            "caption": "Soyad",
+            "description": "Şəxsin soyadı"
+        },
+        "firstName": {
+            "caption": "Ad",
+            "description": "Şəxsin adı"
+        },
+        "middleName": {
+            "caption": "Atasının adı",
+            "description": "Şəxsin atasının adı"
+        },
+        "birthDate": {
+            "caption": "Doğum tarixi",
+            "description": "Doğum tarixi"
+        },
+        "description": {
+            "caption": "Təsvir",
+            "description": "Şəxsin təsviri"
+        },
+        "sexType": {
+            "caption": "Cins",
+            "description": "Şəxsin cinsi"
+        },
+        "suffix": {
+            "caption": "Şəkilçi",
+            "description": "Şəkilçi"
+        },
+        "shortFIO": {
+            "caption": "Qısa ASA",
+            "description": "Nümunə: Ad S.A. adı"
+        },
+        "fullFIO": {
+            "caption": "Tam ASA",
+            "description": "Nümunə: Ad Soyad Atasının adı"
+        },
+        "apply": {
+            "caption": "Müraciət",
+            "description": "Bu şəxsə necə müraciət edilməlidir"
+        },
+        "photo": {
+            "caption": "Foto",
+            "description": "Şəxsi fotosu"
+        },
+        "lastNameGen": {
+            "caption": "Yiy. halda soyad",
+            "description": "Yiyəlik halda şəxsin soyadı"
+        },
+        "lastNameDat": {
+            "caption": "Yön. halda soyad",
+            "description": "Yönlük halda şəxsin soyadı"
+        },
+        "firstNameGen": {
+            "caption": "Yiy. halda ad",
+            "description": "Yiyəlik halda şəxsin adı"
+        },
+        "firstNameDat": {
+            "caption": "Yön. halda ad",
+            "description": "Yönlük halda şəxsin adı"
+        },
+        "middleNameGen": {
+            "caption": "Yiy. halda atasının adı",
+            "description": "Yiyəlik halda şəxsin atasının adı"
+        },
+        "middleNameDat": {
+            "caption": "Yön. halda atasının adı",
+            "description": "Yönlük halda şəxsin atasının adı"
+        },
+        "shortFIOGen": {
+            "caption": "Yiy. halda qısa ASA",
+            "description": "Yiyəlik halda şəxsin qısa ASA"
+        },
+        "shortFIODat": {
+            "caption": "Yön. halda qısa ASA",
+            "description": "Yönlük halda şəxsin qısa ASA"
+        },
+        "fullFIOGen": {
+            "caption": "Yiy. halda tam ASA",
+            "description": "Yiyəlik halda şəxsin tam ASA"
+        },
+        "fullFIODat": {
+            "caption": "Yön. halda tam ASA",
+            "description": "Yönlük halda şəxsin tam ASA"
+        },
+        "applyGen": {
+            "caption": "Yiy. halda müraciət forması",
+            "description": "Yiyəlik halda bu şəxsə necə müraciə edilməlidir"
+        },
+        "applyDat": {
+            "caption": "Yön. halda müraciət forması",
+            "description": "Yönlük halda bu şəxsə necə müraciə edilməlidir"
+        },
+        "regionID": {
+            "caption": "Region",
+            "description": "Şəxsin yaşadığı region"
+        },
+        "identCard": {
+            "caption": "Şəxsiyyət vəsiqəsi",
+            "description": "Şəxsin şəxsiyyət vəsiqəsi"
+        },
+        "workPlacePos": {
+            "caption": "İş yeri, vəzifə",
+            "description": "İş yeri, vəzifə"
+        },
+        "socialstatusID": {
+            "caption": "Sosial status",
+            "description": "Sosial status"
+        },
+        "categoryID": {
+            "caption": "Kateqoriya",
+            "description": "Kateqoriya"
+        }
+    }
+}

@@ -1,0 +1,35 @@
+//@! "do not remove comments below unless you know what you do!"
+//@isDefault "false"
+//@entity "org_diagram"
+//@formType "auto"
+//@caption "Organizational chart"
+//@description "Organizational chart"
+/*global UB, Ext */
+exports.formDef = {
+    size: {
+        width: 1000,
+        height:  600
+    },
+    parentConfig: {
+        layout: { 
+            type: "vbox",
+            align: "stretch" //max 
+        }
+    },
+    items: [ 
+        { attributeName: "caption"},
+        {
+        layout: 'fit',
+        xtype: 'panel',
+        flex: 1,
+        title: UB.i18n('obrazDocumenta'),
+        items: [{
+            expanded: true,
+            attributeName: "document",
+            forceMIME: "application/UBOrgChart",
+            documentMIME: "application/UBOrgChart",
+            keepCmpOnRefresh: true
+        }]
+
+    }]
+};

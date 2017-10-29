@@ -1,0 +1,18 @@
+﻿{
+    "caption": "Korrespondentlərin indeksləri",
+    "description": "Korrespondent indekslərinin indeksləri",
+    "attributes": {
+        "code": {
+            "caption": "Коd",
+            "description": "Korrespondent indeksinin kodu"
+        },
+        "name": {
+            "caption": "Ad",
+            "description": "Korrespondent indeksinin adı"
+        },
+        "fullName": {
+            "caption": "Tam ad",
+            "description": "Korrespondent indeksinin tam adı"
+        }
+    }
+}

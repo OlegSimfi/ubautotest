@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "firefox",
+            "request": "attach",
+            "name": "SyNode",
+            "addonType": "webExtension",
+            "addonPath": "${workspaceRoot}/",
+            "host": "127.0.0.1",
+            "port": 6000,
+            "sourceMaps": "client"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+﻿{
+    "caption": "Staffunit types",
+    "description": "Staffunit types dictionary",
+    "attributes": {
+        "code": {
+            "caption": "Code",
+            "description": "Code of the staffunit type"
+        },
+        "name": {
+            "caption": "Name",
+            "description": "Name of the staffunit type"
+        }
+    }
+}

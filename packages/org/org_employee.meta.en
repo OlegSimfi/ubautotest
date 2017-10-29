@@ -1,0 +1,107 @@
+﻿{
+    "caption": "Employees of internal organizations",
+    "description": "List of employees of internal organizations",
+    "documentation": "В этом справочнике хранится перечень работников. Работник назначается на штатные единицы в сущности org_employeeonstaff",
+    "attributes": {
+        "code": {
+            "caption": "Code",
+            "description": "Employees internal code"
+        },
+        "userID": {
+            "caption": "User",
+            "description": "User login"
+        },
+        "lastName": {
+            "caption": "Last name",
+            "description": "Employee last name"
+        },
+        "firstName": {
+            "caption": "First name",
+            "description": "Employee first name"
+        },
+        "middleName": {
+            "caption": "Middle name",
+            "description": "Employee middle name"
+        },
+        "birthDate": {
+            "caption": "Date of birth",
+            "description": "Date of birth"
+        },
+        "description": {
+            "caption": "Comment",
+            "description": "Comment on Employee"
+        },
+        "sexType": {
+            "caption": "Sex",
+            "description": "Employee sex"
+        },
+        "suffix": {
+            "caption": "Suffix",
+            "description": "Suffix"
+        },
+        "shortFIO": {
+            "caption": "Last name with initials",
+            "description": "Example: Ivanov A.O."
+        },
+        "fullFIO": {
+            "caption": "Full name",
+            "description": "Example: Ivanov Anton Olegovich"
+        },
+        "apply": {
+            "caption": "Treatment",
+            "description": "Describes how to treat to this person"
+        },
+        "lastNameGen": {
+            "caption": "Last name in genitive",
+            "description": "Employee last name in genitive case"
+        },
+        "lastNameDat": {
+            "caption": "Last name in dative",
+            "description": "Employee last name in dative case"
+        },
+        "firstNameGen": {
+            "caption": "First name in genitive",
+            "description": "Employee first name in genitive case"
+        },
+        "firstNameDat": {
+            "caption": "First name in dative",
+            "description": "Employee first name in dative case"
+        },
+        "middleNameGen": {
+            "caption": "Middle name in genitive",
+            "description": "Employee middle name in genitive case"
+        },
+        "middleNameDat": {
+            "caption": "Middle name in dative",
+            "description": "Employee middle name in dative case"
+        },
+        "shortFIOGen": {
+            "caption": "Short name in genitive",
+            "description": "Employee short name in genitive case"
+        },
+        "shortFIODat": {
+            "caption": "Short name in dative",
+            "description": "Employee short name in dative case"
+        },
+        "fullFIOGen": {
+            "caption": "Full name in genitive",
+            "description": "Employee full name in genitive case"
+        },
+        "fullFIODat": {
+            "caption": "Full name in dative",
+            "description": "Employee full name in dative case"
+        },
+        "applyGen": {
+            "caption": "Treatment in genitive",
+            "description": "Describes how to treat to this person in genitive case"
+        },
+        "applyDat": {
+            "caption": "Treatment in dative",
+            "description": "Describes how to treat to this person in dative case"
+        },
+        "facsimile": {
+            "caption": "Facsimile",
+            "description": "Employee signature image"
+        }
+    }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "@unitybase/codemirror-full",
+  "version": "1.2.12",
+  "description": "CodeMirror + plugins + linter",
+  "main": "./dist/codemirror-all.min.js",
+  "repository": "https://git-pub.intecracy.com/unitybase/ubjs/tree/master/packages/codemirror-full",
+  "scripts": {
+    "build": "SET NODE_ENV=production && webpack",
+    "build:watch": "webpack --progress --colors --watch",
+    "analyse-boundle": "webpack --profile --json > wp_stats.json && webpack-bundle-analyzer ./wp_stats.json",
+    "test": "npm run test",
+    "prepublish": "npm run build"
+  },
+  "public": true,
+  "publishConfig": {
+    "registry": "http://registry.unitybase.info"
+  },
+  "dependencies": {
+    "codemirror": "^5.25.0",
+    "jshint": "^2.9.4",
+    "lodash": "^4"
+  },
+  "keywords": [
+    "UnityBase",
+    "UB4",
+    "CodeMirror"
+  ],
+  "author": "UnityBase team (https://unitybase.info)",
+  "license": "(GPL-3.0 OR LGPL-3.0 OR MPL-2.0)"
+}

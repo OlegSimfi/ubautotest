@@ -1,0 +1,20 @@
+{
+	"caption": "Test FB",
+	"description": "Test firebird",
+	"connectionName": "FB",
+	"attributes": {
+		"name": {
+		 	"dataType": "String",
+			"size": 100,
+            		"caption": "Name",
+            		"allowNull": false,
+			"isMultiLang": false
+		}	
+	},
+    "mixins": {
+        "mStorage": {
+            "simpleAudit": true,
+            "safeDelete": false
+        }
+    }
+}

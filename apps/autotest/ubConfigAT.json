@@ -1,0 +1,147 @@
+﻿{
+	"httpServer": {
+		"host": "localhost",
+		"port": "888",
+		"requestQueueLength": 1000,
+		"maxBandwidth": 0,
+		"maxConnections": 0,
+		"allowCORSFrom": "",
+		"inetPub": "%UB_HOME%\\Web\\",
+		"headersPostprocessors": ["#include(%UB_HOME%\\defHeadersPostprocessors.json)"],
+		"watchFileChanges": {
+			"enabled": true,
+			"hashingStrategy": "ModifyDate"
+		},
+		"threadPoolSize": 1
+	},
+	"wsServer": {
+		"host": "localhost",
+		"port": "888",
+		"path": "ws"
+	},
+	"logging": {
+		"path": ".\\logs",
+		"levels": [
+			"*"
+		],
+		"threadingModel": "IdentifiedInOnFile",
+		"stackTrackDepth": 10,
+		"rotationSizeInMB": 100,
+		"performanceCounters": true
+	},
+	"javascript": {
+		"timeout": -1,
+		"lifetimeInMinutes": 360,
+		"fullGCPeriod": 100,
+		"maxPerEngineMemory": 512,
+		"maxRecursionDepth": 32
+	},
+	"security": {
+		"authenticationMethods": [
+			"UB"
+		],
+		"ldapCatalogs": [
+			{
+				"name": "MYDOMAIN",
+				"host": "softline.main",
+				"port": "3268",
+				"useTLS": false,
+				"useSSL": false,
+				"useSasl": true
+			}
+		]
+	},
+	"uiSettings": {
+		"adminUI": {
+			"applicationName": "SQLite3 autotest",
+			"defaultPasswordForDebugOnly": "admin",
+			"themeName": "UBGrayTheme",
+			"messenger": {
+				"enabled": true,
+				"checkInterval": 30
+			}
+		},
+		"portalUI": {}
+	},
+	"application": {
+		"defaultLang": "uk",
+		"rootHandler": "index.html",
+		"schedulers": {"enabled": true},
+		"domain": {
+			"models": [
+				"#include(./allUBModels.json)",
+				{
+					"name": "TST",
+					"path": ".\\models\\TST"
+				}
+			],
+			"implicitlyAddedMixins": [
+				"audit"
+			]
+		},
+		"fts": {
+			"enabled": true,
+			"async": false
+		},
+		"connections": [
+			{
+				"name": "main",
+				"driver": "SQLite3",
+				"isDefault": true,
+				"dialect": "SQLite3",
+				"databaseName": ".\\autotestDB.sqlite3",
+				"supportLang": ["en", "uk"],
+				"advSettings": "Synchronous=Off"
+			},
+			{
+				"name": "ftsDefault",
+				"driver": "SQLite3",
+				"dialect": "SQLite3",
+				"databaseName": ".\\fts\\autotestFTS.ftsdb",
+				"supportLang": [
+					"uk"
+				],
+				"advSettings": "Synchronous=Off,Tokenizer=stemka"
+			},
+			{
+				"name": "ftsSubjectSearch",
+				"driver": "SQLite3",
+				"dialect": "SQLite3",
+				"databaseName": ".\\fts\\autotestSubjects.ftsdb",
+				"supportLang": [
+					"uk"
+				],
+				"advSettings": "Synchronous=Off,Tokenizer=stemka"
+			}
+		],
+		"blobStores": [
+			{
+				"name": "mdb",
+				"storeType": "Virtual"
+			},
+			{
+				"name": "simple",
+				"path": ".\\documents\\simple\\",
+				"isDefault": true,
+				"historyDepth": 0,
+				"storeSize": "Simple",
+				"keepOriginalFileNames": false
+			},
+			{
+				"name": "avatars",
+				"path": ".\\documents\\avatars\\",
+				"historyDepth": 0,
+				"storeSize": "Simple",
+				"keepOriginalFileNames": false
+			}
+		],
+		"customSettings": {
+			"docuSign": {
+				"userName":"Vadim.Orel@gmail.com",
+				"password":"1qazXSW@",
+				"integratorKey":"ea898e73-3cd7-443b-b24b-79fe02b947ef",
+				"apiUrl":"https://demo.docusign.net/restapi"
+			}
+		}
+	}
+}

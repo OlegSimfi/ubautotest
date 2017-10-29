@@ -1,0 +1,53 @@
+{
+	"caption": "Форма собственности",
+	"description": "Справочник форм собственности организаций",
+	"connectionName": "",
+	"sqlAlias": "orgot",
+	"cacheType": "SessionEntity",
+	"descriptionAttribute": "name",
+	"attributes": {
+		"code":
+		{
+			"dataType": "String",
+			"size": 32,
+			"caption": "Код",
+			"description": "Внутренний код формы собственности",
+			"allowNull": false,
+			"isMultiLang": false,
+			"isUnique": true
+		},
+		"shortName":
+		{
+			"dataType": "String",
+			"size": 32,
+			"caption": "Абревиатура",
+			"description": "Абревиатура формы собственности",
+			"allowNull": true,
+			"isMultiLang": true
+		},
+		"name":
+		{
+			"dataType": "String",
+			"size": 100,
+			"caption": "Название",
+			"description": "Название формы собственности",
+			"allowNull": false,
+			"isMultiLang": true
+		},
+		"fullName":
+		{
+			"dataType": "String",
+			"size": 255,
+			"caption": "Полное название",
+			"description": "Полное название формы собственности",
+			"allowNull": true,
+			"isMultiLang": true
+		}
+	},
+	"mixins": {
+		"mStorage": {
+			"simpleAudit":true,
+			"safeDelete":true
+	     }
+	}
+}

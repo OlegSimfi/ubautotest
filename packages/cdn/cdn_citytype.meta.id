@@ -1,0 +1,14 @@
+﻿{
+    "caption": "jenis kota",
+    "description": "direktori jenis kota",
+    "attributes": {
+        "code": {
+            "caption": "Kode",
+            "description": "kode internal tipe kota"
+        },
+        "name": {
+            "caption": "Nama",
+            "description": "Kota Nama Jenis"
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "@unitybase/dml-generator",
+  "version": "1.0.21",
+  "description": "UnityBase DML Generator",
+  "scripts": {
+    "build:doc": "jsdoc -c ./jsdoc-conf.json --package ./package.json"
+  },
+  "public": true,
+  "publishConfig": {
+    "registry": "http://registry.unitybase.info"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@unitybase/base": "^4.2.22"
+  },
+  "devDependencies": {
+    "@unitybase/stubs": "^4.1.13"
+  },
+  "keywords": [
+    "UnityBase",
+    "DML"
+  ],
+  "engines": {
+    "UnityBase": "4.0.0"
+  },
+  "author": "UnityBase team (https://unitybase.info)",
+  "license": "(GPL-3.0 OR LGPL-3.0 OR MPL-2.0)"
+}

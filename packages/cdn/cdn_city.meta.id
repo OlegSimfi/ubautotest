@@ -1,0 +1,36 @@
+﻿{
+    "caption": "kota",
+    "description": "direktori kota",
+    "attributes": {
+        "parentAdminUnitID": {
+            "caption": "Induk"
+        },
+        "code": {
+            "caption": "Kode",
+            "description": "kode kota"
+        },
+        "name": {
+            "caption": "Nama",
+            "description": "Nama Kota"
+        },
+        "caption": {
+            "caption": "caption"
+        },
+        "description": {
+            "caption": "Deskripsi",
+            "description": "deskripsi kota"
+        },
+        "postalCode": {
+            "caption": "Kode Pos",
+            "description": "kode pos kota"
+        },
+        "phoneCode": {
+            "caption": "kode telepon",
+            "description": "Kota kode telepon"
+        },
+        "cityTypeID": {
+            "caption": "Mengetik",
+            "description": "Jenis kota"
+        }
+    }
+}

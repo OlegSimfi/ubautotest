@@ -1,0 +1,13 @@
+﻿{
+    "caption": "Типи контактів",
+    "description": "Довідник типів контактів",
+    "attributes": {
+        "code": {
+            "caption": "Код"
+        },
+        "name": {
+            "caption": "Назва",
+            "description": "Назва типу контакта"
+        }
+    }
+}

@@ -1,0 +1,37 @@
+﻿{
+    "caption": "Посади",
+    "description": "Довідник посад",
+    "attributes": {
+        "code": {
+            "caption": "Код",
+            "description": "Код посади"
+        },
+        "name": {
+            "caption": "Назва",
+            "description": "Назва посади"
+        },
+        "fullName": {
+            "caption": "Повна назва",
+            "description": "Повна назва посади"
+        },
+        "nameGen": {
+            "caption": "Назва в род. відмінку",
+            "description": "Назва посади в родовому відмінку"
+        },
+        "nameDat": {
+            "caption": "Назва в дав. відмінку",
+            "description": "Назва посади в давальному відмінку"
+        },
+        "fullNameGen": {
+            "caption": "Повна назва в род. відмінку",
+            "description": "Повна назва посади в родовому відмінку"
+        },
+        "fullNameDat": {
+            "caption": "Повна назва в дав. відмінку",
+            "description": "Повна назва посади в давальному відмінку"
+        },
+        "description": {
+            "caption": "Заголовок"
+        }
+    }
+}

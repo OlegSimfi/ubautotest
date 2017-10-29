@@ -1,0 +1,47 @@
+{
+	"caption": "Addresses",
+	"description": "Addresses directory",
+	"connectionName": "",
+	"sqlAlias": "addr",
+	"cacheType": "SessionEntity",
+	"descriptionAttribute": "value",
+	"documentation": "",
+	"attributes": {
+		"addressType":
+		{
+			"dataType": "Enum",
+			"enumGroup": "CDN_ADDRESS",
+			"caption": "Address type",
+			"allowNull": false
+		},			
+		"value":
+		{
+			"dataType": "String",
+			"size": 255,
+			"caption": "Address",
+			"allowNull": false,
+			"isMultiLang": false
+		},
+		"subjectID":
+		{
+			"dataType": "BigInt",
+			"caption": "Subject",
+			"allowNull": false,
+			"documentation": "Reference to address owner. No database constraint here, 
+					  since we don't know all entities what want to store contacts. 
+					 Entity developer must remove contacts in beforedelete manually."
+		}
+	},
+	"mixins": {
+		"mStorage": {
+			"simpleAudit":true,
+			"safeDelete":true
+        	}
+	},
+	"dbExtensions": {
+		"idx_address_subjectID": {
+			"type": "INDEX",
+			"definition": {"keys": {"subjectID": {}}, "isUnique": false}
+		}
+	}
+}

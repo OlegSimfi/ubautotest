@@ -1,0 +1,53 @@
+﻿{
+    "caption": "Список будинків",
+    "description": "Список будинків",
+    "connectionName": "",
+    "sqlAlias": "building",
+    "descriptionAttribute": "description",
+    "cacheType": "SessionEntity",
+    "attributes": {
+        "streetID": {
+            "dataType": "Entity",
+            "associatedEntity": "cdn_street",
+            "caption": "Вулиця",
+            "allowNull": false
+        },
+        "postIndexID": {
+            "dataType": "Entity",
+            "associatedEntity": "cdn_postindex",
+            "caption": "Індекс",
+            "allowNull": false
+        },
+        "code": {
+            "dataType": "String",
+            "size": 20,
+            "caption": "№",
+            "description": "Код",
+            "allowNull": false
+        },
+        "description": {
+            "dataType": "String",
+            "size": 255,
+            "caption": "Опис",
+            "description": "Опис",
+            "allowNull": true,
+            "isMultiLang": true
+        },
+        "buildingType": {
+            "dataType": "Enum",
+            "enumGroup": "BUILDING_TYPE",
+            "caption": "Тип",
+            "description": "Тип",
+            "allowNull": false,
+            "defaultValue": "HOUSE"
+        }
+    },
+    "mixins": {
+        "mStorage": {
+            "simpleAudit": true,
+            "safeDelete": true
+        },
+        "dataHistory":{}
+
+    }
+}

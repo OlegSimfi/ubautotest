@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>UnityBase web socket demo</title>
+        <meta charset="utf-8" />
+        <script type="text/javascript" src="/clientRequire/lodash/lodash.min.js"></script>
+        <script type="text/javascript" src="/clientRequire/@unitybase/ub-pub/dist/ub-pub.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+    </head>    <body>
+        <h1>UnityBase web socket demo</h1>
+        <p>
+            Open developer console to see webSocket communication details.
+            The web-socket client address is logged to console as <br>
+            <i>connection accepted id is </i><u>261866934</u><br>
+            For a cross-client communication open this page in other browser window.
+        </p>
+        <p>The following commands are acceptable from console:</p>
+        <ul>
+            <li><pre>$ws.send(JSON.stringify({command: 'tst_echo', params: {message: 'YaYa'}}))</pre></li>
+            <li><pre>$ws.send(JSON.stringify({command: 'tst_message', params: {recipient: 261866934, message: 'YaYa a cocojombo'}}))</pre></li>
+            <li><pre>$ws.send(JSON.stringify({command: 'tst_sendToAllMySession', params: {message: 'Hello from me!'}}))</pre></li>
+            <li><pre>$ws.send(JSON.stringify({command: 'tst_selfClose', params: {reason: "I'm a zombie, I don\'t know why I close myself"}}))</pre></li>
+        </ul>
+        where <u>261866934</u> is a client socket address.
+        <h2>Load test results:</h2>
+        <table id="resTable">
+            <thead><td>Connection Count</td><td>Response Time</td></thead>
+            <tr><td>0</td><td>0</td></tr>
+        </table>
+
+    </body>
+</html>

@@ -1,0 +1,152 @@
+{
+  "caption": "Внутренние организации",
+  "description": "Справочник внутренних организаций",
+  "documentation": "",
+  "connectionName": "",
+  "sqlAlias": "oorg",
+  "cacheType": "Session",
+  "descriptionAttribute": "name",
+  "attributes": [
+    {
+      "name": "parentID",
+      "dataType": "Entity",
+      "associatedEntity": "org_unit",
+      "caption": "Родительский элемент",
+      "description": "Родительский элемент",
+      "allowNull": true
+    },
+    {
+      "name": "code",
+      "dataType": "String",
+      "size": 16,
+      "caption": "Внутренний код",
+      "description": "Внутренний код организации",
+      "allowNull": false,
+      "isUnique": true
+    },
+    {
+      "name": "OKPOCode",
+      "dataType": "String",
+      "size": 16,
+      "caption": "ОКПО",
+      "description": "Общий классификатор предприятий и организаций (ОКПО)",
+      "allowNull": true
+    },
+    {
+      "name": "taxCode",
+      "dataType": "String",
+      "size": 32,
+      "caption": "Налоговый №",
+      "description": "Налоговый номер",
+      "allowNull": true
+    },
+    {
+      "name": "vatCode",
+      "dataType": "String",
+      "size": 32,
+      "caption": "№ св. НДС",
+      "description": "№ свидетельства плательщика НДС",
+      "allowNull": true
+    },
+    {
+      "dataType": "String",
+      "size": 128,
+      "caption": "Название организации",
+      "description": "Название без кавычек и аббревиатур",
+      "allowNull": false,
+      "isMultiLang": true,
+      "name": "name"
+    },
+    {
+      "dataType": "String",
+      "size": 255,
+      "caption": "Полное название организации",
+      "description": "Полное название, как оно указанно в свидетельстве о регистрации",
+      "allowNull": false,
+      "isMultiLang": true,
+      "name": "fullName"
+    },
+    {
+      "dataType": "String",
+      "size": 128,
+      "caption": "Название организации в родительном падеже",
+      "description": "Название без кавычек и аббревиатур в родительном падеже",
+      "allowNull": true,
+      "isMultiLang": true,
+      "name": "nameGen"
+    },
+    {
+      "dataType": "String",
+      "size": 128,
+      "caption": "Название организации в дательном падеже",
+      "description": "Название без кавычек и аббревиатур в дательном падеже",
+      "allowNull": true,
+      "isMultiLang": true,
+      "name": "nameDat"
+    },
+    {
+      "dataType": "String",
+      "size": 255,
+      "caption": "Полное название организации в родительном падеже",
+      "description": "Полное название, как оно указано в свидетельстве о регистрации, в родительном падеже",
+      "allowNull": true,
+      "isMultiLang": true,
+      "name": "fullNameGen"
+    },
+    {
+      "dataType": "String",
+      "size": 255,
+      "caption": "Полное название организации в дательном падеже",
+      "description": "Полное название, как оно указано в свидетельстве о регистрации, в дательном падеже",
+      "allowNull": true,
+      "isMultiLang": true,
+      "name": "fullNameDat"
+    },
+    {
+      "dataType": "String",
+      "size": 255,
+      "caption": "Описание организации",
+      "description": "Описание",
+      "allowNull": true,
+      "isMultiLang": true,
+      "name": "description"
+    },
+    {
+      "dataType": "Entity",
+      "associatedEntity": "cdn_orgbusinesstype",
+      "caption": "Тип организации",
+      "description": "Тип организации",
+      "allowNull": true,
+      "name": "orgBusinessTypeID"
+    },
+    {
+      "dataType": "Entity",
+      "associatedEntity": "cdn_orgownershiptype",
+      "caption": "Тип собственности",
+      "description": "Тип собственности",
+      "allowNull": true,
+      "name": "orgOwnershipTypeID"
+    }
+  ],
+  "mixins": {
+    "mStorage": {
+      "simpleAudit": true,
+      "safeDelete": true
+    },
+    "dataHistory": {},
+    "unity": {
+      "entity": "org_unit",
+      "attributeList": [
+        "parentID",
+        "code",
+        "caption"
+      ],
+      "mapping": {
+        "name": "caption"
+      },
+      "defaults": {
+        "unitType": "ORG"
+      }
+    }
+  }
+}

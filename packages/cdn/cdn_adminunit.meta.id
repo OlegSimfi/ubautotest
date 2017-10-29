@@ -1,0 +1,26 @@
+﻿{
+    "caption": "Unit Admin",
+    "description": "Unit Admin (negara, wilayah, kota)",
+    "attributes": {
+        "parentAdminUnitID": {
+            "caption": "Induk",
+            "description": "Induk"
+        },
+        "code": {
+            "caption": "Kode",
+            "description": "kode internal"
+        },
+        "name": {
+            "caption": "Nama"
+        },
+        "fullName": {
+            "caption": "Nama lengkap"
+        },
+        "adminUnitType": {
+            "caption": "Admin jenis unit"
+        },
+        "caption": {
+            "caption": "caption"
+        }
+    }
+}

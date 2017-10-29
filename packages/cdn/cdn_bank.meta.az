@@ -1,0 +1,32 @@
+﻿{
+    "caption": "Bank bölmələri",
+    "description": "Bank bölmələri üzrə sorğu kitabçası",
+    "attributes": {
+        "MFO": {
+            "caption": "FİD",
+            "description": "Bank bölməsinin filiallararası dövriyyəsi"
+        },
+        "code": {
+            "caption": "MTÜT",
+            "description": "MTÜT kodu"
+        },
+        "name": {
+            "caption": "İş adı",
+            "description": "Mülkiyyət forması və dırnaq olmadan ad. İşin rahatlığı üçün."
+        },
+        "fullName": {
+            "caption": "Tam ad",
+            "description": "Qeydiyyat haqqında şəhadətnamədə əks olunmuş tam ad. Bu xana hesabat üçündür."
+        },
+        "phones": {
+            "caption": "Telefonlar"
+        },
+        "address": {
+            "caption": "Ünvan"
+        },
+        "countryID": {
+            "caption": "Ölkə",
+            "description": "Qeydiyyatdan keçdiyi ölkə"
+        }
+    }
+}

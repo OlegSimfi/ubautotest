@@ -1,0 +1,29 @@
+//@! "do not remove comments below unless you know what you do!"
+//@isDefault "false"
+//@entity "org_employeeonstaff"
+//@formType "auto"
+//@caption "orgEmployeeOnStaff"
+//@description "orgEmployeeOnStaff"
+exports.formDef = {
+
+size: {
+	width: 400,
+	height:350
+},
+parentConfig: {
+	layout: { 
+		type: "vbox",
+		align: "stretch" //max
+	}
+},
+
+items:[
+    { attributeName: "employeeID"},
+    { attributeName: "staffUnitID" },
+    { attributeName: "tabNo", allowBlank: true},
+    { attributeName: "employeeOnStaffType" /*Тип*/},
+    { attributeName: "description"},
+    { attributeName: "mi_dateFrom", fieldLabel: UB.i18n('mi_dateFrom')},
+	{ attributeName: "mi_dateTo", allowBlank: true, fieldLabel: UB.i18n('mi_dateTo')}
+]
+};

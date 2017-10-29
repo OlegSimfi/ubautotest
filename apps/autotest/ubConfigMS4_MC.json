@@ -1,0 +1,241 @@
+﻿{ 
+	"httpServer": {
+		"host": "+",
+		"port": "888",
+		"requestQueueLength": 1000,
+		"maxConnections": 0,
+		"allowCORSFrom": "*",
+		"inetPub": ".\\inetPub\\",
+		"headersPostprocessors": ["#include(%UB_HOME%\\defHeadersPostprocessors.json)"],
+		"watchFileChanges": {
+			"enabled": true,
+			"hashingStrategy": "ModifyDate"
+		},
+		"threadPoolSize": 8
+	},
+	"wsServer": {
+		"host": "+",
+		"port": "888",
+		"path": "ws"
+	},
+	"logging": {
+		"path": ".\\logs",
+		"levels": [
+			"*"
+		],
+		"threadingModel": "IdentifiedInOnFile",
+		"stackTrackDepth": 20,
+		"rotationSizeInMB": 100,
+		"performanceCounters": true
+	},
+	"javascript": {
+		"timeout": -1,
+		"lifetimeInMinutes": 1000,
+		"fullGCPeriod": 100,
+		"maxPerEngineMemory": 512,
+		"maxRecursionDepth": 32
+	},
+	"security": {
+		"authenticationMethods": [
+			"UB", "Negotiate"
+		],
+		"ldapCatalogs": [
+			{
+				"name": "MYDOMAIN",
+				"host": "softline.main",
+				"port": "3268",
+				"useTLS": false,
+				"useSSL": false,
+				"useSasl": true
+			}
+		]
+	},
+	"uiSettings": {
+		"adminUI": {
+			"applicationName": "Autotest UB SQLITE",
+			"applicationTitle": "AdminUI",
+			"defaultPasswordForDebugOnly": "admin",
+			"themeName": "UBGrayTheme",
+			"loginWindowTopLogoURL": "models/TST/UB200.png",
+			"endpoint": "ubadminui",
+			"messenger": {
+				"enabled": true,
+				"checkInterval": 30
+			},
+			"linter": { "asi": true, "sub": true }
+		},
+		"portalUI": {
+			"applicationName": "UBCore usage"
+		}
+	},
+	"application": {
+		"defaultLang": "uk",
+		"rootHandler": "index.html",
+		"schedulers": {"enabled": false},
+		"domain": {
+			"models": [
+				{
+					"name": "UB",
+					"path": "./node_modules/@unitybase/ub",
+					"moduleName": "@unitybase/ub"
+				},
+				{
+					"name": "UBA",
+					"path": "./node_modules/@unitybase/uba",
+					"moduleName": "@unitybase/uba"
+				},
+				{
+					"name": "UBS",
+					"path": "./node_modules/@unitybase/ubs",
+					"moduleName": "@unitybase/ubs"
+				},
+				{
+					"name": "UBM",
+					"path": "./node_modules/@unitybase/ubm",
+					"moduleName": "@unitybase/ubm"
+				},
+				{
+					"name": "UBQ",
+					"path": "./node_modules/@unitybase/ubq",
+					"moduleName": "@unitybase/ubq"
+				},
+				{
+					"name": "CDN",
+					"path": "./node_modules/@unitybase/cdn",
+					"moduleName": "@unitybase/cdn"
+				},
+				{
+					"name": "ORG",
+					"path": "./node_modules/@unitybase/org",
+					"moduleName": "@unitybase/org"
+				},
+				{
+					"name": "ub-pub",
+					"publicPath": "./node_modules/@unitybase/ub-pub",
+					"path": "_public_only_",
+					"moduleName": "@unitybase/ub-pub"
+				},
+				{
+					"name": "adminui-pub",
+					"publicPath": "./node_modules/@unitybase/adminui-pub",
+					"path": "_public_only_",
+					"moduleName": "@unitybase/adminui-pub"
+				},
+				{
+					"name": "adminui-reg",
+					"path": "./node_modules/@unitybase/adminui-reg",
+					"moduleName": "@unitybase/adminui-reg"
+				},
+                                {
+					"name": "DSES",
+					"path": "./node_modules/@ub-e/dses",
+					"moduleName": "@ub-e/dses"
+				},
+				{
+					"name": "nm-dstu",
+					"publicPath": "./node_modules/@ub-d/nm-dstu",
+					"path": "_public_only_",
+					"moduleName": "@ub-d/nm-dstu"
+				},
+				{
+					"name": "TST",
+					"path": ".\\models\\TST"
+				}
+			],
+			"implicitlyAddedMixins": [
+				"audit"
+			]
+		},
+		"fts": {
+			"enabled": true,
+			"async": false
+		},
+		"connections": [
+			{
+				"name": "main",
+				"driver": "MSSQL2012OleDB",
+				"isDefault": true,
+				"dialect": "MSSQL2012",
+				"serverName": "MASH-W10\\SQLEXPRESS",
+				"databaseName": "ub_autotest",
+				"userID": "ub_autotest",
+				"password": "ub_autotest",
+				"supportLang": [
+					"uk",
+					"en"
+				]
+			},
+			{
+				"name": "second",
+				"driver": "MSSQL2012OleDB",
+				"dialect": "MSSQL2012",
+				"serverName": "MASH-W10\\SQLEXPRESS",
+				"databaseName": "ub_autotest2",
+				"userID": "ub_autotest",
+				"password": "ub_autotest",
+				"supportLang": [
+					"uk",
+					"en"
+				]
+			},
+			{
+				"name": "ftsDefault",
+				"driver": "SQLite3",
+				"dialect": "SQLite3",
+				"databaseName": ".\\autotestFTS.sqlite3",
+				"supportLang": [
+					"uk"
+				],
+				"advSettings": "Synchronous=Off,Tokenizer=stemka"
+			},
+			{
+				"name": "ftsSubjectSearch",
+				"driver": "SQLite3",
+				"dialect": "SQLite3",
+				"databaseName": ".\\autotestSubjectsFTS.sqlite3",
+				"supportLang": [
+					"uk"
+				],
+				"advSettings": "Synchronous=Off,Tokenizer=stemka"
+			}
+		],
+		"blobStores": [
+			{
+				"name": "mdb",
+				"storeType": "Virtual"
+			},
+			{
+				"name": "simple",
+				"path": ".\\documents\\simple\\",
+				"isDefault": true,
+				"historyDepth": 0,
+				"storeSize": "Simple",
+				"keepOriginalFileNames": false
+			},
+			{
+				"name": "avatars",
+					"path": ".\\documents\\avatars\\",
+				"historyDepth": 0,
+				"storeSize": "Simple",
+				"keepOriginalFileNames": false
+			}
+		],
+		"customSettings": {
+			"docuSign": {
+				"userName":"",
+				"password":"",
+				"integratorKey":"",
+				"apiUrl":"https://demo.docusign.net/restapi"
+			},
+			"mailerConfig": {
+				"targetHost": "mail.softline.main",
+				"targetPort": "25",
+				"fromAddr": "no-reply@softline.kiev.ua",
+				"user": "",
+				"password": "",
+				"autoTLS": false,
+				"auth": false 
+			}
+		}
+	}
+}

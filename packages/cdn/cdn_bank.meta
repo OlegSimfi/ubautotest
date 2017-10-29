@@ -1,0 +1,67 @@
+{
+    "caption": "Bank branches",
+    "description": "Bank branches directory",
+    "connectionName": "",
+    "sqlAlias": "bank",
+    "cacheType": "SessionEntity",
+    "descriptionAttribute": "name",
+    "documentation": "",
+    "attributes": {
+        "MFO": {
+            "dataType": "String",
+            "size": 16,
+            "caption": "Bank code",
+            "description": "Bank branch code",
+            "allowNull": false,
+            "isUnique": true
+        },
+        "code": {
+            "dataType": "String",
+            "size": 16,
+            "caption": "Organization code",
+            "description": "Bank organization code",
+            "allowNull": true
+        },
+        "name": {
+            "dataType": "String",
+            "size": 128,
+            "caption": "Name",
+            "description": "Name without quotes and ownership. For searching data.",
+            "allowNull": false,
+            "isMultiLang": true
+        },
+        "fullName": {
+            "dataType": "String",
+            "size": 128,
+            "caption": "Full name",
+            "description": "Full official bank name . For displaying in reports.",
+            "allowNull": false,
+            "isMultiLang": true
+        },
+        "phones": {
+            "dataType": "String",
+            "size": 255,
+            "caption": "Phones",
+            "allowNull": true
+        },
+        "address": {
+            "dataType": "String",
+            "size": 255,
+            "caption": "Address",
+            "allowNull": true
+        },
+        "countryID": {
+            "dataType": "Entity",
+            "associatedEntity": "cdn_country",
+            "caption": "Country",
+            "description": "Registration country",
+            "allowNull": true
+        }
+    },
+    "mixins": {
+        "mStorage": {
+            "simpleAudit": true,
+            "safeDelete": true
+        }
+    }
+}

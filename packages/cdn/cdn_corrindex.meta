@@ -1,0 +1,45 @@
+{
+	"caption": "Correspondent indexes",
+	"description": "Correspondent indexes directory",
+	"connectionName": "",
+	"sqlAlias": "coridx",
+	"cacheType": "SessionEntity",
+	"descriptionAttribute": "name",
+	"documentation": "",
+	"attributes": {
+		"code":
+		{
+			"dataType": "String",
+			"size": 16,
+			"caption": "Code",
+			"description": "Code of correspondent index",
+			"allowNull": false,
+			"isMultiLang": false,
+			"isUnique": true
+		},
+		"name":
+		{
+			"dataType": "String",
+			"size": 128,
+			"caption": "Name",
+			"description": "Name of correspondent index",
+			"allowNull": false,
+			"isMultiLang": true
+		},		
+		"fullName":
+		{
+			"dataType": "String",
+			"size": 255,
+			"caption": "Full name",
+			"description": "Full name of correspondent index",
+			"allowNull": false,
+			"isMultiLang": true
+		}		
+	},
+	"mixins": {
+		"mStorage": {
+			"simpleAudit":true,
+			"safeDelete":true
+        }
+	}
+}

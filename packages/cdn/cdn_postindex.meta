@@ -1,0 +1,41 @@
+{
+	"caption": "Поштові індекси",
+	"description": "Поштові індекси",
+	"connectionName": "",
+	"sqlAlias": "postidx",
+	"cacheType": "SessionEntity",
+	"descriptionAttribute": "description",
+	"documentation": "",
+	"attributes": {
+		"code":
+		{
+			"dataType": "String",
+			"size": 6,
+			"caption": "Індекс",
+			"description": "Індекс",
+			"allowNull": false,
+            "isUnique": false
+		},
+        "streetID": {
+            "dataType": "Entity",
+            "associatedEntity": "cdn_street",
+            "caption": "Вулиця",
+            "allowNull": false
+        },
+		"description":
+		{
+			"dataType": "String",
+			"size": 255,
+			"caption": "Опис",
+			"description": "Опис",
+			"allowNull": false,
+			"isMultiLang": true
+		}
+	},
+	"mixins": {
+		"mStorage": {
+			"simpleAudit":true,
+			"safeDelete":true
+        }
+	}
+}

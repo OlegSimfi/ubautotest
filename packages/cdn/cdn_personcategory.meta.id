@@ -1,0 +1,14 @@
+﻿{
+    "caption": "Kategori orang",
+    "description": "Ctegory orang",
+    "attributes": {
+        "code": {
+            "caption": "Kode",
+            "description": "Kode"
+        },
+        "name": {
+            "caption": "Nama",
+            "description": "Nama kategori"
+        }
+    }
+}

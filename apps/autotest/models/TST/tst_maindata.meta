@@ -1,0 +1,130 @@
+﻿{
+	"caption": "ub test main data",
+	"description": "ub test main data",
+	"connectionName": "",
+	"sqlAlias": "tmd",
+	"cacheType": "None",
+	"descriptionAttribute": "caption",
+	"attributes": [
+		{
+			"name": "code",
+			"dataType": "String",
+			"size": 32,
+			"caption": "Code",
+			"allowNull": false
+		},
+		{
+			"name": "caption",
+			"dataType": "String",
+			"size": 255,
+			"caption": "Caption",
+			"allowNull": true,
+			"isMultiLang": true
+		},
+		{
+			"name": "complexCaption",
+			"dataType": "String",
+			"size": 512,
+			"caption": "complexCaption",
+			"allowNull": true,
+			"isMultiLang": false
+		},
+		{
+			"name": "nonNullDict_ID",
+			"dataType": "Entity",
+			"associatedEntity": "tst_dictionary",
+			"caption": "nonNullDict_ID",
+			"allowNull": false
+		},
+		{
+			"name": "nullDict_ID",
+			"dataType": "Entity",
+			"associatedEntity": "tst_dictionary",
+			"caption": "nullDict_ID",
+			"allowNull": true
+		},
+		{
+			"name": "parent",
+			"dataType": "Entity",
+			"associatedEntity": "tst_maindata",
+			"caption": "parent",
+			"allowNull": true
+		},
+		{
+			"name": "parent1",
+			"dataType": "Entity",
+			"associatedEntity": "tst_mainunity",
+			"caption": "parent",
+			"allowNull": true
+		},
+		{
+			"name": "enumValue",
+			"dataType": "Enum",
+			"enumGroup": "TEST_GROUP_1",
+			"caption": "enumValue",
+			"allowNull": false,
+			"defaultValue": "ONE"
+		},
+		{
+			"name": "dateTimeValue",
+			"dataType": "DateTime",
+			"caption": "dateTimeValue",
+			"allowNull": true
+		},
+		{
+			"name": "booleanValue",
+			"dataType": "Boolean",
+			"caption": "booleanValue",
+			"allowNull": false,
+			"defaultValue": "0"
+		},
+		{
+			"name": "manyValue",
+            "dataType": "Many",
+            "associatedEntity": "tst_dictionary",
+            "associationManyData": "tst_maind_dict",
+            "caption": "test many data",
+            "allowNull": true
+		},
+		{
+			"name": "manyValue2",
+            "dataType": "Many",
+            "associatedEntity": "tst_dictionary",
+            "associationManyData": "tst_maind_dict2",
+            "caption": "test 2d many data",
+            "allowNull": true
+		},
+		{
+			"name": "bigintValue",
+		    "dataType": "BigInt",
+            "caption": "BigInt",
+			"defaultValue": "0"
+		}, {
+			"name": "mappedToSelf",
+            "caption": "mappedToSelf",
+			"dataType": "Entity",
+			"associatedEntity": "uba_user",
+            "documentation": "For testing DDL Generator - this attribute must be ignored, since it mapped to existed attribute",
+            "mapping": [{
+              "name": "AnsiSQL",
+              "expressionType": "Field",
+              "expression": "mi_modifyDate"
+            }]
+		}
+	],
+	"mixins": {
+		"mStorage": {
+			"simpleAudit": true,
+			"safeDelete": true
+		},
+		"unity": { 
+			"entity": "tst_mainunity",
+			"attributeList": ["code", "caption"],
+			"defaults": {} 
+		},
+		"rls": {
+			//"expression": "'([ID] > 100) AND ' + tst_maindata.maindataRLS() + ' AND ' + tst_service.serviceRLS()"
+			"expression": "'([mi_owner] = :(' + Session.userID + '):)'"
+		}	
+	}
+}

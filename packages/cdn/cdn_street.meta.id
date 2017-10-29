@@ -1,0 +1,26 @@
+﻿{
+    "caption": "Daftar jalan-jalan",
+    "description": "Daftar jalan-jalan",
+    "attributes": {
+        "name": {
+            "caption": "Nama",
+            "description": "nama jalan"
+        },
+        "fullName": {
+            "caption": "Nama lengkap",
+            "description": "Jalan nama lengkap"
+        },
+        "code": {
+            "caption": "Kode",
+            "description": "Kode"
+        },
+        "streetType": {
+            "caption": "Mengetik",
+            "description": "Mengetik"
+        },
+        "cityID": {
+            "caption": "Kota",
+            "description": "Kota"
+        }
+    }
+}

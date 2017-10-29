@@ -1,0 +1,32 @@
+{
+  "name": "@unitybase/uba",
+  "version": "4.1.32",
+  "description": "UnityBase Administrative model",
+  "repository": "https://git-pub.intecracy.com/unitybase/ubjs/tree/master/packages/uba",
+  "config": {
+    "ubmodel": "UBA"
+  },
+  "scripts": {
+    "test": "ubcli autotest -m UBA -skipModules"
+  },
+  "public": true,
+  "publishConfig": {
+    "registry": "http://registry.unitybase.info"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@unitybase/base": "^4.2.22",
+    "@unitybase/ub": "^4.0.44",
+    "asn1js": "^2.0.14",
+    "pkijs": "^2.0.56"
+  },
+  "devDependencies": {
+    "@unitybase/stubs": "^4.1.13"
+  },
+  "keywords": [
+    "UnityBase",
+    "UB4"
+  ],
+  "author": "UnityBase team (https://unitybase.info)",
+  "license": "(GPL-3.0 OR LGPL-3.0 OR MPL-2.0)"
+}

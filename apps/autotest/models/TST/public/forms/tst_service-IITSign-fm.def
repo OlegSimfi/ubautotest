@@ -1,0 +1,176 @@
+// @! "do not remove comments below unless you know what you do!"
+// @isDefault "false"
+// @entity "tst_service"
+// @model "TST"
+// @formType "custom"
+// @caption "Test IIT Sign"
+// @description "Test IIT Sign"
+Ext.define('TST.IITSign', {
+  extend: 'Ext.form.Panel',
+
+  items: [{
+    xtype: 'filefield',
+    name: 'selFile',
+    fieldLabel: 'File',
+    labelWidth: 100,
+    msgTarget: 'side',
+    allowBlank: false,
+    anchor: '95%',
+    buttonText: 'Select File...',
+    ubID: 'dataFile'
+  }, {
+    xtype: 'textarea',
+    fieldLabel: 'Signature',
+    labelWidth: 100,
+    height: 300,
+    anchor: '95%',
+    ubID: 'signature',
+    items: [{
+      xtype: 'textareafield',
+      grow: true,
+      name: 'message',
+      fieldLabel: 'Message',
+      anchor: '100%'
+    }]
+  }, {
+    xtype: 'textarea',
+    fieldLabel: 'Output data',
+    labelWidth: 100,
+    height: 300,
+    anchor: '95%',
+    ubID: 'resultData',
+    items: [{
+      xtype: 'textareafield',
+      grow: true,
+      name: 'message',
+      fieldLabel: 'Message',
+      anchor: '100%'
+    }]
+  }, {
+    xtype: 'container',
+    layout: {
+      type: 'hbox',
+      defaultMargins: {
+        left: 2
+      }
+    },
+    items: [{
+      xtype: 'button',
+      width: 150,
+      ubID: 'doSign',
+      text: 'Sign'
+    }, {
+      xtype: 'filefield',
+      name: 'selFile',
+      fieldLabel: '',
+      labelWidth: 150,
+      msgTarget: 'side',
+      allowBlank: false,
+      anchor: '0%',
+      width: 150,
+      buttonText: 'Load signature',
+      buttonOnly: true,
+      buttonConfig: {
+        width: 150
+      },
+      ubID: 'doLoadSign',
+      listeners: {
+        afterrender: function (sender) {
+          var
+            me = sender.up('component').up('component'),
+            onFileSelect
+
+          onFileSelect = function (evt) {
+            var file = evt.target.files[0]
+            UB.base64FromAny(file).then(function (b64) {
+              me.down('component[ubID="signature"]').setValue(b64)
+            })
+          }
+
+          sender.getEl().dom.addEventListener('change', onFileSelect, false)
+          sender.inputEl.on('click', function () {
+            this.button.fileInputEl.dom.click()
+          }, sender)
+        },
+        scope: this
+      }
+    }, {
+      xtype: 'button',
+      width: 150,
+      ubID: 'doClearSign',
+      text: 'Clear signature'
+    }, {
+      xtype: 'button',
+      width: 150,
+      ubID: 'doSaveSign',
+      text: 'Save signature'
+    }, {
+      xtype: 'button',
+      width: 150,
+      ubID: 'doValidate',
+      text: 'Verify signature'
+    }]
+  }],
+
+  initPKIAndLoadFile: function () {
+    var me = this
+    var f = me.down('component[ubID="dataFile"]').fileInputEl.dom.files[0]
+    if (!f) {
+      return Promise.reject(new UB.UBError('No file selected'))
+    }
+		return UB.inject('clientRequire/@ub-d/nm-dstu/dist/nm-dstu.min.js').then(function() {
+      return $App.connection.pki 
+      	? true
+        : window[ 'nm-dstu' ].addEncryptionToConnection($App.connection)
+    }).then(function() {
+      return $App.connection.pki().then(function (pki) {
+        return pki.readPK($App.connection).then(function () {
+          return UB.base64FromAny(f)
+        }).then(function (b64) {
+          return {pki: pki, data: b64}
+        })
+      })
+    })  
+  },
+
+  initComponent: function () {
+    var me = this
+    me.callParent(arguments)
+
+    me.down('component[ubID="doSign"]').handler = function () {
+      me.mask('Signing')
+      me.initPKIAndLoadFile().then(function (data) {
+        return data.pki.signData(data.data)
+      }).then(function (signature) {
+        me.down('component[ubID="signature"]').setValue(signature)
+      }).fin(function () {
+        me.unmask()
+      })
+    }
+
+    me.down('component[ubID="doClearSign"]').handler = function () {
+      me.down('component[ubID="signature"]').setValue('')
+    }
+
+    me.down('component[ubID="doValidate"]').handler = function () {
+      me.mask('Verifying')
+      me.initPKIAndLoadFile().then(function (data) {
+        return data.pki.verifySignature(data.data, me.down('component[ubID="signature"]').value)
+      }).then(function (verificationResult) {
+        me.down('component[ubID="resultData"]').setValue(verificationResult)
+      }).catch(function (verificationError) {
+        throw new UB.UBError(verificationError.detail)
+      }).then(function () {
+        me.unmask()
+      })
+    }
+
+    me.down('component[ubID="doSaveSign"]').handler = function () {
+      var buf = UB.base64toArrayBuffer(me.down('component[ubID="signature"]').value)
+      $App.connection.post('echoToFile', buf).fail(function () {
+        return null
+      })
+      $App.dialog('File is saved on server', 'You can find it in folder of your TST model by path <b>\\_autotest\\fixtures\\req</b>', {buttons: 1})
+    }
+  }
+})

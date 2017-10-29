@@ -1,0 +1,140 @@
+﻿{
+	"caption": "Штатные единицы",
+	"description": "Справочник штатных единиц",
+    "documentation": "В этом справочнике хранится перечень штатных единиц (должностей). Каждая штатная единица по UNITY складывается в org_unit",
+	"connectionName": "",
+	"sqlAlias": "stunit",
+	"cacheType": "catySession",
+	"descriptionAttribute": "caption",
+	"attributes": {
+		"parentID":
+		{
+			"dataType": "Entity",
+			"associatedEntity": "org_unit",
+			"caption": "Предок",
+			"description": "Предок",
+			"allowNull": true
+		},
+		"code": {
+			"dataType": "String",
+			"size": 16,
+			"caption": "Внутренний код",
+			"description": "Внутренний код штатной единицы",
+			"allowNull": false,
+            "isUnique": true
+		},
+		"name": {
+			"dataType": "String",
+			"size": 128,
+			"caption": "Название штатной единицы",
+			"description": "Название без кавычек и абревиатур",
+			"allowNull": false,
+			"isMultiLang": true
+		},
+		"fullName": {
+			"dataType": "String",
+			"size": 255,
+			"caption": "Полное название штатной единицы",
+			"description": "Полное название",
+			"allowNull": false,
+			"isMultiLang": true
+		},
+		"description" : {
+			"dataType" : "String",
+			"size" : 255,
+			"caption" : "Описание штатной единицы",
+			"description" : "Описание штатной единицы",
+			"allowNull" : true,
+			"isMultiLang" : true
+		},
+        "nameGen": {
+            "dataType": "String",
+            "size": 128,
+            "caption": "Название штатной единицы в родительном падеже",
+            "description": "Полное название штатной единицы в родительном падеже",
+            "allowNull": true,
+            "isMultiLang": true
+        },		
+        "nameDat": {
+            "dataType": "String",
+            "size": 128,
+            "caption": "Название штатной единицы в дательном падеже",
+            "description": "Полное название штатной единицы в дательном падеже",
+            "allowNull": true,
+            "isMultiLang": true
+        },
+        "fullNameGen": {
+            "dataType": "String",
+            "size": 255,
+            "caption": "Полное название штатной единицы в родительном падеже",
+            "description": "Полное название штатной единицы в родительном падеже",
+            "allowNull": true,
+            "isMultiLang": true
+        },
+        "fullNameDat": {
+            "dataType": "String",
+            "size": 255,
+            "caption": "Полное название штатной единицы в дательном падеже",
+            "description": "Полное название штатной единицы в дательном падеже",
+            "allowNull": true,
+            "isMultiLang": true
+        },			
+        "caption":
+        {
+            "dataType": "String",
+            "size": 1024,
+            "caption": "Заголовок",
+            "description": "Заголовок",
+            "allowNull": false,
+            "isMultiLang": true
+        },
+		"professionExtID": {
+			"dataType": "Entity",
+			"associatedEntity": "cdn_profession",
+			"caption": "Професія",
+			"description": "Професія",
+			"allowNull": true
+		},
+        "professionID": {
+            "dataType": "Entity",
+            "associatedEntity": "org_profession",
+            "caption": "Посада",
+            "description": "Посада",
+            "allowNull": false
+        },
+		"staffUnitTypeID": {
+			"dataType": "Entity",
+			"associatedEntity": "cdn_staffunittype",
+			"caption": "Тип штатной единицы",
+			"description": "Тип штатной единицы",
+			"allowNull": false
+		},
+        "subordinationLevel": {
+            "dataType": "Int",
+            "caption": "Уровень субординации",
+            "description": "Уровень субординации - чем ниже, тем штатная единица считается более важной по орг.структуре",
+            "allowNull": true
+		},
+        "isBoss": {
+            "dataType": "Boolean",
+            "caption": "Boss",
+            "description": "Boss",
+            "allowNull": true,
+            "defaultValue": "0"
+        }
+	},
+	"mixins": {
+		"mStorage": {
+			"simpleAudit": true,
+			"safeDelete": true
+		},
+		"dataHistory": {},
+		"unity": {
+			"entity": "org_unit",
+			"attributeList": ["parentID","code","caption"],
+			"defaults": {
+				"unitType": "STAFF"
+			}
+		}
+	}
+}

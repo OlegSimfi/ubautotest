@@ -1,0 +1,107 @@
+//@! "do not remove comments below unless you know what you do!"
+//@isDefault "false"
+//@entity "org_staffunit"
+//@formType "auto"
+//@caption "orgStaffUnit"
+//@description "orgStaffUnit"
+exports.formDef = {
+    size: {
+        width: 400,
+        height: 350
+    },
+    parentConfig: {
+        layout: {
+            type: "vbox",
+            align: "stretch" //max
+        }
+    },
+
+    items: [{
+        xtype: 'tabpanel',
+        items: [{
+            title: UB.i18n('obshee'), // "Атрибуты"
+            layout: {
+                type: 'vbox',
+                align: "stretch",
+                flex: 1
+            },
+            defaults: {
+                layout: {
+                    type: 'vbox',
+                    align: 'stretch'
+                }
+            },
+            autoScroll: true,
+            items: [{
+                attributeName: "parentID" /*Предок*/
+            }, {
+                attributeName: "professionID",
+                fieldList: ["name"]
+            }, {
+                attributeName: "staffUnitTypeID" /*Тип штатної одиниці*/
+            }, {
+                attributeName: "professionExtID",
+                fieldList: ["name"]
+            }, {
+                attributeName: "code",
+                allowBlank: true
+            }, {
+                attributeName: "name"
+            }, {
+                attributeName: "fullName"
+            }, {
+                attributeName: "description"
+            }, {
+                attributeName: "subordinationLevel"
+            }, {
+                attributeName: "isBoss"
+            }, {
+                xtype: "ubdetailgrid",
+                entityConfig: {
+                    entity: "org_employeeonstaff",
+                    method: "select",
+                    __mip_recordhistory_all: true,
+                    bypassCache: true,
+                    fieldList: ["staffUnitID", "employeeID.fullFIO", "employeeOnStaffType", {
+                            name: "mi_dateFrom",
+                            description: UB.i18n('mi_dateFrom'),
+                            visibility: true
+                        }, {
+                            name: "mi_dateTo",
+                            description: UB.i18n('mi_dateTo'),
+                            visibility: true
+                        }]
+                },
+                masterFields: ["ID"],
+                detailFields: ["staffUnitID"]
+            }]
+        }, {
+            title: UB.i18n('cases'),
+            layout: {
+                type: 'vbox',
+                align: "stretch",
+                flex: 1
+            },
+            defaults: {
+                layout: {
+                    type: 'vbox',
+                    align: 'stretch'
+                }
+            },
+            autoScroll: true,
+            items: [{
+                attributeName: "nameGen",
+                fieldLabel: UB.i18n('nameInGen')
+            }, {
+                attributeName: "nameDat",
+                fieldLabel: UB.i18n('nameInDat')
+            }, {
+                attributeName: "fullNameGen",
+                fieldLabel: UB.i18n('fullNameInGen')
+            }, {
+                attributeName: "fullNameDat",
+                fieldLabel: UB.i18n('fullNameInDat')
+            }]
+        }]
+    }]
+};

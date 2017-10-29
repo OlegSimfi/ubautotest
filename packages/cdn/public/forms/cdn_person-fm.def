@@ -1,0 +1,118 @@
+//@! "do not remove comments below unless you know what you do!"
+//@isDefault "false"
+//@entity "cdn_person"
+//@formType "auto"
+//@caption "physPerson"
+//@description "physPerson"
+exports.formDef = {
+    size: {
+        width: 650,
+        height: 600
+    },
+    parentConfig: {
+        layout: 'fit'
+    },
+    layout: 'fit',
+    items: [
+        {
+            xtype: 'tabpanel',
+            items: [
+                {
+                    title: UB.i18n('Obshchee'), // "Атрибуты"
+                    layout: {
+                        type: 'vbox',
+                        align: "stretch"
+                    },
+                    items: [
+                        {
+                            layout: 'hbox',
+                            items: [{
+                                flex: 1,
+                                layout: {
+                                    type: 'vbox',
+                                    align: "stretch"
+                                },
+                                items: [
+                                    { attributeName: "lastName"},
+                                    { attributeName: "firstName"},
+                                    { attributeName: "middleName"},
+                                    { attributeName: "suffix"},
+                                    { attributeName: "shortFIO"},
+                                    { attributeName: "fullFIO", rows: 1},
+                                    { attributeName: "sexType" },
+                                    { attributeName: "categoryID" }
+                                ]
+                            }, {
+                                flex: 1,
+                                layout: {
+                                    type: 'vbox',
+                                    align: "stretch"
+                                },
+                                items: [
+                                    { attributeName: "apply"},
+                                    { attributeName: "identCard" },
+                                    { attributeName: "workPlacePos" },
+                                    { attributeName: "birthDate" },
+                                    { attributeName: "description" },
+                                    { attributeName: "socialstatusID" },
+                                    { attributeName: "regionID"}
+                                ]
+                           }, { 
+                               attributeName: "photo", width: 250, layout: 'auto', expanded: true, cmpConfig: {height: 300}
+                           }]    
+                        }, {
+                            xtype: "ubdetailgrid",
+                            flex: 100,
+                            entityConfig: {
+                                entity: "cdn_contact",
+                                method: "select",
+                                fieldList: ["contactTypeID", "value"]
+                            },
+                            masterFields: ["ID"],
+                            detailFields: ["subjectID"]
+                        }
+                    ]
+                }, {
+                    title: UB.i18n('cases'),
+                    layout: {
+                        type: 'hbox',
+                        align: "stretch",
+                        flex: 1
+                    },
+                    defaults: {
+                        layout: {
+                            type: 'vbox',
+                            align: 'stretch'
+                        }
+                    },
+                    autoScroll: true,
+                    items: [
+                        {
+                            flex: 1,
+                            items: [
+                                { attributeName: "lastNameGen"},
+                                { attributeName: "lastNameDat"},
+                                { attributeName: "firstNameGen"},
+                                { attributeName: "firstNameDat"},
+                                { attributeName: "middleNameGen"},
+                                { attributeName: "middleNameDat"}
+                            ]
+                        },
+                        {
+                            flex: 1,
+                            items: [
+                                { attributeName: "shortFIOGen"},
+                                { attributeName: "shortFIODat"},
+                                { attributeName: "fullFIOGen"},
+                                { attributeName: "fullFIODat"},
+                                { attributeName: "applyGen"},
+                                { attributeName: "applyDat"}
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+
+    ]
+};

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>UnityBase</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+</head>
+<body>
+
+<script type="text/javascript" charset="utf-8" src="../../compiled/ub-core-debug.js"></script>
+<script type="text/javascript" charset="utf-8" src="initModel.js"></script>
+
+<table>
+    <tr>
+        <td>
+            <img src="images/UBLogo128.png" class="logo-img"/>
+        </td>
+        <td>
+            <h1> Hello, word! </h1>
+            In this example we show how to:
+            <ul>
+                <li>setup UnityBase HTTP server for handle static;</li>
+                <li>enable HTTP caching;</li>
+            </ul>
+        </td>
+    </tr>
+</table>
+
+<h2>1. Setup UnityBase HTTP server</h2>
+First of all we create server config <code>ubConfig.json</code> file: 
+<pre>
+{
+	"HTTPServerType": "stHTTPSys",
+	"logPath": "..\\logs",
+	"logLevel": ["*"],
+	"appConfigs": {
+		"gs": {
+			"domainName": "gettingStarted",
+			"staticFolder": ".\\Web\\" /*folder for static. If set application handle static files request */
+		}
+	},
+	"domainConfigs": {
+		"gettingStarted": {
+		}
+	}
+}
+</pre>
+
+Here we:
+<ul>
+    <li> define empty <strong>Domain</strong> named <code>gettingStarted</code> inside <code>domainConfigs</code>
+        section
+    </li>
+    <li> define <strong>Application</strong> named <code>gs</code> inside <code>appConfig</code> section</li>
+    <li> setup application domain name to empty <code>gettingStarted</code> Domain</li>
+    <li> set application static folder to <code>.\Web\</code> folder</li>
+    <li> set logging path to <code>..\logs</code> folder and tell UnityBase to log almost anything happens on the server
+        side by setting <code>logLevel</code> to <code>['*']</code></li>
+</ul>
+
+<br>
+Now you can run UnityBase by typing in console:
+<pre>
+cd Samples\01_Static_HTTP_Server
+start ub -c
+</pre>
+and follow <a href="http://localhost:888/gs/index.html">this</a> link. <br>
+<br>
+You can see static HTML page served by UnityBase HTTP server. <br>
+
+<h2>2. Enable HTTP caching</h2>
+Let's enable <a href="https://developers.google.com/speed/articles/caching">HTTP caching</a> for images:<br>
+<ul>
+    <li> shut down UnityBase</li>
+    <li> define <code>staticRules</code> section inside application configuration section</li>
+    <li> define single rule: all files with images extensions are valid for one month:</li>
+<pre>
+	"staticRules": {
+		"images": {
+				"location": "\\.(ico|txt|gif|jpg|png|jpeg)$",
+				"expires": 2592000
+		}
+	}
+</pre>
+    <li>Start server and <a href="http://localhost:888/gs/index.html">refresh this page</a></li>
+    <li>Take a look to network tab of browser developer tool - <code>img\UBLogo128.png</code> file now come from cache
+    </li>
+</ul>
+
+<h2>3. More info</h2>
+<ul>
+    <li><a href="https://enviance.softline.kiev.ua/confluence/display/UB/Command-line+interface">UnityBase command-line
+        options</a></li>
+    <li><a href="https://enviance.softline.kiev.ua/confluence/display/UB/Build-in+HTTP+server">HTTP server
+        implementation details</a></li>
+    <li> file <code>bin\_ubConfig_tpl.json</code> for server configuration options.</li>
+    <li><code>samples\logs</code> folder content for detail information about what happens inside server</li>
+</ul>
+
+</body>
+</html>

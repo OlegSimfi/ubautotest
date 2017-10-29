@@ -1,0 +1,76 @@
+{
+  "tags": {
+    "allowUnknownTags": true
+  },
+  "source": {
+    "include": [
+      "./packages/base",
+      "./packages/stubs",
+      "./packages/ub",
+      "./packages/ub/modules",
+      "./packages/ub/virtualStores",
+      "./packages/ubcli/lib",
+      "./packages/http-proxy",
+      "./packages/canvas/UBCanvas.js",
+      "./packages/com-bridge/UBComBridge.js",
+      "./packages/mailer",
+      "./packages/openid-connect/openIDConnect.js",
+      "./packages/compressors/UBCompressors.js",
+      "../ub-e/packages/odata/OData.js"
+    ],
+    "includePattern": ".+\\.js(m|x)?$"
+  },
+  "plugins": [
+    "plugins/markdown",
+    "./packages/ub-jsdocs/plugins/sripPFromDescription"
+  ],
+  "opts": {
+    "template": "./packages/ub-jsdocs",
+    "readme": "./readme.md",
+    "encoding": "utf8",
+    "destination": "./docs",
+    "recurse": false,
+    "tutorials": "tutorials"
+  },
+  "templates": {
+    "cleverLinks": true,
+    "monospaceLinks": false,
+    "buildInURL": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/",
+    "buildins": [
+      "array",
+      "arraybuffer",
+      "boolean",
+      "date",
+      "error",
+      "function",
+      "json",
+      "number",
+      "object",
+      "regexp",
+      "string",
+      "null"
+    ],
+    "smallSourceLink": true,
+    "fullTextSearch": true,
+    "hideAuthor": true,
+    "stylesheet": "styles/ub-jsdoc.css",
+    "links": [
+      {
+        "text": "WEB Core API",
+        "href": "../ubcore/"
+      },
+      {
+        "text": "adminUI API",
+        "href": "../adminUI/"
+      }
+    ],
+    "googleAnalytics": "UA-66006954-1",
+    "default": {
+      "outputSourceFiles": true,
+      "staticFiles": {
+	"include": ["./tutorials"],
+        "excludePattern": "\\.md$"
+      }
+    }
+  }
+}

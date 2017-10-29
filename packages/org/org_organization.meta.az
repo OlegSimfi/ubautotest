@@ -1,0 +1,63 @@
+﻿{
+    "caption": "Daxili təşkilatlar",
+    "description": "Daxili təşkialtlar üzrə sorğu kitabçası",
+    "documentation": "Bu sorğu kitabçasında təşkilatların siyahısı göstərilmişdir. UNİTY üzrə hər təşkilat org_unit-də toplanır",
+    "attributes": {
+        "parentID": {
+            "caption": "Əsas element",
+            "description": "Əsas element"
+        },
+        "code": {
+            "caption": "Daxili kod",
+            "description": "Təşkilatın daxili kodu"
+        },
+        "OKPOCode": {
+            "caption": "MTÜT",
+            "description": "Müəssisə və təşkilatların ümumi təsnifatı (MTÜT)"
+        },
+        "taxCode": {
+            "caption": "Vergi №si",
+            "description": "Vergi nömrəsi"
+        },
+        "vatCode": {
+            "caption": "ƏDV şəh. №si",
+            "description": "ƏDV ödəyicisi şəhadətnaməsinin №si"
+        },
+        "name": {
+            "caption": "Təşkilatın adı",
+            "description": "Dırnaq işarəsi və abbreviatura olmadan ad"
+        },
+        "fullName": {
+            "caption": "Təşkilatın tam adı",
+            "description": "Qeydiyyat haqqında şəhadətnamədə göstərilmiş tam ad"
+        },
+        "description": {
+            "caption": "Təşkilatın təsviri",
+            "description": "Təsvir"
+        },
+        "nameGen": {
+            "caption": "Yiyəlik halda təşkilatın adı",
+            "description": "Yiyəlik halda dırnaq işarəsi və abbreviatura olmadan ad"
+        },
+        "nameDat": {
+            "caption": "Yönlük halda təşkilatın adı",
+            "description": "Yönlük halda dırnaq işarəsi və abbreviatura olmadan ad"
+        },
+        "fullNameGen": {
+            "caption": "Yiyəlik halda təşkilatın tam adı",
+            "description": "Yiyəlik halda,qeydiyyat haqqında şəhadətnamədə göstərilmiş tam ad"
+        },
+        "fullNameDat": {
+            "caption": "Yönlük halda təşkilatın tam adı",
+            "description": "Yönlük halda,qeydiyyat haqqında şəhadətnamədə göstərilmiş tam ad"
+        },
+        "orgBusinessTypeID": {
+            "caption": "Təşkilatın tipi",
+            "description": "Təşkilatın tipi"
+        },
+        "orgOwnershipTypeID": {
+            "caption": "Mülkiyyət tipi",
+            "description": "Mülkiyyət tipi"
+        }
+    }
+}

@@ -1,0 +1,46 @@
+﻿{
+    "caption": "negara",
+    "description": "direktori negara",
+    "attributes": {
+        "code": {
+            "caption": "Kode",
+            "description": "kode internal"
+        },
+        "name": {
+            "caption": "Nama",
+            "description": "Nama negara"
+        },
+        "fullName": {
+            "caption": "Nama lengkap",
+            "description": "Nama resmi lengkap dari negara"
+        },
+        "intCode": {
+            "caption": "kode digital",
+            "description": "kode digital dari negara"
+        },
+        "symbol2": {
+            "caption": "kode ISO",
+            "description": "Kode 2-karakter negara dengan klasifikasi ISO"
+        },
+        "symbol3": {
+            "caption": "kode IOC",
+            "description": "kode 3-karakter negara dengan klasifikasi IOC"
+        },
+        "description": {
+            "caption": "Deskripsi",
+            "description": "negara deskripsi"
+        },
+        "phoneCode": {
+            "caption": "kode telepon",
+            "description": "kode telepon negara"
+        },
+        "currencyID": {
+            "caption": "Mata uang",
+            "description": "mata uang utama negara"
+        },
+        "capitalID": {
+            "caption": "Modal",
+            "description": "Ibukota negara"
+        }
+    }
+}

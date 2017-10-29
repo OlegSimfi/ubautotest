@@ -1,0 +1,17 @@
+﻿{
+    "caption": "Post index",
+    "description": "Post index",
+    "attributes": {
+        "code": {
+            "caption": "Index",
+            "description": "Index"
+        },
+        "streetID": {
+            "caption": "Street"
+        },
+        "description": {
+            "caption": "Description",
+            "description": "Description"
+        }
+    }
+}

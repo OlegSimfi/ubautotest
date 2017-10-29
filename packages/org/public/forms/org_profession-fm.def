@@ -1,0 +1,67 @@
+//@! "do not remove comments below unless you know what you do!"
+//@isDefault "false"
+//@entity "org_profession"
+//@formType "auto"
+//@caption "orgProfession"
+//@description "orgProfession"
+exports.formDef = {
+
+    size: {
+        width: 400,
+        height: 350
+    },
+    parentConfig: {
+        layout: {
+            type: "vbox",
+            align: "stretch" //max
+        }
+    },
+
+    items: [
+        {
+            xtype: 'tabpanel',
+            items: [
+                {
+                    title: UB.i18n('obshee'), // "Атрибуты"
+                    layout: {
+                        type: 'vbox',
+                        align: "stretch",
+                        flex: 1
+                    },
+                    defaults: {
+                        layout: {
+                            type: 'vbox',
+                            align: 'stretch'
+                        }
+                    },
+                    autoScroll: true,
+                    items: [
+                        { attributeName: "name"},
+                        { attributeName: "fullName"},
+                        { attributeName: "code", allowBlank: true}
+                    ]},
+                {
+                    title: UB.i18n('cases'),
+                    layout: {
+                        type: 'vbox',
+                        align: "stretch",
+                        flex: 1
+                    },
+                    defaults: {
+                        layout: {
+                            type: 'vbox',
+                            align: 'stretch'
+                        }
+                    },
+                    autoScroll: true,
+                    items: [
+                        { attributeName: "nameGen", fieldLabel: UB.i18n('nameInGen')},
+                        { attributeName: "nameDat", fieldLabel: UB.i18n('nameInDat')},
+                        { attributeName: "fullNameGen", fieldLabel: UB.i18n('fullNameInGen')},
+                        { attributeName: "fullNameDat", fieldLabel: UB.i18n('fullNameInDat')}
+                    ]
+                }
+            ]
+        }
+    ]
+};

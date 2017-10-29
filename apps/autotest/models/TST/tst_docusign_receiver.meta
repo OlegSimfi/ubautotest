@@ -1,0 +1,30 @@
+{
+  "caption": "DocusignReceiver",
+  "description": "Test Docusign Envelope",
+  "connectionName": "",
+  "descriptionAttribute": "envelope",
+  "documentation": "",
+  "sqlAlias": "dsreciver",
+  "attributes": {
+    "envelope": {
+      "dataType": "Entity",
+      "caption": "Envelope",
+      "description": "Envelope",
+      "allowNull": false,
+      "associatedEntity": "tst_docusign"
+    },
+    "receiver": {
+      "dataType": "Entity",
+      "caption": "Receiver",
+      "description": "Receiver",
+      "allowNull": false,
+      "associatedEntity": "uba_user"
+    }
+  },
+  "mixins": {
+    "mStorage":	{
+      "simpleAudit": true,
+      "safeDelete" : false
+    }
+  }
+}

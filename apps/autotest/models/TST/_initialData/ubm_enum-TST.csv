@@ -1,0 +1,4 @@
+eGroup;code;name;sortOrder
+TEST_GROUP_1;TST1;Test1;10
+TEST_GROUP_1;TST2;Long enumeration caption for test must be last in order;30
+TEST_GROUP_1;TST3;Test Enum 3;20

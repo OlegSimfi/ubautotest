@@ -1,0 +1,14 @@
+﻿{
+    "caption": "Yaşayış məntəqələrinin tipləri",
+    "description": "Yaşayış məntəqələri tipləri üzrə sorğu kitabçası",
+    "attributes": {
+        "code": {
+            "caption": "Kod",
+            "description": "Yaşayış məntəqəsi tipinin kodu"
+        },
+        "name": {
+            "caption": "Ad",
+            "description": "Yaşayış məntəqəsi tipinin adı"
+        }
+    }
+}

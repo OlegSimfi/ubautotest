@@ -1,0 +1,18 @@
+﻿{
+    "caption": "Валюти",
+    "description": "Довідник валют",
+    "attributes": {
+        "intCode": {
+            "caption": "Цифровий код",
+            "description": "Цифровий код валюти"
+        },
+        "code3": {
+            "caption": "Код 3-х символьний",
+            "description": "3-х символьний код валюти"
+        },
+        "name": {
+            "caption": "Назва",
+            "description": "Назва валюти"
+        }
+    }
+}

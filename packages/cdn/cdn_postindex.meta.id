@@ -1,0 +1,17 @@
+﻿{
+    "caption": "indeks posting",
+    "description": "indeks posting",
+    "attributes": {
+        "code": {
+            "caption": "Indeks",
+            "description": "Indeks"
+        },
+        "streetID": {
+            "caption": "jalan"
+        },
+        "description": {
+            "caption": "Deskripsi",
+            "description": "Deskripsi"
+        }
+    }
+}

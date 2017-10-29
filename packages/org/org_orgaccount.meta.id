@@ -1,0 +1,26 @@
+﻿{
+    "caption": "Akun saat ini",
+    "description": "Organisasi giro kamus",
+    "attributes": {
+        "organizationID": {
+            "caption": "Organisasi",
+            "description": "Organisasi"
+        },
+        "currencyID": {
+            "caption": "Mata uang",
+            "description": "Mata uang dari rekening"
+        },
+        "bankID": {
+            "caption": "Bank",
+            "description": "Bank of account"
+        },
+        "code": {
+            "caption": "Kode",
+            "description": "Kode akun"
+        },
+        "acctype": {
+            "caption": "Mengetik",
+            "description": "Jenis account"
+        }
+    }
+}

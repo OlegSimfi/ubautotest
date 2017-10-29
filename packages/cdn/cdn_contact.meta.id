@@ -1,0 +1,12 @@
+﻿{
+    "caption": "kontak",
+    "description": "direktori kontak",
+    "attributes": {
+        "contactTypeID": {
+            "caption": "tipe kontak"
+        },
+        "value": {
+            "caption": "Kontak"
+        }
+    }
+}

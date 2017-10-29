@@ -1,0 +1,15 @@
+﻿{
+    "caption": "Адреси",
+    "description": "Довідник адрес",
+    "attributes": {
+        "addressType": {
+            "caption": "Тип адреси"
+        },
+        "value": {
+            "caption": "Адреса"
+        },
+        "subjectID": {
+            "caption": "Субект"
+        }
+    }
+}

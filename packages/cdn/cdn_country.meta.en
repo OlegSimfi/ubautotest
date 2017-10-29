@@ -1,0 +1,46 @@
+﻿{
+    "caption": "Countries",
+    "description": "Countries directory",
+    "attributes": {
+        "code": {
+            "caption": "Code",
+            "description": "Internal code"
+        },
+        "name": {
+            "caption": "Name",
+            "description": "Name of the country"
+        },
+        "fullName": {
+            "caption": "Full name",
+            "description": "Full official name of the country"
+        },
+        "intCode": {
+            "caption": "Digital code",
+            "description": "Digital code of the country"
+        },
+        "symbol2": {
+            "caption": "ISO code",
+            "description": "2-character code of the country by ISO classification"
+        },
+        "symbol3": {
+            "caption": "IOC code",
+            "description": "3-character code of the country by IOC classification"
+        },
+        "description": {
+            "caption": "Description",
+            "description": "Country description"
+        },
+        "phoneCode": {
+            "caption": "Phone code",
+            "description": "Country phone code"
+        },
+        "currencyID": {
+            "caption": "Currency",
+            "description": "Main currency of the country"
+        },
+        "capitalID": {
+            "caption": "Capital",
+            "description": "Capital of the country"
+        }
+    }
+}

@@ -1,0 +1,13 @@
+﻿{
+    "caption": "jenis kontak",
+    "description": "direktori jenis kontak",
+    "attributes": {
+        "code": {
+            "caption": "Kode"
+        },
+        "name": {
+            "caption": "Nama",
+            "description": "Kontak nama jenis"
+        }
+    }
+}

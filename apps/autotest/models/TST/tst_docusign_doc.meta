@@ -1,0 +1,29 @@
+{
+  "caption": "DocusignDocument",
+  "description": "Test Docusign Envelope",
+  "connectionName": "",
+  "descriptionAttribute": "envelope",
+  "documentation": "",
+  "attributes": {
+    "envelope": {
+      "dataType": "Entity",
+      "caption": "Envelope",
+      "description": "Envelope",
+      "allowNull": false,
+      "associatedEntity": "tst_docusign"
+    },
+    "document": {
+      "dataType": "Entity",
+      "caption": "Document",
+      "description": "Document",
+      "allowNull": false,
+      "associatedEntity": "tst_document"
+    }
+  },
+  "mixins": {
+    "mStorage":	{
+      "simpleAudit": true,
+      "safeDelete" : false
+    }
+  }
+}

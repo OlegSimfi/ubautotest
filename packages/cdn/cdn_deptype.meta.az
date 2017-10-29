@@ -1,0 +1,14 @@
+﻿{
+    "caption": "Şöbənin tipləri",
+    "description": "Şöbənin tipləri üzrə sorğu kitabçaları",
+    "attributes": {
+        "code": {
+            "caption": "Kod",
+            "description": "Şöbə tipinin daxili kodu"
+        },
+        "name": {
+            "caption": "Ad",
+            "description": "Şöbə tipinin adı"
+        }
+    }
+}

@@ -1,0 +1,51 @@
+{
+	"caption": "Contacts",
+	"description": "Contacts directory",
+	"connectionName": "",
+	"sqlAlias": "cont",
+	"cacheType": "None",
+	"descriptionAttribute": "value",
+	"documentation": "",
+	"attributes": {
+		"contactTypeID":
+		{
+			"dataType": "Entity",
+			"associatedEntity": "cdn_contacttype",
+			"caption": "Contact type",
+			"allowNull": false
+		},		
+		"value":
+		{
+			"dataType": "String",
+			"size": 255,
+			"caption": "Contact",
+			"allowNull": false,
+			"isMultiLang": false
+		},
+		"subjectID":
+		{
+			"dataType": "BigInt",
+			"caption": "Subject",
+			"allowNull": false,
+			"documentation": "Reference to contact owner. No database constraint here, 
+					  since we don't know all entities what want to store contacts. 
+					 Entity developer must remove contacts in beforedelete manually."
+		}
+	},
+	"mixins": {
+		"mStorage": {
+			"simpleAudit":true,
+			"safeDelete":true
+        	},
+		"audit": {
+			"parentEntity": "cdn_subject",
+			"parentIdentifier": "subjectID"
+		}
+	},
+	"dbExtensions": {
+		"idx_contact_subjectID": {
+			"type": "INDEX",
+			"definition": {"keys": {"subjectID": {}}, "isUnique": false}
+		}
+	}
+}

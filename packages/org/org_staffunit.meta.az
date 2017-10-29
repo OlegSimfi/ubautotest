@@ -1,0 +1,67 @@
+﻿{
+    "caption": "Ştat vahidlər",
+    "description": "Ştat vahidləri üzrə sorğu kitabçası",
+    "documentation": "Bu sorğu kitabçasında ştat vahidlərinin (vəzifələrin) siyahısı saxlanılır. UNİTY üzrə hər bir ştat vahidi org_unit-ə yığılır",
+    "attributes": {
+        "parentID": {
+            "caption": "Əcdad",
+            "description": "Əcdad"
+        },
+        "code": {
+            "caption": "Daxili kod",
+            "description": "Ştat vahidinin daxili kodu"
+        },
+        "name": {
+            "caption": "Ştat vahidinin adı",
+            "description": "Dırnaq işarəsi və abbreviatura olmadan ad"
+        },
+        "fullName": {
+            "caption": "Tam ad",
+            "description": "Ştat vahidinin tam adı"
+        },
+        "nameGen": {
+            "caption": "Yiyəlik halda ştat vahidinin adı",
+            "description": "Yiyəlik halda dırnaq işarəsi və abbreviatura olmadan ad"
+        },
+        "nameDat": {
+            "caption": "Yönlük halda ştat vahidinin adı",
+            "description": "Yönlük halda dırnaq işarəsi və abbreviatura olmadan ad"
+        },
+        "fullNameGen": {
+            "caption": "Yiyəlik halda tam ad",
+            "description": "Yiyəlik halda ştat vahidinin tam adı"
+        },
+        "fullNameDat": {
+            "caption": "Yönlük halda tam ad",
+            "description": "Yönlük halda ştat vahidinin tam adı"
+        },
+        "description": {
+            "caption": "Ştat vahidinin təsviri",
+            "description": "Ştat vahidinin təsviri"
+        },
+        "caption": {
+            "caption": "Başlıq",
+            "description": "Başlıq"
+        },
+        "professionExtID": {
+            "caption": "Vəzifə",
+            "description": "Vəzifə"
+        },
+        "professionID": {
+            "caption": "Vəzifə",
+            "description": "Vəzifə"
+        },
+        "staffUnitTypeID": {
+            "caption": "Ştat vahidinin tipi",
+            "description": "Ştat vahidinin tipi"
+        },
+        "subordinationLevel": {
+            "caption": "Subardinasiyanın səviyyəsi",
+            "description": "Subardinasiyanın səviyyəsi- nə qədər aşağıdadırsa, stat vahidi təşkilati strukturda bir o qədər daha vacib hesab edilir"
+        },
+        "isBoss": {
+            "caption": "Rəhbər",
+            "description": "Rəhbər"
+        }
+    }
+}

@@ -1,0 +1,119 @@
+﻿{
+    "caption": "Physical persons",
+    "description": "Physical persons dictionary",
+    "documentation": "The directory stores a list of persons (physical persons)",
+    "attributes": {
+        "lastName": {
+            "caption": "Last name",
+            "description": "Last name of the person"
+        },
+        "firstName": {
+            "caption": "First name",
+            "description": "First name of the person"
+        },
+        "middleName": {
+            "caption": "Middle name",
+            "description": "Middle name of the person"
+        },
+        "birthDate": {
+            "caption": "Birthday",
+            "description": "Birthday of the person"
+        },
+        "description": {
+            "caption": "Description",
+            "description": "Description of the person"
+        },
+        "sexType": {
+            "caption": "Sex",
+            "description": "Sex of the person"
+        },
+        "suffix": {
+            "caption": "Sufix",
+            "description": "Sufix of the person"
+        },
+        "shortFIO": {
+            "caption": "Short name",
+            "description": "Example: Antonov I.P."
+        },
+        "fullFIO": {
+            "caption": "Full name",
+            "description": "Example: Antonov Ivan Petrovich"
+        },
+        "apply": {
+            "caption": "Apply",
+            "description": "Apply to the person"
+        },
+        "photo": {
+            "caption": "Photo",
+            "description": "Person's photo"
+        },
+        "lastNameGen": {
+            "caption": "Last name in genitive",
+            "description": "Person's last name in genitive case"
+        },
+        "lastNameDat": {
+            "caption": "Last name in dative",
+            "description": "Person's last name in dative case"
+        },
+        "firstNameGen": {
+            "caption": "First name in genitive",
+            "description": "Person's first name in genitive case"
+        },
+        "firstNameDat": {
+            "caption": "First name in dative",
+            "description": "Person's first name in dative case"
+        },
+        "middleNameGen": {
+            "caption": "Middle name in genitive",
+            "description": "Person's middle name in genitive case"
+        },
+        "middleNameDat": {
+            "caption": "Middle name in dative",
+            "description": "Person's middle name in dative case"
+        },
+        "shortFIOGen": {
+            "caption": "Short name in genitive",
+            "description": "Person's short name in genitive case"
+        },
+        "shortFIODat": {
+            "caption": "Short name in dative",
+            "description": "Person's short name in dative case"
+        },
+        "fullFIOGen": {
+            "caption": "Full name in genitive",
+            "description": "Person's full name in genitive case"
+        },
+        "fullFIODat": {
+            "caption": "Full name in dative",
+            "description": "Person's full name in dative case"
+        },
+        "applyGen": {
+            "caption": "Apply in genitive",
+            "description": "Apply to the person in genitive case"
+        },
+        "applyDat": {
+            "caption": "Apply in dative",
+            "description": "Apply to the person in dative case"
+        },
+        "regionID": {
+            "caption": "Region",
+            "description": "Person's region"
+        },
+        "identCard": {
+            "caption": "Identity card",
+            "description": "Person's identity card"
+        },
+        "workPlacePos": {
+            "caption": "Place of work, position",
+            "description": "Place of work, position"
+        },
+        "socialstatusID": {
+            "caption": "Social status",
+            "description": "Social status position"
+        },
+        "categoryID": {
+            "caption": "Category",
+            "description": "Category position"
+        }
+    }
+}

@@ -1,0 +1,17 @@
+code;caption;nonNullDict_ID;nullDict_ID;enumValue;booleanValue;manyValue;dateTimeValue
+Код1;Заголовок 100;1;null;TST1;0;1,2;null
+Код2;Заголовок 101;2;2;TST1;0;1,3;null
+Код3;Заголовок 102;3;null;TST1;0;1,4;null
+Код4;Заголовок 103;4;4;TST1;0;1,5;null
+Код5;Заголовок 104;5;null;TST2;0;1,6;null
+Код6;Заголовок 105;6;6;TST2;0;2,1;null
+Код7;Заголовок 106;1;null;TST2;0;2,7;null
+Код8;Заголовок 107;2;null;TST2;0;2,3;null
+Код9;Заголовок 108;3;3;TST1;0;2,4;null
+Код10;Заголовок 109;4;null;TST1;0;2,5;null
+Код11;Заголовок 110;5;null;TST1;0;2,6;null
+Код12;Заголовок 111;6;6;TST1;0;3,1;null
+Код13;Заголовок 112;1;null;TST1;0;3,2;null
+Код14;Заголовок 113;2;2;TST1;0;3,6;null
+#Код15;#Заголовок 114;3;null;TST3;0;3,4;#maxdate
+#Код16;#Заголовок 115;4;4;TST3;0;3,5;#currentdate

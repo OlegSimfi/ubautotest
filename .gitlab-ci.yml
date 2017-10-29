@@ -1,0 +1,13 @@
+#image: node:6
+#
+#before_script:
+#- DEL/Q C:\Workaround_folder_for_SelSer\testdownloads\*
+#- '"C:\Program Files\Oracle\VirtualBox\VBoxManage.exe" snapshot UB restore prepared-snapshot-3"'
+#- '"C:\Program Files\Oracle\VirtualBox\VBoxManage.exe" startvm UB --type headless'
+#-  C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe Start-sleep 60
+#- '"C:\Program Files\Oracle\VirtualBox\VBoxManage.exe" controlvm UB setcredentials "QA" "7777" "local"'
+#-  C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe Start-sleep 60
+#
+#test:
+#  script:
+#  - call npm test

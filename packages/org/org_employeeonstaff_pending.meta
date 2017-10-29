@@ -1,0 +1,36 @@
+﻿{
+	"caption": "Назначения с отложенной датой",
+	"description": "Назначения с отложенной датой",
+    "documentation":"Сущность, в которой хранятся ссылки на назначения, срок действия которых не начался",
+	"connectionName": "",
+	"sqlAlias": "emponpend",
+	"cacheType": "Entity",
+	"descriptionAttribute": "",
+	"attributes": {
+		"emponstaffID": {
+			"dataType": "Entity",
+			"associatedEntity": "org_employeeonstaff",
+			"caption": "Назначение",
+			"description": "Назначение",
+			"allowNull": false          
+		},
+        "startDate":{
+            "dataType": "Date",
+            "caption": "Начало",
+            "description": "Начало действия назначения",
+            "allowNull": false
+        },
+        "endDate":{
+            "dataType": "Date",
+            "caption": "Окончание",
+            "description": "Окончание действия назначения",
+            "allowNull": true
+        }
+	},
+	"mixins": {
+		"mStorage": {
+			"simpleAudit":true,
+			"safeDelete":false
+        }
+	}
+}

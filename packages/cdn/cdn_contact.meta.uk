@@ -1,0 +1,12 @@
+﻿{
+    "caption": "Контакти",
+    "description": "Довідник контактів",
+    "attributes": {
+        "contactTypeID": {
+            "caption": "Тип контакту"
+        },
+        "value": {
+            "caption": "Контакт"
+        }
+    }
+}

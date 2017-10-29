@@ -1,0 +1,14 @@
+﻿{
+    "caption": "Типы штатних одиниць",
+    "description": "Довідник типів штатних одиниць",
+    "attributes": {
+        "code": {
+            "caption": "Код",
+            "description": "Код"
+        },
+        "name": {
+            "caption": "Назва",
+            "description": "Назва типу штатної одиниці"
+        }
+    }
+}

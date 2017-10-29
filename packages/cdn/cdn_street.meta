@@ -1,0 +1,59 @@
+{
+	"caption": "Список вулиць",
+	"description": "Список вулиць",
+    "documentation":"В этом справочнике хранится перечень вулиць",
+	"connectionName": "",
+	"sqlAlias": "street",
+	"cacheType": "Entity",
+	"descriptionAttribute": "fullName",
+	"attributes": {
+		"name":
+		{
+			"dataType": "String",
+			"size": 128,
+			"caption": "Назва",
+			"description": "Назва вулиці",
+			"allowNull": false,
+			"isMultiLang": true
+		},
+		"fullName":
+		{
+			"dataType": "String",
+			"size": 128,
+			"caption": "Повна назва",
+			"description": "Повна назва",
+			"allowNull": false,
+			"isMultiLang": true
+		},
+        "code":
+        {
+            "dataType": "String",
+            "size": 6,
+            "caption": "Код",
+            "description": "Код",
+            "allowNull": true
+        },
+        "streetType":
+		{
+			"dataType": "Enum",
+			"enumGroup": "STREET_TYPE",
+			"caption": "Тип",
+			"description": "Тип",
+			"allowNull": true
+		},
+        "cityID": {
+            "dataType": "Entity",
+            "associatedEntity": "cdn_city",
+            "caption": "Нас. пункт",
+            "description": "Населений пункт",
+            "allowNull": true
+        }
+    },
+	"mixins": {
+		"mStorage": {
+			"simpleAudit":true,
+			"safeDelete":true
+        },
+		"dataHistory":{}
+	}
+}

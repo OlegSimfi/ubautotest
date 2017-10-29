@@ -1,0 +1,36 @@
+{
+    "caption": "The category",
+    "description": "The category",
+    "documentation":"The directory stores a list of categories or physical persons",
+	"connectionName": "",
+	"sqlAlias": "category",
+	"cacheType": "SessionEntity",
+	"descriptionAttribute": "name",
+	"attributes": {
+		"code":
+		{
+			"dataType": "String",
+			"size": 32,
+			"caption": "Code",
+			"description": "Code",
+			"allowNull": false,
+			"isMultiLang": false,
+			"isUnique": true
+		},
+		"name":
+		{
+			"dataType": "String",
+			"size": 100,
+			"caption": "Name",
+			"description": "Name",
+			"allowNull": false,
+			"isMultiLang": true
+		}
+	},
+	"mixins": {
+		"mStorage": {
+			"simpleAudit":true,
+			"safeDelete":true
+	    }
+	}
+}

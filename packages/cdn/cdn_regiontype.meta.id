@@ -1,0 +1,14 @@
+﻿{
+    "caption": "jenis Region",
+    "description": "jenis Region kamus",
+    "attributes": {
+        "code": {
+            "caption": "Kode",
+            "description": "Kode"
+        },
+        "name": {
+            "caption": "Nama",
+            "description": "Nama tipe daerah"
+        }
+    }
+}

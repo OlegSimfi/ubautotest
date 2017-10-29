@@ -1,0 +1,56 @@
+{
+	"caption": "Расчётные счета",
+	"description": "Справочник расчётных счетов организаций",
+	"connectionName": "",
+	"sqlAlias": "orgacc",
+	"cacheType": "Entity",
+	"descriptionAttribute": "",
+	"attributes": {
+		"organizationID":
+		{
+			"dataType": "Entity",
+			"associatedEntity": "cdn_organization",
+			"caption": "Организация",
+			"description": "Организация",
+			"allowNull": false
+		},
+		"currencyID":
+		{
+			"dataType": "Entity",
+			"associatedEntity": "cdn_currency",
+			"caption": "Валюта",
+			"description": "Валюта счета",
+			"allowNull": false
+		},
+		"bankID":
+		{
+			"dataType": "Entity",
+			"associatedEntity": "cdn_bank",
+			"caption": "Банк",
+			"description": "Банк, в котором открыт счет",
+			"allowNull": false
+		},
+		"code":
+		{
+			"dataType": "String",
+			"size": 32,
+			"caption": "КодСчета",
+			"description": "Код счета (Номер счета)",
+			"allowNull": false
+		},
+		"acctype":
+		{
+			"dataType": "Enum",
+			"enumGroup": "CDN_ACCOUNTTYPE",
+			"caption": "Тип счета",
+			"description": "Тип счета",
+			"allowNull": false
+		}
+	},
+	"mixins": {
+		"mStorage": {
+			"simpleAudit":true,
+			"safeDelete":true
+		}
+	}
+}

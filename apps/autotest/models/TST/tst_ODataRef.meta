@@ -1,0 +1,34 @@
+﻿{
+	"caption": "tst_ODataRef",
+	"description": "ttesr OData referential types",
+	"connectionName": "",
+	"sqlAlias": "todatar",
+	"cacheType": "None",
+	"descriptionAttribute": "code",
+	"attributes": {
+		"code":	{
+			"dataType": "String",
+			"size": 32,
+			"caption": "Code",
+			"description": "Code",
+			"allowNull": false
+		},
+		"refColumn": {
+			"dataType": "Entity",
+			"associatedEntity": "tst_ODataSimple",
+			"allowNull": false
+		},
+        "storeColumn": {
+            "dataType": "Document",
+            "caption": "Simple",
+            "description": "Document stored to simple store",
+            "storeName": "simple"
+        }
+	},
+	"mixins": {
+		"mStorage": {
+			"simpleAudit": false,
+			"safeDelete": false
+		}
+	}
+}

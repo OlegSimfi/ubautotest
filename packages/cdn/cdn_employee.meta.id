@@ -1,0 +1,106 @@
+﻿{
+    "caption": "Karyawan organisasi eksternal",
+    "description": "Daftar karyawan organisasi eksternal",
+    "attributes": {
+        "lastName": {
+            "caption": "nama keluarga",
+            "description": "Karyawan nama terakhir"
+        },
+        "firstName": {
+            "caption": "Nama depan",
+            "description": "Karyawan nama pertama"
+        },
+        "middleName": {
+            "caption": "Nama tengah",
+            "description": "Karyawan nama tengah"
+        },
+        "description": {
+            "caption": "Deskripsi",
+            "description": "deskripsi Karyawan"
+        },
+        "sexType": {
+            "caption": "Seks",
+            "description": "sex karyawan"
+        },
+        "uniqNum": {
+            "caption": "Nomor pegawai",
+            "description": "Nomor pegawai"
+        },
+        "suffix": {
+            "caption": "Akhiran",
+            "description": "Akhiran"
+        },
+        "shortFIO": {
+            "caption": "Nama terakhir dengan inisial",
+            "description": "Contoh: Ivanov A.O."
+        },
+        "fullFIO": {
+            "caption": "Nama lengkap",
+            "description": "Contoh: Ivanov Anton Olegovich"
+        },
+        "apply": {
+            "caption": "Pengobatan",
+            "description": "Menjelaskan bagaimana memperlakukan orang ini"
+        },
+        "lastNameGen": {
+            "caption": "Nama terakhir di genitive",
+            "description": "Karyawan nama terakhir dalam kasus genitif"
+        },
+        "lastNameDat": {
+            "caption": "Nama terakhir di datif",
+            "description": "Karyawan nama terakhir di dativus"
+        },
+        "firstNameGen": {
+            "caption": "Nama pertama di genitive",
+            "description": "Karyawan nama pertama dalam kasus genitif"
+        },
+        "firstNameDat": {
+            "caption": "Nama pertama di datif",
+            "description": "Karyawan nama pertama di dativus"
+        },
+        "middleNameGen": {
+            "caption": "nama tengah di genitive",
+            "description": "Karyawan nama tengah dalam kasus genitif"
+        },
+        "middleNameDat": {
+            "caption": "nama tengah di datif",
+            "description": "Karyawan nama tengah di dativus"
+        },
+        "shortFIOGen": {
+            "caption": "nama pendek di genitive",
+            "description": "Karyawan nama pendek dalam kasus genitif"
+        },
+        "shortFIODat": {
+            "caption": "nama pendek di datif",
+            "description": "Karyawan nama pendek di dativus"
+        },
+        "fullFIOGen": {
+            "caption": "nama lengkap di genitive",
+            "description": "Karyawan nama lengkap dalam kasus genitif"
+        },
+        "fullFIODat": {
+            "caption": "nama lengkap di datif",
+            "description": "Karyawan nama lengkap di dativus"
+        },
+        "applyGen": {
+            "caption": "Pengobatan di genitive",
+            "description": "Menjelaskan bagaimana memperlakukan orang ini dalam kasus genitif"
+        },
+        "applyDat": {
+            "caption": "Pengobatan di datif",
+            "description": "Menjelaskan bagaimana memperlakukan orang ini di dativus"
+        },
+        "departmentID": {
+            "caption": "Departemen",
+            "description": "Departemen organisasi eksternal, yang termasuk karyawan"
+        },
+        "organizationID": {
+            "caption": "Organisasi",
+            "description": "organisasi eksternal, yang termasuk karyawan"
+        },
+        "addrText": {
+            "caption": "formulasi alamat",
+            "description": "Perumusan penerima, yang akan muncul dalam pembentukan dokumen keluar PDF"
+        }
+    }
+}

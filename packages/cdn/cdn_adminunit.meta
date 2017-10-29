@@ -1,0 +1,65 @@
+﻿{
+	"caption": "Admin unit",
+	"description": "Admin unit (country, region, city)",
+	"connectionName": "",
+	"sqlAlias": "admunt",
+	"cacheType": "Entity",
+	"descriptionAttribute": "name",
+	"documentation": "Main parent for countries, regions and cities",
+	"attributes": {
+		"parentAdminUnitID":
+		{
+			"dataType": "Entity",
+			"associatedEntity": "cdn_adminunit",
+			"caption": "Parent",
+			"description": "Parent",
+			"allowNull": true
+		},
+        "code":
+        {
+            "dataType": "String",
+            "size": 16,
+            "caption": "Code",
+            "description": "Internal code",
+            "allowNull": false,
+            "isUnique": true
+        },
+		"name":
+		{
+			"dataType": "String",
+			"size": 128,
+			"caption": "Name",
+			"allowNull": false,
+			"isMultiLang": true
+		},
+		"fullName":
+		{
+			"dataType": "String",
+			"size": 255,
+			"caption": "Full name",
+			"allowNull": true,
+			"isMultiLang": true
+		},
+		"adminUnitType":
+		{
+			"dataType": "Enum",
+			"enumGroup": "CDN_ADMINUNITTYPE",
+			"caption": "Admin unit type",
+			"documentation": "String representation of unit's type for fast queries",
+			"allowNull": false
+		},
+        "caption": {
+            "dataType": "String",
+            "size": 1024,
+            "caption": "Caption",
+            "allowNull": true,
+            "isMultilang": true
+        }
+	},
+	"mixins": {
+		"mStorage": {
+			"simpleAudit":true,
+			"safeDelete":true
+        }
+	}
+}

@@ -1,0 +1,120 @@
+﻿{
+	"caption": "DocumentTest",
+	"description": "Test adtDocument attributes",
+	"connectionName": "",
+	"descriptionAttribute": "code",
+	"documentation": "",
+	"attributes": {
+		"code": {
+			"dataType": "String",
+			"size": 64,
+			"caption": "Code",
+			"allowNull": false
+		},
+		"docDate": {
+			"dataType": "Date",
+			"caption": "Document date"
+		},
+		"incomeDate": {
+			"dataType": "Date",
+			"caption": "income date"
+		},
+		"regDate": {
+			"dataType": "Date",
+			"caption": "reg date"
+		},
+		"category": {
+              		"dataType": "Entity",
+              		"associatedEntity": "tst_category",
+			"associationAttr": "instanceID",
+              		"caption": "Category",
+              		"description": "",
+              		"allowNull": false,
+			"cascadeDelete": false,
+			"customSettings": { "UIGridColumnClass": "Categories" },
+			"mapping": {
+				"AnsiSql": {
+					"expressionType": "Field",
+					"expression": "ID"
+				}
+			}
+		},
+		"favorites": {
+              		"dataType": "Entity",
+              		"associatedEntity": "tst_category",
+			"associationAttr": "instanceID",
+              		"caption": "Favorites",
+              		"description": "",
+              		"allowNull": false,
+			"cascadeDelete": true,
+			"customSettings": { "UIGridColumnClass": "Favorites" },
+			"mapping": {
+				"AnsiSql": {
+					"expressionType": "Field",
+					"expression": "ID"
+				}
+			}
+		},
+		"favorites2": {
+              		"dataType": "Entity",
+              		"associatedEntity": "tst_category",
+			"associationAttr": "instanceID",
+              		"caption": "Favorites",
+              		"description": "",
+              		"allowNull": false,
+			"cascadeDelete": true,
+			//"customSettings": { "UIGridColumnClass": "Favorites" },
+			"mapping": {
+				"AnsiSql": {
+					"expressionType": "Field",
+					"expression": "ID"
+				}
+			}
+		},
+		"docDateTime": {
+			"dataType": "DateTime",
+			"caption": "Document full date"
+		},
+		"description": {
+			"dataType": "String",
+			"size": 2000,
+			"caption": "Description"
+		},
+		"fileStoreSimple": {
+			"dataType": "Document",
+			"caption": "Simple",
+			"description": "Document stored to simple store",
+			"storeName": "simple"
+			//"storeName": "pdf"
+		},
+		"person": {
+            		"dataType": "Entity",
+            		"associatedEntity": "cdn_person",
+			"caption": "person",
+			"allowNull": true
+		},
+		"employee": {
+            		"dataType": "Entity",
+            		"associatedEntity": "cdn_employee",
+			"caption": "employee",
+			"allowNull": true
+		}
+
+	},
+	"mixins": {
+		"mStorage":	{
+			"simpleAudit": true,
+			"safeDelete" : false
+		},
+		"softLock": {
+		  "lockIdentifier": "ID",
+		  "lockEntity": "tst_document"
+		},
+		"fts": {
+			"scope": "Connection",
+			"dataProvider": "Mixin",
+			"indexedAttributes": ["code", "description"],
+			"dateAttribute": "docDate"
+		}
+	}
+}

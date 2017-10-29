@@ -1,0 +1,14 @@
+﻿{
+    "caption": "Типи регіонів",
+    "description": "Довідник типів регіонів",
+    "attributes": {
+        "code": {
+            "caption": "Код",
+            "description": "Код"
+        },
+        "name": {
+            "caption": "Назва",
+            "description": "Назва типу регіону"
+        }
+    }
+}

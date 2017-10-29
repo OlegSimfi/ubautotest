@@ -1,0 +1,102 @@
+{
+	"httpServer": {
+		"host": "+",
+		"port": "888",
+		"inetPub": ".\\img\\",
+		"watchFileChanges": {
+			"enabled": false,
+			"hashingStrategy": "ModifyDate"
+		}
+	},
+	"logging": {
+		//"levels": ["*"],
+		"path": ".\\logs",
+		"rotationSizeInMB": 100
+	},
+	"security": {
+		"authenticationMethods": []
+	},
+	"javascript": {
+		"fullGCPeriod": 100000
+	},
+	"application": {
+		"defaultLang": "en",
+		"rootHandler": "index.html",
+		"domain": {
+			"models": [
+				{
+					"name": "UB",
+					"path": "./node_modules/@unitybase/ub"
+				},
+				{
+					"name": "UBA",
+					"path": "./node_modules/@unitybase/uba"
+				},
+				{
+					"name": "UBS",
+					"path": "./node_modules/@unitybase/ubs"
+				},
+				{
+					"name": "UBM",
+					"path": "./node_modules/@unitybase/ubm"
+				},
+				{
+					"name": "adminui",
+					"publicPath": "./node_modules/@unitybase/adminui",
+					"path": "_public_only_"
+				},
+				{
+					"name": "adminui-reg",
+					"path": "./node_modules/@unitybase/adminui-reg"				
+				},
+				{
+					"name": "TPW",
+					"path": "./models/tpw"
+				},
+				{
+					"name": "ub-pub",
+					"publicPath": "./node_modules/@unitybase/ub-pub",
+					"path": "_public_only_"
+				}
+			]
+		},
+		"connections": [
+			{
+				"name": "main",
+				"driver": "Oracle",
+				"statementCacheSize": 30,
+				"isDefault": true,
+				"dialect": "Oracle11",
+				"serverName": "(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=localhost)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=ORAIB11N)))",
+				"userID": "ub_tpw",
+				"password": "ub_tpw",
+				"supportLang": [
+					"en"
+				]
+			}
+		],
+		"blobStores": [
+			{
+				"name": "mdb",
+				"storeType": "Virtual"
+			},
+			{
+				"name": "avatars",
+				"isDefault": true,
+				"path": ".\\stores\\avatars\\",
+				"historyDepth": 0,
+				"storeSize": "Simple",
+				"keepOriginalFileNames": false
+			}
+		]
+	},
+	"uiSettings": {
+		"adminUI": {
+			"applicationName": "Techempower(SQLite3)",
+			"defaultPasswordForDebugOnly": "admin",
+			"themeName": "UBGrayTheme",
+			"endpoint": "ubadmin"
+		},
+		"portalUI": {}
+	}
+}

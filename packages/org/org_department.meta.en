@@ -1,0 +1,55 @@
+﻿{
+    "caption": "Internal departments",
+    "description": "Internal departments",
+    "documentation": "",
+    "attributes": {
+        "parentID": {
+            "caption": "Parent",
+            "description": "Parent"
+        },
+        "code": {
+            "caption": "Internal code",
+            "description": "Internal code"
+        },
+        "name": {
+            "caption": "Department name",
+            "description": "Name of department without the quotes and abbreviations"
+        },
+        "fullName": {
+            "caption": "Department full name",
+            "description": "Department full name"
+        },
+        "description": {
+            "caption": "Department description",
+            "description": "Department description"
+        },
+        "nameGen": {
+            "caption": "Department name in genitive case",
+            "description": "Department name without the quotes and abbreviations in genitive case"
+        },
+        "nameDat": {
+            "caption": "Department name in dative case",
+            "description": "Department name without the quotes and abbreviations in dative case"
+        },
+        "fullNameGen": {
+            "caption": "Department full name in genitive case",
+            "description": "Department full name in genitive case"
+        },
+        "fullNameDat": {
+            "caption": "Department full name in dative case",
+            "description": "Department full name in dative case"
+        },
+        "depTypeID": {
+            "caption": "Department type",
+            "description": "Department type"
+        },
+        "isClerical": {
+            "caption": "Clerical?",
+            "description": "Clerical unit mark"
+        },
+        "caption": {
+            "caption": "Caption",
+            "description": "Caption"
+        }
+    }
+}

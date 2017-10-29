@@ -1,0 +1,35 @@
+﻿{
+	"caption": "ТестДокументів",
+	"description": "Тестування adtDocument атрибуту",
+	"descriptionAttribute": "code",
+	"documentation": "",
+	"attributes": {
+		"code": {
+			"caption": "Код"
+		},
+		"docDate": {
+			"caption": "Дата документу"
+		},
+		"description": {
+			"dataType": "String",
+			"caption": "Опис"
+		}
+	},
+	"mixins": {
+		"mStorage":	{
+			"simpleAudit": true,
+			"safeDelete" : false
+		},
+		"softLock": {
+		  "lockIdentifier": "ID",
+		  "lockEntity": "tst_document"
+		},
+		"fts": {
+			"scope": "Connection",
+			"dataProvider": "Mixin",
+			"indexedAttributes": ["code", "description"],
+			"dateAttribute": "docDate"
+		}
+	},
+	"options": {}
+}

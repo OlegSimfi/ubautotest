@@ -1,0 +1,55 @@
+﻿{
+    "caption": "Daxili bölmə",
+    "description": "Daxili bölmələr üzrə sorğu kitabçası",
+    "documentation": "",
+    "attributes": {
+        "parentID": {
+            "caption": "Əcdad",
+            "description": "Əcdad"
+        },
+        "code": {
+            "caption": "Daxili kod",
+            "description": "Şöbənin daxili kodu"
+        },
+        "name": {
+            "caption": "Şöbənin  adı",
+            "description": "Dırnaq işarəsi və abbreviatura olmadan ad"
+        },
+        "fullName": {
+            "caption": "Şöbənin tam adı",
+            "description": "Şöbənin tam adı"
+        },
+        "description": {
+            "caption": "Şöbənin təsviri",
+            "description": "Təsvir"
+        },
+        "nameGen": {
+            "caption": "Yiyəlik halda şöbənin adı",
+            "description": "Yiyəlik halda dırnaq işarəsi və abbreviatura olmadan ad"
+        },
+        "nameDat": {
+            "caption": "Yönlük halda şöbənin adı",
+            "description": "Yönlük halda dırnaq işarəsi və abbreviatura olmadan ad"
+        },
+        "fullNameGen": {
+            "caption": "Yiyəlik halda şöbənin tam adı",
+            "description": "Yiyəlik halda şöbənin tam adı"
+        },
+        "fullNameDat": {
+            "caption": "Yönlük halda şöbənin tam adı",
+            "description": "Yönlük halda şöbənin tam adı"
+        },
+        "depTypeID": {
+            "caption": "Şöbənin tipi",
+            "description": "Şöbənin tipi"
+        },
+        "isClerical": {
+            "caption": "İşgüzar?",
+            "description": "Bu şöbə işgüzardırmı"
+        },
+        "caption": {
+            "caption": "Başlıq",
+            "description": "Başlıq"
+        }
+    }
+}

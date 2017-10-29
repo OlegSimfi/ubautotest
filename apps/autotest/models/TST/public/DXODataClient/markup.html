@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>UB OData demo</title>
+
+    <!-- Latest Bootstrap compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <![endif]-->
+    <!--[if gte IE 9]><!-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!--<![endif]-->
+
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/globalize/0.1.1/globalize.min.js"></script>
+    <script type="text/javascript" src="http://cdn3.devexpress.com/jslib/15.2.4/js/dx.webappjs.js"></script>
+
+    <script type="text/javascript" src="employees.js"></script>
+    <script type="text/javascript" src="renderer.js"></script>
+
+    <script type="text/javascript" src="/autotest/compiled/ub-core-debug.js"></script>
+
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://cdn3.devexpress.com/jslib/15.2.4/css/dx.common.css" />
+    <link rel="stylesheet" type="text/css" href="http://cdn3.devexpress.com/jslib/15.2.4/css/dx.light.css" />
+</head>
+<body>
+    <div class="page-header">
+        <h1>Using UnityBase OData endpoint</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <p>This sample show usage of Developer Express grid mapped to UnityBase OData endpoint</p>
+            <p>UnityBase core module are used for authentication/authorization, so all network requests are secure.</p>
+            Compatibility:
+            <ul>
+                <li><strong>GET/POST/DELETE/PUT</strong> for CRUID operations - you can select/edit/add/remove grid rows</li>
+                <li><strong>$filters</strong> (without any/all) - just set a filter on columns</li>
+                <li><strong>$order</strong> - click columns caption for ordering</li>
+                <li><strong>$select</strong> - only a subset of attributes are retrieved from entity</li>
+                <li><strong>$top/$skip/$count</strong> - see a pagination</li>
+                <li><strong>$metadata</strong> - click to <button type="button" class="btn btn-sm btn-primary" id="getMetadataBtn">Get a OData metadata</button></li>
+            </ul>
+        </div>
+        <div class="col-md-9">
+            <div id="gridContainer">dxDataGrid grid will be placed here after loading....</div>
+        </div>
+    </div>
+</body>
+</html>

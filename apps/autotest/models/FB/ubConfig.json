@@ -1,0 +1,126 @@
+{
+	"logPath": "..\\logs",
+	"logLevel": [
+		"*"
+	],
+	"logThreadLogType": "IdentifiedInOnFile",
+	"appConfigs": {
+		"autotest": {
+			"domainName": "testDomain",
+			"authMethods": [
+				"UBLDAP", "UB"
+			],
+			"defaultLang": "uk",
+			"staticFolder": "..\\UnityBase\\WebDbg\\",
+			"defaultStaticIndex": "index-dev.html",
+			"staticRules": {
+				"libs": {
+					"location": "\\\\Web\\\\.+\\.(js|css)$",
+					"expires": 25920000,
+					"usePreparedGzip": true,
+					"addHeader": "Vary: Accept-Encoding",
+					"useETag": true
+				},
+				"crx": {
+					"location": "\\.crx",
+					"addHeader": "Content-type: application/x-chrome-extension"
+				},
+				"images": {
+					"location": "\\.(ico|txt|gif|jpg|png|jpeg)$",
+					"expires": 25920000
+				},
+				"entities": {
+					"location": "\\\\models\\\\.+(meta|def|js)$",
+					"useETag": true
+				}
+			},
+			"UBAppConfig": {
+				"applicationName": "Postgre autotest",
+				"defaultPasswordForDebugOnly": "admin"
+			},
+			"connections": {
+				"main": {
+					"driver": "PostgreSQL",
+					"isDefault": true,
+					"dialect": "PostgreSQL",
+					"serverName": "postgresql://localhost:5432",
+					"databaseName": "postgres",
+					"userID": "ub_autotest",
+					"password": "ub_autotest",
+					"supportLang": [
+						"uk",
+						"en"
+					],
+					"advSettings": "LibLocation=C:\\Program Files (x86)\\PostgreSQL\\9.3\\bin\\libpq.dll "
+				},
+				"FB": {
+					"driver": "Firebird",
+					"isDefault": false,
+					"dialect": "Firebird",
+					"serverName": "firebird-2.5://127.0.0.1:3055",
+					"databaseName": "C:\\Firebird\\Data\\TEST.FDB",
+					"userID": "SYSDBA",
+					"password": "masterkey",
+					"supportLang": [
+						"uk",
+						"en"
+					],
+					"advSettings": "LibLocation=C:\\Firebird\\Firebird_2_5\\bin\\fbclient.dll "
+				}
+
+			},
+			"storeConfigs": {
+				"mdb": {
+					"storeType": "Virtual"
+				},
+				"simple": {
+					"path": ".\\documents\\simple\\",
+					"isDefault": true,
+					"historyDepth": 0,
+					"storeSize": "Simple",
+					"useOriginalFileName": false
+				}
+			}
+		}
+	},
+	"domainConfigs": {
+		"testDomain": {
+			"models": {
+				"UB": {
+					"path": "..\\UnityBase\\models\\UB"
+				},
+				"UBA": {
+					"path": "..\\UnityBase\\models\\UBA"
+				},
+				"UBS": {
+					"path": "..\\UnityBase\\models\\UBS"
+				},
+				"UBM": {
+					"path": "..\\UnityBase\\models\\UBM"
+				},
+				"CDN": {
+					"path": "..\\UnityBase\\models\\CDN"
+				},
+				"PDF": {
+					"path": "..\\UnityBase\\models\\PDF"
+				},
+				"TST": {
+					"path": ".\\models\\TST"
+				},
+				"FB": {
+					"path": ".\\models\\FB"
+				}
+			}
+		}
+	},
+	"authDomainsConfig": {
+		"SOFTLINE": {
+			"domainType": "LDAP",
+			"host": "softline.main",
+			"port": "3268",
+			"useTLS": false,
+			"useSSL": false,
+			"useSasl": true
+		}
+	}
+}

@@ -1,0 +1,71 @@
+{
+	"httpServer": {
+		"host": "+",
+		"port": "888",
+		"watchFileChanges": {
+			"enabled": false,
+			"hashingStrategy": "ModifyDate"
+		}
+	},
+	"logging": {
+		//"levels": ["*"],
+		"path": ".\\logs",
+		"rotationSizeInMB": 100
+	},
+	"security": {
+		"authenticationMethods": []
+	},
+	"javascript": {
+		"fullGCPeriod": 100000
+	},
+	"application": {
+		"defaultLang": "en",
+		"domain": {
+			"models": [
+				{
+					"name": "UB",
+					"path": "./node_modules/@unitybase/ub"
+				},
+				{
+					"name": "TPW",
+					"path": "./models/tpw"
+				}
+			]
+		},
+		"connections": [
+			{
+				"name": "main",
+				"driver": "SQLite3",
+				"isDefault": true,
+				"dialect": "SQLite3",
+				"databaseName": ".\\techempower.sqlite3",
+				"supportLang": [
+					"en"
+				]
+			}
+		],
+		"blobStores": [
+			{
+				"name": "mdb",
+				"storeType": "Virtual"
+			},
+			{
+				"name": "avatars",
+				"isDefault": true,
+				"path": ".\\stores\\avatars\\",
+				"historyDepth": 0,
+				"storeSize": "Simple",
+				"keepOriginalFileNames": false
+			}
+		]
+	},
+	"uiSettings": {
+		"adminUI": {
+			"applicationName": "Techempower(SQLite3)",
+			"defaultPasswordForDebugOnly": "admin",
+			"themeName": "UBGrayTheme",
+			"endpoint": "ubadmin"
+		},
+		"portalUI": {}
+	}
+}

@@ -1,0 +1,107 @@
+﻿{
+    "caption": "Daxili təşkilatın əməkdaşları",
+    "description": "Daxili təşkilatın əməkdaşları üzrə sorğu kitabçası",
+    "documentation": "Bu sorğu kitabçasında əməkdaşların siyahısı saxlanılır. Əməkdaş ştat vahidinə, əsasən org_employeeonstaff-a təyin olunur",
+    "attributes": {
+        "code": {
+            "caption": "Коd",
+            "description": "Əməkdaşın daxili kodu"
+        },
+        "userID": {
+            "caption": "İstifadəçi",
+            "description": "İstifadəçi/Təsvir"
+        },
+        "lastName": {
+            "caption": "Soyad",
+            "description": "Əməkdaşın soyadı"
+        },
+        "firstName": {
+            "caption": "Ad",
+            "description": "Əməkdaşın adı"
+        },
+        "middleName": {
+            "caption": "Atasının adı",
+            "description": "Əməkdaşın atasının adı"
+        },
+        "birthDate": {
+            "caption": "Doğum tarixi",
+            "description": "Doğum tarixi"
+        },
+        "description": {
+            "caption": "Təsvir",
+            "description": "Daxili təşkilat əməkdaşının təsviri"
+        },
+        "sexType": {
+            "caption": "Cins",
+            "description": "Daxili təşkilat əməkdaşının cinsi"
+        },
+        "suffix": {
+            "caption": "Şəkilçi",
+            "description": "Şəkilçi"
+        },
+        "shortFIO": {
+            "caption": "Qısa ASA",
+            "description": "Nümunə: Ad S.A. adı"
+        },
+        "fullFIO": {
+            "caption": "Tam ASA",
+            "description": "Nümunə: Ad Soyas Atasının adı"
+        },
+        "apply": {
+            "caption": "Müraciət",
+            "description": "Müraciət forması"
+        },
+        "lastNameGen": {
+            "caption": "Yiy. halda soyad",
+            "description": "Yiyəlik halda əməkdaşın soyadı"
+        },
+        "lastNameDat": {
+            "caption": "Yön. halda soyad",
+            "description": "Yönlük halda əməkdaşın soyadı"
+        },
+        "firstNameGen": {
+            "caption": "Yiy. halda ad",
+            "description": "Yiyəlik halda əməkdaşın adı"
+        },
+        "firstNameDat": {
+            "caption": "Yön. halda ad",
+            "description": "Yönlük halda əməkdaşın adı"
+        },
+        "middleNameGen": {
+            "caption": "Yiy. halda atasının adı",
+            "description": "Yiyəlik halda əməkdaşın atasının adı"
+        },
+        "middleNameDat": {
+            "caption": "Yön. halda atasının adı",
+            "description": "Yönlük halda əməkdaşın atasının adı"
+        },
+        "shortFIOGen": {
+            "caption": "Yiy. halda qısa ASA",
+            "description": "Yiyəlik halda əməkdaşın qısa ASA"
+        },
+        "shortFIODat": {
+            "caption": "Yön. halda qısa ASA",
+            "description": "Yönlük halda əməkdaşın qısa ASA"
+        },
+        "fullFIOGen": {
+            "caption": "Yiy. halda tam ASA",
+            "description": "Yiyəlik halda əməkdaşın tam ASA"
+        },
+        "fullFIODat": {
+            "caption": "Yön. halda tam ASA",
+            "description": "Yönlük halda əməkdaşın tam ASA"
+        },
+        "applyGen": {
+            "caption": "Yiy. halda müraciət",
+            "description": "Yiyəlik halda bu şəxsə müraciət forması"
+        },
+        "applyDat": {
+            "caption": "Yön. halda müraciət",
+            "description": "Yönlük halda bu şəxsə müraciət forması"
+        },
+        "facsimile": {
+            "caption": "Faksimil",
+            "description": "Əməkdaşın imzasının təsviri"
+        }
+    }
+}

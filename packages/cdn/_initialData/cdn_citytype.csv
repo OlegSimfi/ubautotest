@@ -1,0 +1,9 @@
+﻿code;name
+smallcity;Місто(до 50тис.)
+middlecity;Місто(50-100 тис.)
+bigcity;Місто(100—250 тис.)
+verybigcity;Місто(250—500 тис.)
+extrabigcity;Місто(500 тис.—1 млн.)
+millioncity;Місто(понад 1 млн.)
+townlikevillage;Селище міського типу (від 2 тис.)
+village;Село (до 2 тис.)

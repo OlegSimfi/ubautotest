@@ -1,0 +1,14 @@
+﻿{
+    "caption": "jenis departemen",
+    "description": "Departemen jenis kamus",
+    "attributes": {
+        "code": {
+            "caption": "Kode",
+            "description": "Kode jenis departemen"
+        },
+        "name": {
+            "caption": "Nama",
+            "description": "Nama jenis departemen"
+        }
+    }
+}

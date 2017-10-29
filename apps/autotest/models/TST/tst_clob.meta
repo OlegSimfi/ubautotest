@@ -1,0 +1,64 @@
+﻿{
+	"caption": "CLOBTest",
+	"description": "Test CLOB attributes",
+	"connectionName": "",
+	"descriptionAttribute": "code",
+	"documentation": "",
+	"attributes": [
+		{
+			"name": "description",	
+			"dataType": "String",
+			"size": 255,
+			"caption": "Description"
+		},
+		{	
+			"name": "text100",
+			"dataType": "Text",
+			"caption": "Text100",
+			"description": "Long text value truncated to 100"
+		},
+		{
+			"name": "text2",
+			"dataType": "Text",
+			"caption": "Text2",
+			"description": "Long text value truncated to 2"
+		}, 
+		{
+			"name": "text2000",
+			"dataType": "Text",
+			"caption": "Text2000",
+			"description": "Long text value truncated to 2000"
+		},
+		{
+			"name": "textN",
+			"dataType": "String",
+			"size": 1900,
+			"description": "Long text 1900"
+		},
+		{
+			"name": "code",
+			"dataType": "String",
+			"size": 64,
+			"caption": "Code",
+			"allowNull": false
+		}
+	],
+	"mixins": {
+		"mStorage":	{
+			"simpleAudit": false,
+			"safeDelete" : false
+		},
+		"clobTruncate": {
+			/*"attributeList": [
+				{"name": "text100", "size": 100},
+				{"name": "text2", "size": 2},
+				{"name": "text2000", "size": 2000}
+			]*/
+			"attributeList": {
+				"text100": {"size": 100},
+				"text2": {"size": 2},
+				"text2000": {"size": 2000}
+			}
+		}
+	}
+}

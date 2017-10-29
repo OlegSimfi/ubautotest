@@ -1,0 +1,24 @@
+//@! "do not remove comments below unless you know what you do!"
+//@isDefault "false"
+//@entity "cdn_profession"
+//@formType "auto"
+//@caption "Професії"
+//@description "Професії"
+exports.formDef = {
+
+size: {
+	width: 400,
+	height:350
+},
+parentConfig: {
+	layout: { 
+		type: "vbox",
+		align: "stretch" //max
+	}
+},
+
+items:[
+    { attributeName: "name"},
+    { attributeName: "code", allowBlank: true}
+]
+};

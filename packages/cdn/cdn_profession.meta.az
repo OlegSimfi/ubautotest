@@ -1,0 +1,17 @@
+﻿{
+    "caption": "Standart peşələr",
+    "description": "Standart peşələr üzrə sorğu kitabçası",
+    "attributes": {
+        "code": {
+            "caption": "Коd",
+            "description": "Коd"
+        },
+        "name": {
+            "caption": "Ad",
+            "description": "Ad"
+        },
+        "description": {
+            "caption": "Başlıq"
+        }
+    }
+}

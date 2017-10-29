@@ -1,0 +1,158 @@
+// @! "do not remove comments below unless you know what you do!"
+// @isDefault "false"
+// @entity "org_employee"
+// @model "ORG"
+// @formType "auto"
+// @caption "orgEmployee"
+// @description "orgEmployee"
+/*global UB, Ext, DMP */
+
+exports.formDef = {
+    size: {
+        width: 800,
+        height: 600
+    },
+    parentConfig: {
+        layout: {
+            type: "fit",
+            align: "stretch"
+        }
+    },
+    items: [
+        {
+            xtype: 'tabpanel',
+            items: [
+                {
+                    title: UB.i18n('Obshchee'), // "Атрибуты"
+                    layout: {
+                        type: 'vbox',
+                        align: "stretch",
+                        flex: 1
+                    },
+                    defaults: {
+                        layout: {
+                            type: 'vbox',
+                            align: 'stretch'
+                        }
+                    },
+                    autoScroll: true,
+                    items: [{
+                        layout: 'hbox',
+                        items: [{
+                            flex: 1,
+                            layout: {
+                                type: 'vbox',
+                                align: "stretch",
+                                flex: 1
+                            },
+                            items: [
+                                {attributeName: "sexType"},
+                                {attributeName: "lastName"},
+                                {attributeName: "firstName"},
+                                {attributeName: "middleName"},
+                                {attributeName: "code", fieldLabel: UB.i18n('identificationCodeShort'), allowBlank: true, emptyText: UB.i18n('identificationCode')},
+                                {attributeName: "userID", emptyText: UB.i18n('userOfSystem')}
+                            ]
+                        },{
+                            flex: 1,
+                            layout: {
+                                type: 'vbox',
+                                align: "stretch",
+                                flex: 1
+                            },
+                            items: [
+                                { attributeName: "birthDate"},
+								{ attributeName: "apply" },
+                                { attributeName: "shortFIO"},
+                                { attributeName: "fullFIO"}
+                            ]
+                        }]
+                   }, { 
+                       attributeName: "description", 
+                       labelAlign: "top"
+                   }, {
+                   		attributeName: 'facsimile'
+                   }, { 
+                       xtype: "tabpanel",
+                       height: 300,
+                       items: [{
+                            title: $App.domainInfo.entities.cdn_contact.caption,
+                            items: [{
+                                xtype: "ubdetailgrid",
+                                flex: 1,
+                                cmdType: "showList",
+                                entityConfig: {
+                                   entity: "cdn_contact",
+                                   method: "select",
+                                   fieldList: ["contactTypeID", "value"]
+                                },
+                                masterFields: ["ID"],
+                                detailFields: ["subjectID"]
+                            }]    
+                  		}, {
+                            title: $App.domainInfo.entities.org_employeeonstaff.caption.split(' ')[0],
+                            items: [{
+                                xtype: "ubdetailgrid",
+                                flex: 1,
+                                cmdType: "showList",
+                                entityConfig: {
+                                   entity: "org_employeeonstaff",
+                                   method: "select",
+                                   fieldList: [
+                                       {name: "employeeID", visibility: false}, 
+										{name: "mi_dateFrom", description: UB.i18n('mi_dateFrom')}, 
+                                       {name: "mi_dateTo", description: UB.i18n('mi_dateTo')},
+                                       "employeeOnStaffType",
+                                       "staffUnitID.name",
+                                       "staffUnitID.parentID.caption"
+                                   ]
+                                },
+                                masterFields: ["ID"],
+                                detailFields: ["employeeID"]
+                           }]     
+                  		}] 
+
+                   }]
+                },
+                {
+                    title: UB.i18n('cases'),
+                    layout: {
+                        type: 'hbox',
+                        align: "stretch",
+                        flex: 1
+                    },
+                    defaults: {
+                        layout: {
+                            type: 'vbox',
+                            align: 'stretch'
+                        }
+                    },
+                    autoScroll: true,
+                    items: [{
+                        flex: 1,
+                        items: [
+                            { attributeName: "lastNameGen"},
+                            { attributeName: "lastNameDat"},
+                            { attributeName: "firstNameGen"},
+                            { attributeName: "firstNameDat"},
+                            { attributeName: "middleNameGen"},
+                            { attributeName: "middleNameDat"}
+                        ]
+                    },{
+                        flex: 1,
+                        items: [
+                            { attributeName: "shortFIOGen"},
+                            { attributeName: "shortFIODat"},
+                            { attributeName: "fullFIOGen"},
+                            { attributeName: "fullFIODat"},
+                            { attributeName: "applyGen"},
+                            { attributeName: "applyDat"}
+                        ]
+                    }]
+                }
+            ]
+
+
+        }
+    ]
+}

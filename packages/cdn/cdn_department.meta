@@ -1,0 +1,96 @@
+﻿{
+    "caption": "Внешние подразделения",
+    "description": "Справочник внешних подразделений",
+    "connectionName": "",
+    "sqlAlias": "dep",
+    "cacheType": "None",
+    "descriptionAttribute": "name",
+    "documentation": "",
+    "attributes": {
+        "code": {
+            "dataType": "String",
+            "size": 16,
+            "caption": "Внутренний код",
+            "description": "Внутренний код подразделения",
+            "allowNull": true
+        },
+        "name": {
+            "dataType": "String",
+            "size": 128,
+            "caption": "Название подразделения",
+            "description": "Название без кавычек и аббревиатур",
+            "allowNull": false,
+            "isMultiLang": true
+        },
+        "fullName": {
+            "dataType": "String",
+            "size": 255,
+            "caption": "Полное название подразделения",
+            "description": "Полное название подразделения",
+            "allowNull": true,
+            "isMultiLang": true
+        },
+        "description": {
+            "dataType": "String",
+            "size": 255,
+            "caption": "Описание подразделения",
+            "description": "Описание подразделения",
+            "allowNull": true,
+            "isMultiLang": true
+        },
+        "nameGen": {
+            "dataType": "String",
+            "size": 128,
+            "caption": "Название подразделения в родительном падеже",
+            "description": "Название без кавычек и аббревиатур в родительном падеже",
+            "allowNull": true,
+            "isMultiLang": true
+        },		
+        "nameDat": {
+            "dataType": "String",
+            "size": 128,
+            "caption": "Название подразделения в дательном падеже",
+            "description": "Название без кавычек и аббревиатур в дательном падеже",
+            "allowNull": true,
+            "isMultiLang": true
+        },
+        "fullNameGen": {
+            "dataType": "String",
+            "size": 255,
+            "caption": "Полное название подразделения в родительном падеже",
+            "description": "Полное название подразделения в родительном падеже",
+            "allowNull": true,
+            "isMultiLang": true
+        },
+        "fullNameDat": {
+            "dataType": "String",
+            "size": 255,
+            "caption": "Полное название подразделения в дательном падеже",
+            "description": "Полное название подразделения в дательном падеже",
+            "allowNull": true,
+            "isMultiLang": true
+        },			
+        "depTypeID": {
+            "dataType": "Entity",
+            "associatedEntity": "cdn_deptype",
+            "caption": "Тип подразделения",
+            "description": "Тип подразделения",
+            "allowNull": true
+        },
+        "organizationID": {
+            "dataType": "Entity",
+            "associatedEntity": "cdn_organization",
+            "caption": "Организация",
+            "description": "Организация, которой принадлежит подразделение",
+            "allowNull": true
+        }
+    },
+    "mixins": {
+        "mStorage": {
+            "simpleAudit": true,
+            "safeDelete": true
+        },
+        "dataHistory": {}
+    }
+}
+

@@ -1,0 +1,26 @@
+﻿{
+    "caption": "Hesablaşma hesabları",
+    "description": "Təşkilatların hesablaşma hesabları üzrə sorğu kitabçaları",
+    "attributes": {
+        "organizationID": {
+            "caption": "Təşkilat",
+            "description": "Təşkilat"
+        },
+        "currencyID": {
+            "caption": "Valyuta",
+            "description": "Hesab valyutası"
+        },
+        "bankID": {
+            "caption": "Bank",
+            "description": "Hesabın açıldığı bank"
+        },
+        "code": {
+            "caption": "Hesab kodu",
+            "description": "Hesab kodu (hesabın nömrəsi)"
+        },
+        "acctype": {
+            "caption": "Hesab tipi",
+            "description": "Hesab tipi"
+        }
+    }
+}

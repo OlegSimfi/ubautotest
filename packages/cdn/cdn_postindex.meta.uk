@@ -1,0 +1,17 @@
+﻿{
+    "caption": "Поштові індекси",
+    "description": "Поштові індекси",
+    "attributes": {
+        "code": {
+            "caption": "Індекс",
+            "description": "Індекс"
+        },
+        "streetID": {
+            "caption": "Вулиця"
+        },
+        "description": {
+            "caption": "Опис",
+            "description": "Опис"
+        }
+    }
+}

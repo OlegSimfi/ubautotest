@@ -1,0 +1,30 @@
+{
+  "name": "@unitybase/base",
+  "version": "4.2.22",
+  "description": "Build-in UnityBase model",
+  "repository": "https://git-pub.intecracy.com/unitybase/ubjs/tree/master/packages/base",
+  "scripts": {
+    "build:doc": "jsdoc -c ./jsdoc-conf.json --package ./package.json"
+  },
+  "public": true,
+  "publishConfig": {
+    "registry": "http://registry.unitybase.info"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@unitybase/cryptojs": "^1.0.13",
+    "lodash": "^4"
+  },
+  "devDependencies": {
+    "@unitybase/stubs": "^4.1.13"
+  },
+  "keywords": [
+    "UnityBase",
+    "UB4"
+  ],
+  "engines": {
+    "ub": "4.0.0"
+  },
+  "author": "UnityBase team (https://unitybase.info)",
+  "license": "(GPL-3.0 OR LGPL-3.0 OR MPL-2.0)"
+}

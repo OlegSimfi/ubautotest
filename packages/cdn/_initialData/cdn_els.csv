@@ -1,0 +1,3 @@
+code;entityMask;methodMask;ruleType;ruleRole;description
+CDN_READ_USERS;cdn*;select;A;User;Allow read all CDN model entities for users role
+CDN_DENY_ADMINUNIT;cdn_adminunit;[iuda]*;D;Everyone;Deny direct modification of UNITY cdn_adminunit

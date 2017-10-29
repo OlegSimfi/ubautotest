@@ -1,0 +1,25 @@
+//@! "do not remove comments below unless you know what you do!"
+//@isDefault "false"
+//@entity "cdn_contact"
+//@formType "auto"
+//@caption "Контакт"
+//@description "Контакт"
+exports.formDef = {
+
+    size: {
+        width: 300,
+        height:150
+    },
+    parentConfig: {
+        layout: {
+            type: "vbox",
+            align: "stretch" //max
+        }
+    },
+
+    items:[
+        { attributeName: "contactTypeID" },
+        { attributeName: "value" },
+        { attributeName: "subjectID", hidden: true}
+    ]
+};

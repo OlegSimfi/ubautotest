@@ -1,0 +1,63 @@
+﻿{
+    "caption": "Internal organizations",
+    "description": " List of internal organizations",
+    "documentation": "В этом справочнике хранится перечень организаций. Каждая организация по UNITY складывается в org_unit",
+    "attributes": {
+        "parentID": {
+            "caption": "Parent",
+            "description": "Parent"
+        },
+        "code": {
+            "caption": "Internal code",
+            "description": "Organization internal code"
+        },
+        "OKPOCode": {
+            "caption": "CCEO",
+            "description": "Common classifier of enterprises and organizations (CCEO)"
+        },
+        "taxCode": {
+            "caption": "Tax number",
+            "description": "Tax number"
+        },
+        "vatCode": {
+            "caption": "VAT number",
+            "description": "VAT (value-added tax) registration certificate number"
+        },
+        "name": {
+            "caption": "Organization name",
+            "description": "Name of organization without the quotes and abbreviations"
+        },
+        "fullName": {
+            "caption": "Organization full name",
+            "description": "Full name of organization, as it's specified in the certificate of registration"
+        },
+        "description": {
+            "caption": "Organization description",
+            "description": "Organization description"
+        },
+        "nameGen": {
+            "caption": "Name in genitive case",
+            "description": "Organization name in genitive case"
+        },
+        "nameDat": {
+            "caption": "Name in dative case",
+            "description": "Organization name in dative case"
+        },
+        "fullNameGen": {
+            "caption": "Full name in genitive case",
+            "description": "Full name of organization, as it's specified in the certificate of registration, in genitive case"
+        },
+        "fullNameDat": {
+            "caption": "Full name in dative case",
+            "description": "Full name of organization, as it's specified in the certificate of registration, in dative case"
+        },
+        "orgBusinessTypeID": {
+            "caption": "Organization type",
+            "description": "Organization type"
+        },
+        "orgOwnershipTypeID": {
+            "caption": "Ownership type",
+            "description": "Ownership type"
+        }
+    }
+}

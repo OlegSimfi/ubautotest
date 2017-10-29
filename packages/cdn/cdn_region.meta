@@ -1,0 +1,99 @@
+{
+	"caption": "Регионы",
+	"description": "Справочник регионов",
+	"connectionName": "",
+	"sqlAlias": "regn",
+	"descriptionAttribute": "name",
+	"cacheType": "Entity",
+	"attributes": {
+        "parentAdminUnitID":
+        {
+            "dataType": "Entity",
+            "associatedEntity": "cdn_adminunit",
+            "caption": "Предок",
+            "description": "Предок",
+            "allowNull": false
+        },
+        "code":
+        {
+            "dataType": "String",
+            "size": 16,
+            "caption": "Код",
+            "description": "Внутрішній код",
+            "allowNull": false,
+            "isUnique": true
+        },
+        "regionTypeID":
+		{
+			"dataType": "Entity",
+			"associatedEntity": "cdn_regiontype",
+			"caption": "Тип региона",
+			"description": "Тип региона",
+			"allowNull": true
+		},				
+		"name":
+		{
+			"dataType": "String",
+			"size": 128,
+			"caption": "Название",
+			"description": "Название региона",
+			"allowNull": false,
+			"isMultiLang": true
+		},
+        "caption":
+        {
+            "dataType": "String",
+            "size": 255,
+            "caption": "Заголовок",
+            "description": "Заголовок региона",
+            "allowNull": true,
+            "isMultiLang": true
+        },
+		"fullName":
+		{
+			"dataType": "String",
+			"size": 255,
+			"caption": "Полное название",
+			"description": "Полное официальное название региона",
+			"allowNull": false,
+			"isMultiLang": true
+		},		
+		"description":
+		{
+			"dataType": "String",
+			"size": 255,
+			"caption": "Описание",
+			"description": "Описание региона",
+			"allowNull": true,
+			"isMultiLang": true
+		},			
+		"phoneCode":
+		{
+			"dataType": "String",
+			"size": 64,
+			"caption": "Телефонный код",
+			"description": "Телефонный код региона",
+			"allowNull": true
+		},
+		"centerID":
+		{
+			"dataType": "Entity",
+			"associatedEntity": "cdn_city",
+			"caption": "Центр",
+			"description": "Центр региона",
+			"allowNull": true
+		}		
+	},
+	"mixins": {
+		"mStorage": {
+			"simpleAudit":true,
+			"safeDelete":true
+        },
+		"dataHistory":{},
+		"unity": { 
+			"entity": "cdn_adminunit",
+			"attributeList": ["parentAdminUnitID","code","name","caption","fullName"],
+			"defaults": { "adminUnitType": "DISTRICT" }
+		}
+	}
+}

@@ -1,0 +1,35 @@
+{
+	"caption": "Типы регионов",
+	"description": "Справочник типов регионов",
+	"connectionName": "",
+	"sqlAlias": "regnt",
+	"cacheType": "SessionEntity",
+	"descriptionAttribute": "name",
+	"documentation": "",
+	"attributes": {
+		"code":
+		{
+			"dataType": "String",
+			"size": 16,
+			"caption": "Код",
+			"description": "Код",
+			"allowNull": false,
+			"isMultiLang": false
+		},	
+		"name":
+		{
+			"dataType": "String",
+			"size": 128,
+			"caption": "Название",
+			"description": "Название типа региона",
+			"allowNull": false,
+			"isMultiLang": true
+		}	
+	},
+	"mixins": {
+		"mStorage": {
+			"simpleAudit":true,
+			"safeDelete":true
+        }
+	}
+}

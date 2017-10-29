@@ -1,0 +1,107 @@
+﻿{
+	"caption": "Countries",
+	"description": "Countries directory",
+	"connectionName": "",
+	"sqlAlias": "cntr",
+	"descriptionAttribute": "name",
+	"cacheType": "SessionEntity",
+	"attributes": {
+        "code":
+        {
+            "dataType": "String",
+            "size": 16,
+            "caption": "Code",
+            "description": "Internal code",
+            "allowNull": false,
+            "isUnique": true
+        },
+		"name":
+		{
+			"dataType": "String",
+			"size": 128,
+			"caption": "Name",
+			"description": "Name of the country",
+			"allowNull": false,
+			"isMultiLang": true
+		},
+		"fullName":
+		{
+			"dataType": "String",
+			"size": 255,
+			"caption": "Full name",
+			"description": "Full official name of the country",
+			"allowNull": false,
+			"isMultiLang": true
+		},
+		"intCode":
+		{
+			"dataType": "Int",
+			"caption": "Digital code",
+			"description": "Digital code of the country",
+			"allowNull": false,
+			"isUnique": true
+		},		
+		"symbol2":
+		{
+			"dataType": "String",
+			"size": 2,
+			"caption": "ISO code",
+			"description": "2-character code of the country by ISO classification",
+			"allowNull": false,
+			"isUnique": true
+		},
+		"symbol3":
+		{
+			"dataType": "String",
+			"size": 3,
+			"caption": "IOC code",
+			"description": "3-character code of the country by IOC classification",
+			"allowNull": false,
+			"isUnique": true
+		},		
+		"description":
+		{
+			"dataType": "String",
+			"size": 255,
+			"caption": "Description",
+			"description": "Country description",
+			"allowNull": true,
+			"isMultiLang": true
+		},			
+		"phoneCode":
+		{
+			"dataType": "String",
+			"size": 64,
+			"caption": "Phone code",
+			"description": "Country phone code",
+			"allowNull": true
+		},
+		"currencyID":
+		{
+			"dataType": "Entity",
+			"associatedEntity": "cdn_currency",
+			"caption": "Currency",
+			"description": "Main currency of the country",
+			"allowNull": true
+		},
+		"capitalID":
+		{
+			"dataType": "Entity",
+			"associatedEntity": "cdn_city",
+			"caption": "Capital",
+			"description": "Capital of the country",
+			"allowNull": true
+		}		
+	},
+	"mixins": {
+		"mStorage": {
+			"simpleAudit":true,
+			"safeDelete":true
+        },
+		"unity": { 
+			"entity": "cdn_adminunit",
+			"attributeList": ["code","name","fullName"],
+			"defaults": { "adminUnitType": "COUNTRY" } 
+		}			
+	}
+}

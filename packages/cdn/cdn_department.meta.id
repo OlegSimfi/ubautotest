@@ -1,0 +1,46 @@
+﻿{
+    "caption": "departemen eksternal",
+    "description": "departemen eksternal kamus",
+    "attributes": {
+        "code": {
+            "caption": "Kode",
+            "description": "Kode departemen"
+        },
+        "name": {
+            "caption": "Nama",
+            "description": "Nama departemen"
+        },
+        "fullName": {
+            "caption": "Nama lengkap",
+            "description": "Nama resmi lengkap dari departemen"
+        },
+        "description": {
+            "caption": "Deskripsi",
+            "description": "Deskripsi departemen"
+        },
+        "nameGen": {
+            "caption": "Nama dalam kasus genitif",
+            "description": "Nama departemen dalam kasus genitif"
+        },
+        "nameDat": {
+            "caption": "Nama di dativus",
+            "description": "Nama departemen di dativus"
+        },
+        "fullNameGen": {
+            "caption": "nama lengkap dalam kasus genitif",
+            "description": "Departemen nama resmi penuh dalam kasus genitif"
+        },
+        "fullNameDat": {
+            "caption": "nama lengkap di dativus",
+            "description": "Departemen nama resmi penuh dalam dativus"
+        },
+        "depTypeID": {
+            "caption": "Mengetik",
+            "description": "Jenis departemen"
+        },
+        "organizationID": {
+            "caption": "Organisasi",
+            "description": "organisasi eksternal induk"
+        }
+    }
+}

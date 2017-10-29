@@ -1,0 +1,39 @@
+//@! "do not remove comments below unless you know what you do!"
+//@isDefault "true"
+//@entity "cdn_region"
+//@formType "auto"
+//@caption "Регионы"
+//@description "Справочник регионов"
+exports.formDef = {
+
+    size: {
+        width: 400,
+        height: 350
+    },
+    parentConfig: {
+        layout: {
+            type: "vbox",
+            align: "stretch" //max
+        }
+    },
+
+    items: [
+        { attributeName: "caption", disabled: true},
+        { attributeName: "parentAdminUnitID", fieldList: ["name", "adminUnitType"],
+            whereList: {
+                "type": {
+                    expression: '[adminUnitType]',
+                    condition: 'equal',
+                    values: {'adminUnitType': 'COUNTRY'}
+                }
+            }
+        },
+        { attributeName: "code"},
+        { attributeName: "regionTypeID"},
+        { attributeName: "name"},
+        { attributeName: "fullName"},
+        { attributeName: "description"},
+        { attributeName: "phoneCode"},
+        { attributeName: "centerID"}
+    ]
+};

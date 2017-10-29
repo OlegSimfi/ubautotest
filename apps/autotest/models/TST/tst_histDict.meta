@@ -1,0 +1,32 @@
+﻿{
+  "caption": "tst_histDict",
+  "description": "Historical dictionary",
+  "connectionName": "",
+  "descriptionAttribute": "organization",
+  "attributes": [
+    {
+      "name": "organization",
+      "dataType": "Entity",
+      "associatedEntity": "org_organization",
+      "caption": "Organization",
+      "description": "Our organization",
+      "allowNull": false
+    },
+    {
+      "name": "currencyValue",
+      "dataType": "Currency",
+      "caption": "Currency Data",
+      "allowNull": false,
+      "defaultValue": "0"
+    }
+  ],
+  "mixins": {
+    "mStorage": {
+      "simpleAudit": true,
+      "safeDelete": false
+    },
+    "dataHistory": {
+
+    }
+  }
+}

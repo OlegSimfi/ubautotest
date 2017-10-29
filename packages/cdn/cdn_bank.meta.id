@@ -1,0 +1,32 @@
+﻿{
+    "caption": "cabang bank",
+    "description": "direktori cabang bank",
+    "attributes": {
+        "MFO": {
+            "caption": "Kode Bank",
+            "description": "kode cabang Bank"
+        },
+        "code": {
+            "caption": "kode organisasi",
+            "description": "kode organisasi Bank"
+        },
+        "name": {
+            "caption": "Nama",
+            "description": "Nama tanpa tanda kutip dan kepemilikan. Untuk mencari data."
+        },
+        "fullName": {
+            "caption": "Nama lengkap",
+            "description": "Penuh resmi nama bank. Untuk menampilkan dalam laporan."
+        },
+        "phones": {
+            "caption": "telepon"
+        },
+        "address": {
+            "caption": "Alamat"
+        },
+        "countryID": {
+            "caption": "Negara",
+            "description": "negara Pendaftaran"
+        }
+    }
+}

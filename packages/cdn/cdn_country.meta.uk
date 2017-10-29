@@ -1,0 +1,46 @@
+﻿{
+    "caption": "Країни",
+    "description": "Довідник країн",
+    "attributes": {
+        "code": {
+            "caption": "Код",
+            "description": "Внутрішній код"
+        },
+        "name": {
+            "caption": "Назва",
+            "description": "Назва країни"
+        },
+        "fullName": {
+            "caption": "Повна назва",
+            "description": "Повна офіційна назва країни"
+        },
+        "intCode": {
+            "caption": "Код цифровий",
+            "description": "Цифровий код країни"
+        },
+        "symbol2": {
+            "caption": "ISO код",
+            "description": "2-х символьний код країни по класифікації ISO"
+        },
+        "symbol3": {
+            "caption": "Код МОК",
+            "description": "3-х символьний код країни по класифікації МОК"
+        },
+        "description": {
+            "caption": "Опис",
+            "description": "Опис країни"
+        },
+        "phoneCode": {
+            "caption": "Телефонний код",
+            "description": "Телефонний код країни"
+        },
+        "currencyID": {
+            "caption": "Валюта",
+            "description": "Валюта, яка використовується в країні в якості основної"
+        },
+        "capitalID": {
+            "caption": "Столиця",
+            "description": "Столиця країни"
+        }
+    }
+}

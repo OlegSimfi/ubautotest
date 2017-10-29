@@ -1,0 +1,22 @@
+﻿{
+    "caption": "Types of ownership",
+    "description": "Types of ownership dictionary",
+    "attributes": {
+        "code": {
+            "caption": "Code",
+            "description": "Code of the ownership type"
+        },
+        "shortName": {
+            "caption": "Acronim",
+            "description": "Acronim of the ownership type"
+        },
+        "name": {
+            "caption": "Name",
+            "description": "Name of the ownership type"
+        },
+        "fullName": {
+            "caption": "Full name",
+            "description": "Full name of the ownership type"
+        }
+    }
+}

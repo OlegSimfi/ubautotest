@@ -1,0 +1,14 @@
+﻿{
+    "caption": "jenis Staffunit",
+    "description": "jenis Staffunit kamus",
+    "attributes": {
+        "code": {
+            "caption": "Kode",
+            "description": "Kode jenis staffunit"
+        },
+        "name": {
+            "caption": "Nama",
+            "description": "Nama jenis staffunit"
+        }
+    }
+}

@@ -1,0 +1,15 @@
+﻿{
+    "caption": "Addresses",
+    "description": "Addresses directory",
+    "attributes": {
+        "addressType": {
+            "caption": "Address type"
+        },
+        "value": {
+            "caption": "Address"
+        },
+        "subjectID": {
+            "caption": "Subject"
+        }
+    }
+}

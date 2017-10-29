@@ -1,0 +1,15 @@
+﻿{
+    "caption": "Ünvanlar",
+    "description": "Ünvanlar üzrə sorğu kitabçası",
+    "attributes": {
+        "addressType": {
+            "caption": "Ünvan tipi"
+        },
+        "value": {
+            "caption": "Ünvan"
+        },
+        "subjectID": {
+            "caption": "Ünvan/Başlıq"
+        }
+    }
+}

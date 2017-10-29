@@ -1,0 +1,31 @@
+﻿{
+    "caption": "Internal organization assignments",
+    "description": "List of internal organization assignments",
+    "documentation": "Развязочная сущность, в которой указывается какой работник на какой штатной единице работает (назначение). Так же есть тип назначения (временное, постоянное, полставки и т.д.)",
+    "attributes": {
+        "tabNo": {
+            "caption": "Employee №",
+            "description": "Employee number"
+        },
+        "employeeID": {
+            "caption": "Employee",
+            "description": "Employee"
+        },
+        "staffUnitID": {
+            "caption": "Staff unit",
+            "description": "Internal organization staff unit"
+        },
+        "employeeOnStaffType": {
+            "caption": "Assignment type",
+            "description": "Assignment type"
+        },
+        "description": {
+            "caption": "Description",
+            "description": "Assignment description"
+        },
+        "caption": {
+            "caption": "Caption",
+            "description": "Caption"
+        }
+    }
+}

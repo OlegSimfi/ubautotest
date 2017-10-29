@@ -1,0 +1,135 @@
+<h1 style="text-align: center;">Report <br />builder manual</h1>
+<p><span style="font-size: 10pt;">In UnityBase <strong>report is&nbsp;simply a <a href="https://github.com/janl/mustache.js">Mustache</a>! </strong>So you can use <strong>everything must</strong>ache is support.</span></p>
+<table style="word-break: break-all;" border="1px" width="773" cellspacing="0" cellpadding="3px">
+<tbody>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="tinymce-templated">
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<h2 style="text-align: left;">Define template</h2>
+<p>&nbsp; <span style="font-size: 10pt;">Here is we define report template. Depending of report type (PDF or HTML) &nbsp;you can use different subset of HTML tags and properties. &nbsp;</span></p>
+<p><span style="font-size: 10pt;">&nbsp; Everything accessible from visual menu is handled by PDF rendering, but if you need to change HTML manually you can use Tools-&gt; Source code menu and change HTML directly. In this case there is no guaranty to correct PDF rendering, but you can try :)</span></p>
+<p><span style="font-size: 10pt;">&nbsp; After template is defined it stores to <span style="text-decoration: underline;">modelPublcFolder</span>\reports\<strong>reportCode</strong>.template where&nbsp;<strong>reportCode </strong>is code of your report.&nbsp;</span></p>
+<h2 style="text-align: left;">Define data&nbsp;</h2>
+<p><span style="font-size: 10pt;">&nbsp; &nbsp;Next&nbsp;step is defining&nbsp;<strong>data</strong> for report.&nbsp;</span></p>
+<h2 style="text-align: left;">Bind data</h2>
+<p><span style="font-size: 10pt;">To<strong> <em>translate something</em></strong> to current user language, simple wrap text to&nbsp;<span style="text-decoration: underline;"><strong>#i18n</strong></span> <a href="https://github.com/janl/mustache.js#functions">function call:</a> {{#i18n}}user{{/i18n}} we add to report.data automatically.</span></p>
+<p><span style="font-size: 10pt;">Or <em><strong>define your own function</strong></em> and do anything inside, like this:&nbsp;{{#boldIfLong}}I`m{{/boldIfLong}} {{#boldIfLong}} bold {{/boldIfLong}}.</span></p>
+<p><span style="font-size: 10pt;">&nbsp;{{myBirthday}}</span></p>
+<p><span style="font-size: 10pt;">To iterate other array of object first insert template (menu Insert-&gt;Template) and then use</span></p>
+<p>&nbsp;</p>
+<p style="text-indent: 15px;">You can use text-indent attribute for tag &lt;p&gt;. &nbsp;You can use text-indent attribute for tag &lt;p&gt;.&nbsp;You can use text-indent attribute for tag &lt;p&gt;.&nbsp;You can use text-indent attribute for tag &lt;p&gt;.&nbsp;You can use text-indent attribute for tag &lt;p&gt;.&nbsp;</p>
+<p><img src="XXXX" alt="" width="16" height="16" /></p>
+<p>&nbsp;<img src="XXXX" alt="" width="150" height="74" /></p>
+<p><img src="XXXX" alt="" width="16" height="16" /></p>
+<p>&nbsp;Countries list&nbsp;</p>
+<table style="border-collapse: collapse; border: 1px solid black; height: 189px;" width="1060" cellspacing="0" cellpadding="3px">
+<tbody>
+<tr>
+<td style="width: 172px; border: 1px solid black;" rowspan="2">
+<div style="text-align: right;">Country code</div>
+<div style="text-align: right;">Country code 1</div>
+</td>
+<td style="width: 287px; border: 1px solid black;">Country name</td>
+<td style="width: 245px; border: 1px solid black;">Currency</td>
+</tr>
+<tr>
+<td style="width: 287px; border: 1px solid black;">Country name 1</td>
+<td style="width: 245px; border: 1px solid black;">Currency 1</td>
+</tr>
+<!--{{#countries}}-->
+<tr class="tinymce_templated" data-iterate-over="countries">
+<td class="tinymce_templated" style="width: 96px; border: 1px solid black; cursor: default; background-color: gray;">{{code}}</td>
+<td style="width: 248px; border: 1px solid black;">
+<p><strong>{{name}}</strong></p>
+<p><strong>{{name}}</strong></p>
+</td>
+<td style="width: 261px; border: 1px solid black;">&nbsp;{{currencyName}}</td>
+</tr>
+<!--{{/countries}}-->
+<tr data-iterate-over="">
+<td style="cursor: default;">Площад ь</td>
+<td style="cursor: default;" colspan="2">{{area}}</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>Roles:&nbsp;</p>
+<!--{{#roles}}-->
+<p class="tinymce_templated" data-iterate-over="roles">{{index}}. {{roleIDname}} от {{userIDname}} <br />для {{ID}}</p>
+<!--{{/roles}}-->
+<p>&nbsp;<!-- pagebreak --></p>
+<p>My birthday is: {{myBirthday}}</p>
+<p>&nbsp;</p>
+<!--{{#myArray}}-->
+<p class="tinymce_templated">{{.}}</p>
+<!--{{/myArray}}-->
+<p><img src="XXXX" alt="" width="82" height="82" /></p>
+<table style="word-break: break-all; height: 100px; width: 1027px; border-collapse: collapse; border: 2px dashed gray;" border="1px" width="632px" cellspacing="0" cellpadding="3px">
+<tbody>
+<tr>
+<td style="width: 608px; cursor: w-resize; border: 2px dashed gray;"><img src="XXXX" alt="" width="270" height="95" /></td>
+<td style="width: 1249px; cursor: w-resize; text-align: center; border: 2px dashed gray;"><strong><span style="font-size: 24pt;"><em>Document title</em></span></strong></td>
+<td style="width: 854px; cursor: w-resize; border: 2px dashed gray;"><img src="XXXX" alt="" width="69" height="69" /></td>
+</tr>
+</tbody>
+</table>
+<p>Using lists:</p>
+<ol style="list-style-type: decimal;">
+<li>first item</li>
+<li>second item</li>
+<li>third item<br />
+<ol style="list-style-type: decimal;">
+<li>first sub item</li>
+<li>second&nbsp;sub item</li>
+<li>third&nbsp;sub item</li>
+<li>fourth&nbsp;sub item</li>
+</ol>
+</li>
+<li>forth item</li>
+</ol>
+<p>List with marker&nbsp;</p>
+<ul style="list-style-type: circle;">
+<li>first item</li>
+<li>second item</li>
+<li>third item</li>
+</ul>
+<ul style="list-style-type: disc;">
+<li>first item</li>
+<li>second item</li>
+<li>third item</li>
+</ul>
+<ul style="list-style-type: square;">
+<li>first item</li>
+<li>second item</li>
+<li>third item</li>
+</ul>
+<p>&nbsp;</p>

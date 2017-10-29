@@ -1,0 +1,106 @@
+﻿{
+    "caption": "Kənar təşkilatların əməkdaşı",
+    "description": "Kənar təşkilatların əməkdaşları üzrə sorğu kitabçası",
+    "attributes": {
+        "lastName": {
+            "caption": "Soyad",
+            "description": "Əməkdaşın soyadı"
+        },
+        "firstName": {
+            "caption": "Ad",
+            "description": "Əməkdaşın adı"
+        },
+        "middleName": {
+            "caption": "Atasının adı",
+            "description": "Əməkdaşın atasının adı"
+        },
+        "description": {
+            "caption": "Təsvir",
+            "description": "Əməkdaşın təsviri"
+        },
+        "sexType": {
+            "caption": "Cins",
+            "description": "Əməkdaşın cinsi"
+        },
+        "uniqNum": {
+            "caption": "Tabel nömrəsi",
+            "description": "Əməkdaşın tabel nömrəsi"
+        },
+        "suffix": {
+            "caption": "Şəkilçi",
+            "description": "Şəkilçi"
+        },
+        "shortFIO": {
+            "caption": "Qısa ASA",
+            "description": "Nümunə: Ad S.A. adı"
+        },
+        "fullFIO": {
+            "caption": "Tam ASA",
+            "description": "Nümunə: Ad Soyad Atasının adı"
+        },
+        "apply": {
+            "caption": "Müraciət",
+            "description": "Bu şəxsə necə müraciət edilməlidir"
+        },
+        "lastNameGen": {
+            "caption": "Yiy. halda soyad",
+            "description": "Yiyəlik halda əməkdaşın soyadı"
+        },
+        "lastNameDat": {
+            "caption": "Yön. halda soyad",
+            "description": "Yönlük halda əməkdaşın soyadı"
+        },
+        "firstNameGen": {
+            "caption": "Yiy. halda ad",
+            "description": "Yiyəlik halda əməkdaşın adı"
+        },
+        "firstNameDat": {
+            "caption": "Yön. halda ad",
+            "description": "Yönlük halda əməkdaşın adı"
+        },
+        "middleNameGen": {
+            "caption": "Yiy. halda atasının adı",
+            "description": "Yiyəlik halda əməkdaşın atasının adı"
+        },
+        "middleNameDat": {
+            "caption": "Yön. halda atasının adı",
+            "description": "Yönlük halda əməkdaşın atasının adı"
+        },
+        "shortFIOGen": {
+            "caption": "Yiy. halda qısa ASA",
+            "description": "Yiyəlik halda əməkdaşın qısa ASA"
+        },
+        "shortFIODat": {
+            "caption": "Yön. halda qısa ASA",
+            "description": "Yönlük halda əməkdaşın qısa ASA"
+        },
+        "fullFIOGen": {
+            "caption": "Yiy. halda tam ASA",
+            "description": "Yiyəlik halda əməkdaşın tam ASA"
+        },
+        "fullFIODat": {
+            "caption": "Yön. halda tam ASA",
+            "description": "Yönlük halda əməkdaşın tam ASA"
+        },
+        "applyGen": {
+            "caption": "Yiy. halda müraciət",
+            "description": "Yiyəlik halda bu şəxsə necə müraciət etməli"
+        },
+        "applyDat": {
+            "caption": "Yön. halda müraciət",
+            "description": "Yönlük halda bu şəxsə necə müraciət edilməlidir"
+        },
+        "departmentID": {
+            "caption": "Şöbə",
+            "description": "Bu əməkdaşın daxil olduğu kənar təşkilatın şöbəsi"
+        },
+        "organizationID": {
+            "caption": "Təşkilat",
+            "description": "Bu əməkdaşın daxil olduğu kənar təşkilat"
+        },
+        "addrText": {
+            "caption": "Adresat xülasəsi",
+            "description": "Göndərilən sənədin PDF surətinin yaradılması zamanı əks olunacaq adresatın xülasəsi"
+        }
+    }
+}

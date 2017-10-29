@@ -1,0 +1,24 @@
+﻿{
+    "caption": "List of buildings",
+    "description": "List of buildings",
+    "attributes": {
+        "streetID": {
+            "caption": "Street"
+        },
+        "postIndexID": {
+            "caption": "Index"
+        },
+        "code": {
+            "caption": "Num",
+            "description": "Code"
+        },
+        "description": {
+            "caption": "Description",
+            "description": "Description"
+        },
+        "buildingType": {
+            "caption": "Type",
+            "description": "Type"
+        }
+    }
+}

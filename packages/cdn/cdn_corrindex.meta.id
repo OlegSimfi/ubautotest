@@ -1,0 +1,18 @@
+﻿{
+    "caption": "indeks koresponden",
+    "description": "direktori indeks koresponden",
+    "attributes": {
+        "code": {
+            "caption": "Kode",
+            "description": "Kode indeks koresponden"
+        },
+        "name": {
+            "caption": "Nama",
+            "description": "Nama indeks koresponden"
+        },
+        "fullName": {
+            "caption": "Nama lengkap",
+            "description": "nama lengkap indeks koresponden"
+        }
+    }
+}

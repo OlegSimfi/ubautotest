@@ -1,0 +1,33 @@
+{
+  "name": "@unitybase/ubq",
+  "version": "4.2.5",
+  "description": "UnityBase queue",
+  "repository": "https://git-pub.intecracy.com/unitybase/ubjs/tree/master/packages/ubq",
+  "config": {
+    "ubmodel": "UBQ"
+  },
+  "scripts": {
+    "test": "ubcli autotest -m UBQ -skipModules"
+  },
+  "public": true,
+  "publishConfig": {
+    "registry": "http://registry.unitybase.info"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@unitybase/base": "^4.2.13",
+    "@unitybase/mailer": "^4.0.8",
+    "@unitybase/ub": "^4.0.33",
+    "@unitybase/uba": "^4.1.20",
+    "node-cron": "^1.1.2"
+  },
+  "devDependencies": {
+    "@unitybase/stubs": "^4.1.6"
+  },
+  "keywords": [
+    "UnityBase",
+    "UB4"
+  ],
+  "author": "UnityBase team (https://unitybase.info)",
+  "license": "(GPL-3.0 OR LGPL-3.0 OR MPL-2.0)"
+}

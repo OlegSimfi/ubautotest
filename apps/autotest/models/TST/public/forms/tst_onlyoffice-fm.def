@@ -1,0 +1,20 @@
+// @! "do not remove comments below unless you know what you do!"
+// @isDefault "true"
+// @entity "tst_onlyoffice"
+// @model "TST"
+// @formType "auto"
+// @caption "test form for only office"
+// @description "test form for only office"
+exports.formDef = {
+  items: [
+    { attributeName: 'caption' },
+    {
+      attributeName: 'content',
+      expanded: true,
+      readOnly: false,
+      documentMIME: 'application/word',
+      height: 600,
+      width: 1200
+    }
+  ]
+}

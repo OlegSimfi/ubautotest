@@ -1,0 +1,34 @@
+﻿{
+	"caption": "test fts data with scope=Entity non multi lang",
+	"connectionName": "",
+	"sqlAlias": "tftse",
+	"cacheType": "None",
+	"descriptionAttribute": "caption",
+	"attributes": {
+		"caption": {
+			"dataType": "String",
+			"size": 255,
+			"caption": "Caption",
+			"allowNull": true,
+			"isMultiLang": false
+		},
+        "regDate": {
+            "dataType": "DateTime",
+            "caption": "Registration date",
+            "allowNull": true
+        }
+	},
+	"mixins": {
+		"mStorage": {
+			"simpleAudit": false,
+			"safeDelete": false
+		},
+		"audit": {
+			"enabled": false
+		},
+		"fts": {
+			"scope": "Entity",
+			"dataProvider": "Entity"
+		}
+	}
+}

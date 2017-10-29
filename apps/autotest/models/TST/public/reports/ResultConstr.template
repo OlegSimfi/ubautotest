@@ -1,0 +1,29 @@
+<!--@name "ResultConstr"-->
+<!--@report_code "ResultConstr"-->
+<!--@model "UBCVS"-->
+<!--@ID "3000000215408"-->
+
+
+
+<!--%pageOrientation:portrait-->
+<table style="word-break: break-all; indissoluble-first-rows: 2;" width="773" cellspacing="0" cellpadding="0px">
+<tbody>
+<tr>
+<td style="width: 30px;">&nbsp;</td>
+<td style="width: 40px; border-bottom: 1px solid black; border-bottom-color: black; border-bottom-style: solid; border-bottom-width: 1px;">&nbsp;</td>
+<td style="width: 543px; border-bottom: 1px solid black; border-bottom-color: black; border-bottom-style: solid; border-bottom-width: 1px;">&nbsp;</td>
+<td style="width: 157px; border-bottom: 1px solid black; text-align: center; border-bottom-color: black; border-bottom-style: solid; border-bottom-width: 1px;" colspan="2">&nbsp;<strong>Answer</strong></td>
+</tr>
+<tr style="disablesplit: true;">
+<td style="width: 30px; cursor: default;">&nbsp;</td>
+<td style="width: 40px; border-left: 1px solid black; border-bottom: 1px solid black; vertical-align: top; border-left-width: 1px; border-bottom-width: 1px; border-top-width: 1px; border-color: black; border-style: solid;"><span style="font-size: 10pt;">{{num}}</span></td>
+<td style="width: 543px; border-bottom: 1px solid black; vertical-align: top; border-bottom-color: black; border-bottom-style: solid; border-bottom-width: 1px; border-top-width: 1px; border-top-color: black; border-top-style: solid;"><span style="font-size: 10pt;">{{question}}</span></td>
+<td style="width: 170px; border-bottom: 1px solid black; vertical-align: top; border: 1px solid black;">
+&nbsp;
+</td>
+</tr>
+
+</tbody>
+</table>
+
+<p>&nbsp;</p>

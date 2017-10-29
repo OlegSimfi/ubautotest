@@ -1,0 +1,24 @@
+﻿{
+    "caption": "Список будинків",
+    "description": "Список будинків",
+    "attributes": {
+        "streetID": {
+            "caption": "Вулиця"
+        },
+        "postIndexID": {
+            "caption": "Індекс"
+        },
+        "code": {
+            "caption": "№",
+            "description": "Код"
+        },
+        "description": {
+            "caption": "Опис",
+            "description": "Опис"
+        },
+        "buildingType": {
+            "caption": "Тип",
+            "description": "Тип"
+        }
+    }
+}

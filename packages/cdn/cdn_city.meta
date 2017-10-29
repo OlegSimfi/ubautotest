@@ -1,0 +1,81 @@
+﻿{
+    "caption": "Cities",
+    "description": "Cities directory",
+    "connectionName": "",
+    "sqlAlias": "city",
+    "descriptionAttribute": "name",
+    "cacheType": "SessionEntity",
+    "attributes": {
+        "parentAdminUnitID": {
+            "dataType": "Entity",
+            "associatedEntity": "cdn_adminunit",
+            "caption": "Parent",
+            "allowNull": false
+        },
+        "code": {
+            "dataType": "String",
+            "size": 16,
+            "caption": "Code",
+            "description": "City code",
+            "allowNull": false,
+            "isUnique": true
+        },
+        "name": {
+            "dataType": "String",
+            "size": 128,
+            "caption": "Name",
+            "description": "City name",
+            "allowNull": false,
+            "isMultiLang": true
+        },
+        "caption": {
+            "dataType": "String",
+            "size": 255,
+            "caption": "Caption",
+            "allowNull": true,
+            "isMultiLang": true
+        },
+        "description": {
+            "dataType": "String",
+            "size": 255,
+            "caption": "Description",
+            "description": "City description",
+            "allowNull": true,
+            "isMultiLang": true
+        },
+        "postalCode": {
+            "dataType": "String",
+            "size": 64,
+            "caption": "Postal code",
+            "description": "City postal code",
+            "allowNull": true
+        },
+        "phoneCode": {
+            "dataType": "String",
+            "size": 64,
+            "caption": "Phone code",
+            "description": "City phone code",
+            "allowNull": true
+        },
+        "cityTypeID": {
+            "dataType": "Entity",
+            "associatedEntity": "cdn_citytype",
+            "caption": "Type",
+            "description": "City type",
+            "allowNull": true
+        }
+    },
+    "mixins": {
+        "mStorage": {
+            "simpleAudit": true,
+            "safeDelete": true
+        },
+        "unity": {
+            "entity": "cdn_adminunit",
+            "attributeList": ["parentAdminUnitID", "code", "name", "caption"],
+            "defaults": {
+                "adminUnitType": "CITY"
+            }
+        }
+    }
+}

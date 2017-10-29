@@ -1,0 +1,71 @@
+{
+  "server-architecture": {
+    "title": "00 Server architecture"
+  },
+  "http_server": {
+    "title": "01 Build-in HTTP server",
+    "children": {
+      "web_sockets": {
+        "title": "WebSockets"
+      }
+    }
+  },
+  "security": {
+    "title": "02 Security",
+    "children": {
+      "security_ub_schema": {
+        "title": "UB schema"
+      },
+      "security_ubip_schema": {
+        "title": "UBIP schema"
+      },
+      "security_openidconnect": {
+        "title": "OpenID Connect"
+      }
+    }
+  },
+  "delayed_operations": {
+    "title": "03 Delayed operations",
+    "children": {
+      "schedulers": {
+        "title": "Schedulers"
+      }
+    }
+  },
+  "odata": {
+    "title": "04 OData"
+  },
+  "DocuSign": {
+    "title": "05 DocuSign"
+  },
+  "other_workInProgress": {
+    "title": "06 Other(work in progress)",
+    "children": {
+      "entites": {
+        "title": "Entites"
+      },
+      "primary_keys": {
+        "title": "Primary keys"
+      },
+      "mixin_rls": {
+        "title": "Row level security"
+      },
+      "mixins_fts": {
+        "title": "Full text search"
+      },
+      "web_dav": {
+        "title": "Web DAV access"
+      },
+      "reports": {
+        "title": "Report generation"
+      },
+      "messages": {
+        "title": "Messages with guaranteed delivery"
+      },
+      "using_unitybase_modules": {
+        "title": "Using UnityBase modules"
+      }
+    }
+  
+  }
+}

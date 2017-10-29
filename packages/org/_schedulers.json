@@ -1,0 +1,12 @@
+﻿[
+  {
+	"name": "updateStaffUnitCaptions",
+	"schedulingCondition": "App.serverConfig.application.fts && App.serverConfig.application.fts.enabled && App.serverConfig.application.fts.async",
+	"cron": "0 0 2 * * *",
+	"description": "Sets properly values for org_staffunit.captions every day at 02.00 AM",
+	"command": "org_employeeonstaff.updatePendingStaffUnitCaptions",
+	"singleton": true,
+	"runAs": "admin",
+	"logSuccessful": false
+  }
+]

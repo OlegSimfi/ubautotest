@@ -1,0 +1,1 @@
+﻿Definition (stubs) for build-in UnityBase modules & globals - such stubs are used by IDEs. 

@@ -1,0 +1,34 @@
+<!--@name "OnClick sample"-->
+<!--@report_code "click_sample"-->
+<!--@model "UBS"-->
+<!--@ID "332110723252225"-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--%pageOrientation:portrait-->
+
+
+
+
+
+
+<h1>OnClick event sample</h1>
+<table><!--{{#countries}}-->
+<tbody>
+<tr class="tinymce_templated" data-iterate-over="countries">
+<td><a href="#" onclick="window.parent.openCountry({{ID}})">{{name}}</a></td>
+</tr>
+<!--{{/countries}}--></tbody>
+</table>

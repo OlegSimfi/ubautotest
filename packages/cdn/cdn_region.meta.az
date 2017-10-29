@@ -1,0 +1,42 @@
+﻿{
+    "caption": "Regionlar",
+    "description": "Regionlar üzrə sorğu kitabçası",
+    "attributes": {
+        "regionTypeID": {
+            "caption": "Region tipi",
+            "description": "Region tipi"
+        },
+        "name": {
+            "caption": "Ad",
+            "description": "Regionun adı"
+        },
+        "fullName": {
+            "caption": "Tam ad",
+            "description": "Regionun tam rəsmi adı"
+        },
+        "description": {
+            "caption": "Təsvir",
+            "description": "Regionun təsviri"
+        },
+        "phoneCode": {
+            "caption": "Telefon kodu",
+            "description": "Regionun telefon kodu"
+        },
+        "centerID": {
+            "caption": "Mərkəz",
+            "description": "Regionun mərkəzi"
+        },
+        "caption": {
+            "caption": "Başlıq",
+            "description": "Başlıq"
+        },
+        "parentAdminUnitID": {
+            "caption": "Əcdad",
+            "description": "Əcdad"
+        },
+        "code": {
+            "caption": "Kod",
+            "description": "Daxili kod"
+        }
+    }
+}

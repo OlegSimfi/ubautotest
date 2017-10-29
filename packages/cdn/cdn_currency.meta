@@ -1,0 +1,38 @@
+{
+    "caption": "Currencies",
+    "description": "Currencies dictionary",
+    "connectionName": "",
+    "sqlAlias": "curr",
+    "cacheType": "SessionEntity",
+    "descriptionAttribute": "code3",
+    "attributes": {
+        "intCode": {
+            "dataType": "Int",
+            "caption": "Digital code",
+            "description": "Digital code of currency",
+            "allowNull": false
+        },
+        "code3": {
+            "dataType": "String",
+            "size": 3,
+            "caption": "3-character code",
+            "description": "3-character code of currency",
+            "allowNull": false,
+            "isMultiLang": false
+        },
+        "name": {
+            "dataType": "String",
+            "size": 32,
+            "caption": "Name",
+            "description": "Name of currency",
+            "allowNull": false,
+            "isMultiLang": true
+        }
+    },
+    "mixins": {
+        "mStorage": {
+            "simpleAudit": true,
+            "safeDelete": true
+        }
+    }
+}

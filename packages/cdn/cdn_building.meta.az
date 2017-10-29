@@ -1,0 +1,24 @@
+﻿{
+    "caption": "Evlərin siyahısı",
+    "description": "Evlərin siyahısı",
+    "attributes": {
+        "streetID": {
+            "caption": "Küçə"
+        },
+        "postIndexID": {
+            "caption": "İndeks"
+        },
+        "code": {
+            "caption": "nöm.",
+            "description": "Kod"
+        },
+        "description": {
+            "caption": "Təsvir",
+            "description": "Təsvir"
+        },
+        "buildingType": {
+            "caption": "Növ",
+            "description": "Növ"
+        }
+    }
+}

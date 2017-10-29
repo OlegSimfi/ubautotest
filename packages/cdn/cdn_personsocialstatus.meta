@@ -1,0 +1,36 @@
+{
+    "caption": "Social status",
+    "description": "Dictonary of social status",
+    "documentation":"The directory stores a list of social status or physical persons",
+	"connectionName": "",
+	"sqlAlias": "perssocstatus",
+	"cacheType": "SessionEntity",
+	"descriptionAttribute": "name",
+	"attributes": {
+		"code":
+		{
+			"dataType": "String",
+			"size": 32,
+			"caption": "Code",
+			"description": "Code",
+			"allowNull": false,
+			"isMultiLang": false,
+			"isUnique": true
+		},
+		"name":
+		{
+			"dataType": "String",
+			"size": 100,
+			"caption": "Name",
+			"description": "Name",
+			"allowNull": false,
+			"isMultiLang": true
+		}
+	},
+	"mixins": {
+		"mStorage": {
+			"simpleAudit":true,
+			"safeDelete":true
+	    }
+	}
+}

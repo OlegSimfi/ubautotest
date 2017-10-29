@@ -1,0 +1,63 @@
+//@! "do not remove comments below unless you know what you do!"
+//@isDefault "true"
+//@entity "tst_docusign"
+//@formType "auto"
+//@caption "tst_docusign"
+//@description "tst_docusign"
+exports.formDef = {
+	dockedItems: [{
+		xtype: "toolbar",
+		dock: "top",
+		items: [{
+			orderId: 5,
+			actionId: "ActionSendID"
+		}]
+	},{
+        xtype: "toolbar",
+        dock: "top",
+        items: [{
+            orderId: 6,
+            actionId: "ActionUpdateID"
+        }]
+    }],
+    items: [
+        /*put your items here*/
+        {
+            attributeName: "name"
+        }, {
+            attributeName: "envelope"
+        }, {
+            flex: 1,
+            margin: "10 0 0 0",
+            layout: {
+                type: "hbox",
+                align: "stretch"
+            },
+            items: [{
+                flex: 1,
+                margin: "0 10 0 0",
+                xtype: "ubdetailgrid",
+                entity: "tst_docusign_doc",
+                entityConfig: {
+                    entity: "tst_docusign_doc",
+                    method: "select",
+                    fieldList: ["document"]
+                },
+                masterFields: ["ID"],
+                detailFields: ["envelope"]
+            }, {
+                flex: 1,
+                margin: "0 10 0 0",
+                xtype: "ubdetailgrid",
+                entity: "tst_docusign_receiver",
+                entityConfig: {
+                    entity: "tst_docusign_receiver",
+                    method: "select",
+                    fieldList: ["receiver"]
+                },
+                masterFields: ["ID"],
+                detailFields: ["envelope"]
+            }]
+        }
+    ]
+};

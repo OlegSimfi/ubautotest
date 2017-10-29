@@ -1,0 +1,26 @@
+﻿{
+    "caption": "Our accounts",
+    "description": "Our organization's current accounts",
+    "attributes": {
+        "organizationID": {
+            "caption": "Organization",
+            "description": "Organization"
+        },
+        "currencyID": {
+            "caption": "Currency",
+            "description": "Currency of the account"
+        },
+        "bankID": {
+            "caption": "Bank",
+            "description": "Bank of the account"
+        },
+        "code": {
+            "caption": "Code",
+            "description": "Code of the account"
+        },
+        "acctype": {
+            "caption": "Type",
+            "description": "Type of the account"
+        }
+    }
+}

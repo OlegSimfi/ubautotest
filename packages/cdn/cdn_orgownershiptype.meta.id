@@ -1,0 +1,22 @@
+﻿{
+    "caption": "Jenis kepemilikan",
+    "description": "Jenis kamus kepemilikan",
+    "attributes": {
+        "code": {
+            "caption": "Kode",
+            "description": "Kode jenis kepemilikan"
+        },
+        "shortName": {
+            "caption": "Acronim",
+            "description": "Acronim dari jenis kepemilikan"
+        },
+        "name": {
+            "caption": "Nama",
+            "description": "Nama jenis kepemilikan"
+        },
+        "fullName": {
+            "caption": "Nama lengkap",
+            "description": "nama lengkap dari jenis kepemilikan"
+        }
+    }
+}

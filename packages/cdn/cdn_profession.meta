@@ -1,0 +1,48 @@
+﻿{
+	"caption": "Професії",
+	"description": "Довідник професій",
+	"connectionName": "",
+	"sqlAlias": "cdnprof",
+	"cacheType": "SessionEntity",
+	"descriptionAttribute": "name",
+	"documentation": "",
+	"attributes": {
+		"code":
+		{
+			"dataType": "String",
+			"size": 16,
+			"caption": "Код",
+			"description": "Код професії",
+			"allowNull": false,
+			"isUnique": true
+		},
+		"name":
+		{
+			"dataType": "String",
+			"size": 128,
+			"caption": "Назва",
+			"description": "Назва професії",
+			"allowNull": false,
+       		"isMultiLang": true
+		},
+		"description": {
+		 	"caption" : "Назва + код",
+			"dataType": "String",
+			"size": 128,
+        	"allowNull": false,
+			"mapping": { 
+				"AnsiSQL": {
+					"expressionType": "Expression",
+					"expression": "[name]"
+				}
+			}
+		}
+
+	},
+	"mixins": {
+		"mStorage": {
+			"simpleAudit":true,
+			"safeDelete": true
+        }
+	}
+}

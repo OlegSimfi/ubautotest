@@ -1,0 +1,29 @@
+{
+  "caption": "tst_onlyoffice",
+  "description": "only office test ground",
+  "connectionName": "",
+  "sqlAlias": "too",
+  "descriptionAttribute": "caption",
+  "cacheType": "None",
+  "attributes": {
+    "caption": {
+      "dataType": "String",
+      "size": 512,
+      "caption": "Caption",
+      "allowNull": true
+    },
+    "content": {
+      "dataType": "Document",
+      "storeName": "simple",
+      "caption": "content",
+      "description": "contents of the document",
+      "defaultView": false
+    }
+  },
+  "mixins": {
+    "mStorage": {
+      "simpleAudit": false,
+      "safeDelete": false
+    }
+  }
+}

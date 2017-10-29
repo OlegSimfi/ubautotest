@@ -1,0 +1,13 @@
+﻿{
+    "caption": "Əlaqə tipləri",
+    "description": "Əlaqə tiplərinin sorğu kitabçaları",
+    "attributes": {
+        "code": {
+            "caption": "Коd"
+        },
+        "name": {
+            "caption": "Ad",
+            "description": "Əlaqə tipinin adı"
+        }
+    }
+}

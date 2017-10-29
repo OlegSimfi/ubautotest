@@ -1,0 +1,247 @@
+﻿{
+  "caption": "Physical persons",
+  "description": "Physical persons dictionary",
+  "documentation": "The directory stores a list of persons (physical persons)",
+  "connectionName": "",
+  "sqlAlias": "cpers",
+  "cacheType": "None",
+  "descriptionAttribute": "fullFIO",
+  "documentation": "",
+  "attributes": {
+    "lastName": {
+      "dataType": "String",
+      "size": 128,
+      "caption": "Last name",
+      "description": "Last name of the person",
+      "allowNull": false,
+      "isMultiLang": true
+    },
+    "firstName": {
+      "dataType": "String",
+      "size": 128,
+      "caption": "First name",
+      "description": "First name of the person",
+      "allowNull": false,
+      "isMultiLang": true
+    },
+    "middleName": {
+      "dataType": "String",
+      "size": 128,
+      "caption": "Middle name",
+      "description": "Middle name of the person",
+      "allowNull": true,
+      "isMultiLang": true
+    },
+    "identCard": {
+      "dataType": "String",
+      "size": 255,
+      "caption": "Identity card",
+      "description": "Person's identity card",
+      "allowNull": true,
+      "isMultiLang": true
+    },
+    "workPlacePos": {
+      "dataType": "String",
+      "size": 255,
+      "caption": "Place of work, position",
+      "description": "Place of work, position",
+      "allowNull": true,
+      "isMultiLang": true
+    },
+    "birthDate": {
+      "dataType": "Date",
+      "caption": "Birthday",
+      "description": "Birthday of the person",
+      "allowNull": true
+    },
+    "description": {
+      "dataType": "String",
+      "size": 255,
+      "caption": "Description",
+      "description": "Description of the person",
+      "allowNull": true,
+      "isMultiLang": true
+    },
+    "sexType": {
+      "dataType": "Enum",
+      "enumGroup": "CDN_SEXTYPE",
+      "caption": "Sex",
+      "description": "Sex of the person",
+      "allowNull": false,
+      "defaultValue": "?"
+    },
+    "suffix": {
+      "dataType": "String",
+      "size": 30,
+      "caption": "Sufix",
+      "description": "Sufix of the person",
+      "allowNull": true,
+      "isMultiLang": true
+    },
+    "shortFIO": {
+      "dataType": "String",
+      "size": 256,
+      "caption": "Short name",
+      "description": "Example: Antonov I.P.",
+      "allowNull": true,
+      "isMultiLang": true
+    },
+    "fullFIO": {
+      "dataType": "String",
+      "size": 512,
+      "caption": "Full name",
+      "description": "Example: Antonov Ivan Petrovich",
+      "allowNull": false,
+      "isMultiLang": true
+    },
+    "apply": {
+      "dataType": "String",
+      "size": 100,
+      "caption": "Apply",
+      "description": "Apply to the person",
+      "allowNull": true,
+      "isMultiLang": true
+    },
+    "photo": {
+      "dataType": "Document",
+      "caption": "Photo",
+      "description": "Person's photo",
+      "allowNull": true,
+      "documentMIME": "image/jpeg"
+    },
+    "lastNameGen": {
+      "dataType": "String",
+      "size": 128,
+      "caption": "Last name in genitive",
+      "description": "Person's last name in genitive case",
+      "allowNull": true,
+      "isMultiLang": true
+    },
+    "lastNameDat": {
+      "dataType": "String",
+      "size": 128,
+      "caption": "Last name in dative",
+      "description": "Person's last name in dative case",
+      "allowNull": true,
+      "isMultiLang": true
+    },
+    "firstNameGen": {
+      "dataType": "String",
+      "size": 128,
+      "caption": "First name in genitive",
+      "description": "Person's first name in genitive case",
+      "allowNull": true,
+      "isMultiLang": true
+    },
+    "firstNameDat": {
+      "dataType": "String",
+      "size": 128,
+      "caption": "First name in dative",
+      "description": "Person's first name in dative case",
+      "allowNull": true,
+      "isMultiLang": true
+    },
+    "middleNameGen": {
+      "dataType": "String",
+      "size": 128,
+      "caption": "Middle name in genitive",
+      "description": "Person's middle name in genitive case",
+      "allowNull": true,
+      "isMultiLang": true
+    },
+    "middleNameDat": {
+      "dataType": "String",
+      "size": 128,
+      "caption": "Middle name in dative",
+      "description": "Person's middle name in dative case",
+      "allowNull": true,
+      "isMultiLang": true
+    },
+    "shortFIOGen": {
+      "dataType": "String",
+      "size": 256,
+      "caption": "Short name in genitive",
+      "description": "Person's short name in genitive case",
+      "allowNull": true,
+      "isMultiLang": true
+    },
+    "shortFIODat": {
+      "dataType": "String",
+      "size": 256,
+      "caption": "Short name in dative",
+      "description": "Person's short name in dative case",
+      "allowNull": true,
+      "isMultiLang": true
+    },
+    "fullFIOGen": {
+      "dataType": "String",
+      "size": 512,
+      "caption": "Full name in genitive",
+      "description": "Person's full name in genitive case",
+      "allowNull": true,
+      "isMultiLang": true
+    },
+    "fullFIODat": {
+      "dataType": "String",
+      "size": 512,
+      "caption": "Full name in dative",
+      "description": "Person's full name in dative case",
+      "allowNull": true,
+      "isMultiLang": true
+    },
+    "applyGen": {
+      "dataType": "String",
+      "size": 100,
+      "caption": "Apply in genitive",
+      "description": "Apply to the person in genitive case",
+      "allowNull": true,
+      "isMultiLang": true
+    },
+    "applyDat": {
+      "dataType": "String",
+      "size": 100,
+      "caption": "Apply in dative",
+      "description": "Apply to the person in dative case",
+      "allowNull": true,
+      "isMultiLang": true
+    },
+    "regionID": {
+      "dataType": "Entity",
+      "associatedEntity": "cdn_region",
+      "caption": "Region",
+      "description": "Person's region",
+      "allowNull": true
+    },
+    "socialstatusID": {
+      "dataType": "Entity",
+      "associatedEntity": "cdn_personsocialstatus",
+      "caption": "Social status",
+      "description": "Social status position",
+      "allowNull": true
+    },
+    "categoryID": {
+      "dataType": "Entity",
+      "associatedEntity": "cdn_personcategory",
+      "caption": "Category",
+      "description": "Category position",
+      "allowNull": true
+    }
+  },
+  "mixins": {
+    "mStorage": {
+      "simpleAudit": true,
+      "safeDelete": true
+    },
+    "dataHistory": {},
+    "fts": {
+      "scope": "Connection",
+      "connectionName": "ftsSubjectSearch",
+      "dataProvider": "Mixin",
+      "indexedAttributes": [
+        "regionID.name",
+        "shortFIO",
+        "fullFIO"
+      ]
+    }
+  }
+}

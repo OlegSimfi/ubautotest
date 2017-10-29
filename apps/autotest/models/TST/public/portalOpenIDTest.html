@@ -1,0 +1,60 @@
+﻿<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>&laquo;UB portal&raquo;</title>
+
+        <script charset="utf-8" src="/autotest/compiled/ub-core.js"></script>
+    </head>
+    <body >
+		<h1>User list</h1>
+        <div id="UBData"></div>
+        <script type="text/javascript">
+            var conn = new UBConnection({
+                 host: window.location.origin,
+                 appName: 'autotest/',
+                 requestAuthParams: function(conn, isRepeat){
+                     var deferred = Q.defer();
+                     var url = window.location.origin + '/autotest/openIDConnect/IdentityServer';
+					function getWindowConfig() {
+
+						var width = 600,
+							height = 525,
+							left = Math.floor(window.screenX + (window.outerWidth - width) / 2),
+							top = Math.floor(window.screenY + (window.outerHeight - height) / 2);
+
+						return "width=" + width + ",height=" + height + ",left=" + left + ",top=" + top + ",toolbar=0,scrollbars=1,status=1,resizable=1,location=1,menuBar=0";
+					}					 
+                     var loginWindowOpenID = window.open(url, 'login', getWindowConfig());
+                     
+					 function loginListener(event) {
+						if (event.source === loginWindowOpenID) {
+							window.removeEventListener("message", loginListener);
+							if (event.origin.indexOf(window.location.origin) === 0) {
+								var response = event.data;
+								if (response.success) {
+									response.authSchema = 'OpenIDConnect';
+									deferred.resolve(response);
+								} else {
+									deferred.reject('authOpenIDConnectFail');
+								}
+							} else {
+								deferred.reject('authOpenIDConnectFail');
+							}
+						}
+					 }
+					 window.addEventListener("message", loginListener);
+					 
+                     return deferred.promise;
+                  }
+             });
+             conn.run({entity: 'uba_user', method: 'select', fieldList: ['ID', 'name']}).done(function(result){
+				var htmlTpl = '<table cellspacing = "0" border ="1">'+
+							  '<tr><td style = "text-align: center; padding: 2px;"><b>id</b></td><td style = "text-align: center; padding: 2px;"><b>login</b></td></tr>'+
+							  '<% _.forEach(resultData.data, function(user){%><tr><td style = "padding: 2px;"><%- user[0] %></td><td style = "padding: 2px;"><%- user[1] %></td></tr><%}); %>'+
+							  '</table>';
+				document.getElementById("UBData").innerHTML = _.template(htmlTpl)(result);
+			 });
+        </script>
+    </body>
+</html>

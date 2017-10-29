@@ -1,0 +1,21 @@
+﻿{
+    "caption": "diagram",
+    "description": "diagram",
+    "attributes": {
+        "orgunitID": {
+            "caption": "Akar"
+        },
+        "caption": {
+            "caption": "Nama",
+            "description": "Nama"
+        },
+        "isdefault": {
+            "caption": "kegagalan",
+            "description": "kegagalan"
+        },
+        "document": {
+            "caption": "bagan organisasi",
+            "description": "bagan organisasi"
+        }
+    }
+}

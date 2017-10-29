@@ -1,0 +1,89 @@
+﻿{
+	"caption": "Посади",
+	"description": "Довідник посад",
+	"connectionName": "",
+	"sqlAlias": "prof",
+	"cacheType": "SessionEntity",
+	"descriptionAttribute": "name",
+	"documentation": "",
+	"attributes": {
+		"code":
+		{
+			"dataType": "String",
+			"size": 16,
+			"caption": "Код",
+			"description": "Код посади",
+			"allowNull": false,
+			"isUnique": true
+		},
+		"name":
+		{
+			"dataType": "String",
+			"size": 128,
+			"caption": "Назва",
+			"description": "Назва посади",
+			"allowNull": false,
+       		"isMultiLang": true
+		},
+        "fullName":
+        {
+            "dataType": "String",
+            "size": 255,
+            "caption": "Повна назва",
+            "description": "Повна назва посади",
+            "allowNull": false,
+            "isMultiLang": true
+        },
+        "nameGen": {
+            "dataType": "String",
+            "size": 128,
+            "caption": "Название должности в родительном падеже",
+            "description": "Полное название должности в родительном падеже",
+            "allowNull": true,
+            "isMultiLang": true
+        },		
+        "nameDat": {
+            "dataType": "String",
+            "size": 128,
+            "caption": "Название должности в дательном падеже",
+            "description": "Полное название должности в дательном падеже",
+            "allowNull": true,
+            "isMultiLang": true
+        },
+        "fullNameGen": {
+            "dataType": "String",
+            "size": 255,
+            "caption": "Полное название должности в родительном падеже",
+            "description": "Полное название должности в родительном падеже",
+            "allowNull": true,
+            "isMultiLang": true
+        },
+        "fullNameDat": {
+            "dataType": "String",
+            "size": 255,
+            "caption": "Полное название должности в дательном падеже",
+            "description": "Полное название должности в дательном падеже",
+            "allowNull": true,
+            "isMultiLang": true
+        },		
+		"description": {
+		 	"caption" : "Назва + код",
+			"dataType": "String",
+			"size": 128,
+        	"allowNull": false,
+			"mapping": { 
+				"AnsiSQL": {
+					"expressionType": "Expression",
+					"expression": "[fullName]"
+				}
+			}
+		}
+
+	},
+	"mixins": {
+		"mStorage": {
+			"simpleAudit":true,
+			"safeDelete": true
+        }
+	}
+}

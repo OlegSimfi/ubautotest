@@ -1,0 +1,12 @@
+documents/
+fts/
+main.sql
+fts*.sql
+domainDocumentation.html
+_autotestResults.json
+
+#Reports
+junit-reports
+
+# Screenshots directory
+errorShots

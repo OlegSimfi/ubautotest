@@ -1,0 +1,82 @@
+﻿{
+	"caption": "tst_ODataSimple",
+	"description": "ub tst_OData",
+	"connectionName": "",
+	"sqlAlias": "todata",
+	"cacheType": "None",
+	"descriptionAttribute": "caption",
+	"attributes": {
+		"code":	{
+			"dataType": "String",
+			"size": 32,
+			"caption": "Code",
+			"description": "Code",
+			"allowNull": false
+		},
+		"caption": {
+			"dataType": "String",
+			"size": 255,
+			"caption": "Caption",
+			"description": "Caption",
+			"allowNull": true,
+			"isMultiLang": true
+		},
+		"filterValue": {
+			"dataType": "BigInt",
+			"caption": "filterValue",
+			"description": "",
+			"allowNull": false
+		},
+		"currencyValue": {
+			"dataType": "Currency",
+			"caption": "Currency Data"
+		},
+		"calculated": {
+			"dataType": "String",
+			"size": 255,
+			"caption": "Назва",
+			"mapping": {
+				"AnsiSql": { "expressionType": "Expression", "expression": "[code] || ' ' || [caption]" },
+				"MSSQL": { "expressionType": "Expression", "expression": "[code] + ' ' + [caption]" } 
+			}
+		},
+		"booleanColumn": {
+			"dataType": "Boolean",
+            		"caption": "Test boolean column",
+            		"allowNull": true,
+            		"defaultValue": "0"
+        	},
+        	"enumColumn": {
+          		"dataType": "Enum",
+          		"enumGroup": "TEST_GROUP_1"
+        	},
+		"dateColumn": {
+			"dataType": "Date",
+			"caption": "Document date"
+		}
+	},
+	"mixins": {
+		"mStorage": {
+			"simpleAudit": false,
+			"safeDelete": false
+		}
+	},
+	"dbKeys": {
+		"UIDX_ODATACFV": {
+			"code": {},
+			"filterValue": {}
+		}
+	},
+	"dbExtensions": {
+		"UIDX_ODATACODE": {
+			"MSSQL": {
+				"expression": "CREATE UNIQUE INDEX UIDX_ODATACODE on tst_OData(code, filterValue)",
+				"exprtype": "index"
+			},
+			"Oracle": {
+				"expression": "CREATE UNIQUE INDEX UIDX_ODATACODE on tst_OData(UPPER(code), filterValue)",
+				"exprtype": "index"
+			}
+		}
+	}
+}

@@ -1,0 +1,11 @@
+[
+	{
+		"name": "Synchronize Camunda Tasks to UBPM",
+		"cron": "30 */1 * * * *",
+		"command": "tst_service.schedulerTest",
+		"schedulingCondition": "true",
+		"singleton": true,
+		"runAs": "admin",
+		"logSuccessful": true
+	}
+]

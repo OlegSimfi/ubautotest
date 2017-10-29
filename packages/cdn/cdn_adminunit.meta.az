@@ -1,0 +1,28 @@
+﻿{
+    "caption": "İnzibati vahid",
+    "description": "İnzibati vahid (ölkə, region, yaşayış məntəqəsi)",
+    "documentation": "Ölkə, region və yaşayış məntəqələri üçün ümumi əcdad",
+    "attributes": {
+        "parentAdminUnitID": {
+            "caption": "Əcdad",
+            "description": "Əcdad"
+        },
+        "code": {
+            "caption": "Kod",
+            "description": "Daxili kod"
+        },
+        "name": {
+            "caption": "Ad"
+        },
+        "fullName": {
+            "caption": "Tam ad"
+        },
+        "adminUnitType": {
+            "caption": "İnzibati vahidin tipi",
+            "documentation": "Sürətli seçin və server məntiqi üçün vahid tipinin sətri təsəvvürü"
+        },
+        "caption": {
+            "caption": "Başlıq"
+        }
+    }
+}

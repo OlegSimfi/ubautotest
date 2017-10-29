@@ -1,0 +1,28 @@
+{
+  "caption": "DocusignEnvelopeTest",
+  "description": "Test Docusign Envelope",
+  "connectionName": "",
+  "descriptionAttribute": "ID",
+  "documentation": "",
+  "attributes": {
+    "name": {
+      "dataType": "String",
+      "size": 64,
+      "caption": "name",
+      "allowNull": false
+    },
+    "envelope": {
+      "dataType": "Entity",
+      "caption": "Envelope",
+      "description": "Envelope",
+      "allowNull": true,
+      "associatedEntity": "dses_envelope"
+    }
+  },
+  "mixins": {
+    "mStorage":	{
+      "simpleAudit": true,
+      "safeDelete" : false
+    }
+  }
+}

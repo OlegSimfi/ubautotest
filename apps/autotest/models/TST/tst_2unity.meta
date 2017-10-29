@@ -1,0 +1,35 @@
+﻿{
+	"caption": "tst_2unity",
+	"description": "ub test main unity",
+	"connectionName": "",
+	"descriptionAttribute": "caption",
+	"cacheType": "None",
+	"attributes": {
+		"code":
+		{
+			"dataType": "String",
+			"size": 32,
+			"caption": "Code",
+			"allowNull": false
+		},
+		"caption":
+		{
+			"dataType": "String",
+			"size": 255,
+			"caption": "Caption",
+			"allowNull": true,
+			"isMultiLang": true
+		}
+	},
+	"mixins": {
+		"mStorage": {
+			"simpleAudit": true,
+			"safeDelete": true
+        },
+	"unity": { 
+			"entity": "tst_mainunity",
+			"attributeList": ["code"],
+			"defaults": {"caption": "2nd"} 
+		}
+	}
+}

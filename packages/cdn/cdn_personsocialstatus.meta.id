@@ -1,0 +1,14 @@
+﻿{
+    "caption": "Status sosial",
+    "description": "Kamus status sosial",
+    "attributes": {
+        "code": {
+            "caption": "Kode",
+            "description": "Kode"
+        },
+        "name": {
+            "caption": "Nama",
+            "description": "Nama status sosial"
+        }
+    }
+}

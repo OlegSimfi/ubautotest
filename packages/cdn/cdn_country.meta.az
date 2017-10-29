@@ -1,0 +1,46 @@
+﻿{
+    "caption": "Ölkələr",
+    "description": "Ölkələrin sorğu kitabçası",
+    "attributes": {
+        "code": {
+            "caption": "Коd",
+            "description": "Daxili kod"
+        },
+        "name": {
+            "caption": "Ad",
+            "description": "Ölkənin adı"
+        },
+        "fullName": {
+            "caption": "Tam ad",
+            "description": "Ölkənin tam rəsmi adı"
+        },
+        "intCode": {
+            "caption": "Rəqəmsal kod",
+            "description": "Ölkənin rəqəmsal kodu"
+        },
+        "symbol2": {
+            "caption": "2 simvollu ISO kod",
+            "description": "Ölkənin 2 simvollu kodu ISO"
+        },
+        "symbol3": {
+            "caption": "3 simvollu kod",
+            "description": "Ölkənin 3 simvollu kodu"
+        },
+        "description": {
+            "caption": "Təsvir",
+            "description": "Ölkənin təsviri"
+        },
+        "phoneCode": {
+            "caption": "Telefon kodu",
+            "description": "Ölkənin telefon kodu"
+        },
+        "currencyID": {
+            "caption": "Valyuta",
+            "description": "Bu ölkədə istifadə edilən əsas valyuta"
+        },
+        "capitalID": {
+            "caption": "Paytaxt",
+            "description": "Ölkənin paytaxtı"
+        }
+    }
+}

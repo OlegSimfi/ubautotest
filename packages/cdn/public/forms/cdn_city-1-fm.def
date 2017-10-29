@@ -1,0 +1,38 @@
+//@! "do not remove comments below unless you know what you do!"
+//@isDefault "true"
+//@entity "cdn_city"
+//@formType "auto"
+//@caption "Населенные пункты"
+//@description "Справочник населенных пунктов"
+exports.formDef = {
+
+    size: {
+        width: 400,
+        height: 350
+    },
+    parentConfig: {
+        layout: {
+            type: "vbox",
+            align: "stretch" //max
+        }
+    },
+
+    items: [
+        { attributeName: "caption", disabled: true},
+        { attributeName: "parentAdminUnitID", fieldList: ["name", "adminUnitType"],
+            whereList: {
+                "type": {
+                    expression: '[adminUnitType]',
+                    condition: 'equal',
+                    values: {'adminUnitType': 'DISTRICT'}
+                }
+            }
+        },
+        { attributeName: "code"},
+        { attributeName: "name"},
+        { attributeName: "description"},
+        { attributeName: "postalCode"},
+        { attributeName: "phoneCode"},
+        { attributeName: "cityTypeID"}
+    ]
+};

@@ -1,0 +1,37 @@
+﻿{
+    "caption": "posisi",
+    "description": "Daftar posisi",
+    "attributes": {
+        "code": {
+            "caption": "Kode",
+            "description": "Kode posisi"
+        },
+        "name": {
+            "caption": "Nama",
+            "description": "nama posisi"
+        },
+        "fullName": {
+            "caption": "Nama lengkap",
+            "description": "Posisi nama lengkap"
+        },
+        "nameGen": {
+            "caption": "Nama dalam kasus genitif",
+            "description": "nama posisi dalam kasus genitif"
+        },
+        "nameDat": {
+            "caption": "Nama di dativus",
+            "description": "nama posisi di dativus"
+        },
+        "fullNameGen": {
+            "caption": "nama lengkap dalam kasus genitif",
+            "description": "Posisi nama lengkap dalam kasus genitif"
+        },
+        "fullNameDat": {
+            "caption": "nama lengkap di dativus",
+            "description": "Posisi nama lengkap di dativus"
+        },
+        "description": {
+            "caption": "caption"
+        }
+    }
+}

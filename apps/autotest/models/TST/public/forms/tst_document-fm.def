@@ -1,0 +1,20 @@
+//@! "do not remove comments below unless you know what you do!"
+//@isDefault "false"
+//@entity "tst_document"
+//@formType "auto"
+//@caption "tst_document.meta"
+//@description "Document type attribute test"
+exports.formDef = {
+	items:[
+		{ attributeName: "code" /*Code*/},
+        { attributeName: "description",width: 800},
+		{ xtype: 'ubfieldset', 
+          text: 'Grouped data',
+          items: [
+        	{ attributeName: "docDate"},
+			{ attributeName: "docDateTime"}
+          ]
+        },
+        { attributeName: "fileStoreSimple", expanded: true, height: 500}
+	]
+};

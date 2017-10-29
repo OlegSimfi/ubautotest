@@ -1,0 +1,2 @@
+code;entityMask;methodMask;ruleType;ruleRole;description
+UBM_READ_ANONYMOUS;ubm*;select;A;Anonymous;Allow read all UBM model entities for Anonymous for test purpose

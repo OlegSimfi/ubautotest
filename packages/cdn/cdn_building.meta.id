@@ -1,0 +1,24 @@
+﻿{
+    "caption": "Daftar bangunan",
+    "description": "Daftar bangunan",
+    "attributes": {
+        "streetID": {
+            "caption": "jalan"
+        },
+        "postIndexID": {
+            "caption": "Indeks"
+        },
+        "code": {
+            "caption": "num",
+            "description": "Kode"
+        },
+        "description": {
+            "caption": "Deskripsi",
+            "description": "Deskripsi"
+        },
+        "buildingType": {
+            "caption": "Mengetik",
+            "description": "Mengetik"
+        }
+    }
+}

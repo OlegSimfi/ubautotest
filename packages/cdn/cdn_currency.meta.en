@@ -1,0 +1,18 @@
+﻿{
+    "caption": "Currencies",
+    "description": "Currencies dictionary",
+    "attributes": {
+        "intCode": {
+            "caption": "Digital code",
+            "description": "Digital code of currency"
+        },
+        "code3": {
+            "caption": "3-character code",
+            "description": "3-character code of currency"
+        },
+        "name": {
+            "caption": "Name",
+            "description": "Name of currency"
+        }
+    }
+}

@@ -1,0 +1,67 @@
+﻿{
+    "caption": "Staff units",
+    "description": "List of staff units",
+    "documentation": "В этом справочнике хранится перечень штатных единиц (должностей). Каждая штатная единица по UNITY складывается в org_unit",
+    "attributes": {
+        "parentID": {
+            "caption": "Parent",
+            "description": "Parent"
+        },
+        "code": {
+            "caption": "Internal code",
+            "description": "Staff unit internal code"
+        },
+        "name": {
+            "caption": "Staff unit name",
+            "description": "Name of staff unit without the quotes and abbreviations"
+        },
+        "fullName": {
+            "caption": "Full name",
+            "description": "Staff unit full name"
+        },
+        "description": {
+            "caption": "Staff unit description",
+            "description": "Staff unit description"
+        },
+        "nameGen": {
+            "caption": "Staff unit name in genitive case",
+            "description": "Name of staff unit without the quotes and abbreviations in genitive case"
+        },
+        "nameDat": {
+            "caption": "Staff unit name in dative case",
+            "description": "Name of staff unit without the quotes and abbreviations in dative case"
+        },
+        "fullNameGen": {
+            "caption": "Full name in genitive case",
+            "description": "Staff unit full name in genitive case"
+        },
+        "fullNameDat": {
+            "caption": "Full name in dative case",
+            "description": "Staff unit full name in dative case"
+        },
+        "caption": {
+            "caption": "Caption",
+            "description": "Caption"
+        },
+        "professionExtID": {
+            "caption": "Profession",
+            "description": "Profession"
+        },
+        "professionID": {
+            "caption": "Position",
+            "description": "Position"
+        },
+        "staffUnitTypeID": {
+            "caption": "Staff unit type",
+            "description": "Staff unit type"
+        },
+        "subordinationLevel": {
+            "caption": "Subordination level",
+            "description": "If level is lower - then staff unit is more important"
+        },
+        "isBoss": {
+            "caption": "Boss",
+            "description": "Boss"
+        }
+    }
+}

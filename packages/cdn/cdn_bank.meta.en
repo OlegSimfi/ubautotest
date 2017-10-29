@@ -1,0 +1,32 @@
+﻿{
+    "caption": "Bank branches",
+    "description": "Bank branches directory",
+    "attributes": {
+        "MFO": {
+            "caption": "Bank code",
+            "description": "Bank branch code"
+        },
+        "code": {
+            "caption": "Organization code",
+            "description": "Bank organization code"
+        },
+        "name": {
+            "caption": "Name",
+            "description": "Name without quotes and ownership. For searching data."
+        },
+        "fullName": {
+            "caption": "Full name",
+            "description": "Full official bank name . For displaying in reports."
+        },
+        "phones": {
+            "caption": "Phones"
+        },
+        "address": {
+            "caption": "Address"
+        },
+        "countryID": {
+            "caption": "Country",
+            "description": "Registration country"
+        }
+    }
+}

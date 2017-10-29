@@ -1,0 +1,18 @@
+﻿{
+    "caption": "Valyutalar",
+    "description": "Valyutalar üzrə sorğu kitabçası",
+    "attributes": {
+        "intCode": {
+            "caption": "Rəqəmsal kod",
+            "description": "Rəqəmsal kod"
+        },
+        "code3": {
+            "caption": "3 simvollu kod",
+            "description": "valyutanın 3 simvollu kodu"
+        },
+        "name": {
+            "caption": "Ad",
+            "description": "Valyutanın adı"
+        }
+    }
+}

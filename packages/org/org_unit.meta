@@ -1,0 +1,69 @@
+﻿{
+	"caption": "Организационные единицы",
+	"description": "Справочник организационных единиц (организации, департаменты и штатные единицы)",
+    	"documentation":"Справочник, в который по UNITY складываются организации (org_organization), департаменты (org_department)
+                    и штатные единицы (org_staffunit). Справочник самозацикленный, что позволяет строить
+                    иерархию по всем организационным единицам в одном дереве",
+	"connectionName": "",
+	"sqlAlias": "ounit",
+	"cacheType": "catySession",
+	"descriptionAttribute": "caption",
+	"attributes": {
+		"parentID":
+		{
+			"dataType": "Entity",
+			"associatedEntity": "org_unit",
+			"caption": "Предок",
+			"description": "Предок",
+			"allowNull": true
+		},		
+		"code":
+		{
+			"dataType": "String",
+			"size": 16,
+			"caption": "Внутренний код",
+			"description": "Внутренний код организационной единицы",
+			"allowNull": false
+		},
+        "caption":
+        {
+            "dataType": "String",
+            "size": 1024,
+            "caption": "Заголовок",
+            "description": "Заголовок",
+            "allowNull": false,
+            "isMultiLang": true
+        },
+//        "executorName":
+//        {
+//            "dataType": "String",
+//            "size": 255,
+//            "caption": "Название исполнителя",
+//            "description": "Для штатных единиц - ФИО работника на текущем основном назначении, для департаментов - название",
+//            "allowNull": false,
+//            "isMultiLang": true
+//        },
+		"unitType":
+		{
+			"dataType": "Enum",
+			"enumGroup": "ORG_UNITTYPE",
+			"caption": "Тип орг. единицы",
+			"description": "Тип организационной единицы",
+			"allowNull": false,
+			"isMultiLang": false
+		}
+	},
+	"mixins": {
+		"mStorage": {
+			"simpleAudit":true,
+			"safeDelete":true
+        },
+		"dataHistory":{},
+		"tree": {
+			"parentAttr": "parentID"
+		},
+		"audit": {
+			"enabled": false
+		}
+	}
+}

@@ -1,0 +1,33 @@
+{
+  "name": "ub-jsdoc",
+  "version": "1.4.16",
+  "description": "JSDoc 3 Template / Theme",
+  "main": "publish.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "public": true,
+  "publishConfig": {
+    "registry": "http://registry.unitybase.info"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UnityBaseJS/ub-jsdoc.git"
+  },
+  "author": "Pavl Mash <pavel.mash@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/UnityBaseJS/ub-jsdoc/issues"
+  },
+  "homepage": "https://github.com/UnityBaseJS/ub-jsdoc",
+  "dependencies": {
+    "jsdoc": "~3.4.0",
+    "lunr": "^0.7.0"
+  },
+  "keywords": [
+    "jsdoc",
+    "documentation",
+    "template",
+    "theme"
+  ]
+}

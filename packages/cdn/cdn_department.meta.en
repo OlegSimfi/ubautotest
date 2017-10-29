@@ -1,0 +1,46 @@
+﻿{
+    "caption": "External departments",
+    "description": "External departments dictionary",
+    "attributes": {
+        "code": {
+            "caption": "Code",
+            "description": "Code of the department"
+        },
+        "name": {
+            "caption": "Name",
+            "description": "Name of the department"
+        },
+        "fullName": {
+            "caption": "Full name",
+            "description": "Full official name of the department"
+        },
+        "description": {
+            "caption": "Description",
+            "description": "Description of the department"
+        },
+        "nameGen": {
+            "caption": "Name in genitive case",
+            "description": "Department name in genitive case"
+        },
+        "nameDat": {
+            "caption": "Name in dative case",
+            "description": "Department name in dative case"
+        },
+        "fullNameGen": {
+            "caption": "Full name in genitive case",
+            "description": "Department full official name in genitive case"
+        },
+        "fullNameDat": {
+            "caption": "Full name in dative case",
+            "description": "Department full official name in dative case"
+        },
+        "depTypeID": {
+            "caption": "Type",
+            "description": "Type of the department"
+        },
+        "organizationID": {
+            "caption": "Organization",
+            "description": "Parent external organization"
+        }
+    }
+}

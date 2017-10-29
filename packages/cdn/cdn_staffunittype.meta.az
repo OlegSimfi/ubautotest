@@ -1,0 +1,14 @@
+﻿{
+    "caption": "Ştat vahidlərinin tipləri",
+    "description": "Ştat vahidlərinin tipləri üzrə sorğu kitabçaları",
+    "attributes": {
+        "code": {
+            "caption": "Коd",
+            "description": "Коd"
+        },
+        "name": {
+            "caption": "Ad",
+            "description": "Ştat vahidi tipinin adı"
+        }
+    }
+}

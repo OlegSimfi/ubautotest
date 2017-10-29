@@ -1,0 +1,22 @@
+﻿{
+    "caption": "Mülkiyyət forması",
+    "description": "Təşkilatların mülkiyyət formaları üzrə sorğu kitabçası",
+    "attributes": {
+        "code": {
+            "caption": "Коd",
+            "description": "Mülkiyyət formasının daxili kodu"
+        },
+        "shortName": {
+            "caption": "Abbreviatura",
+            "description": "Mülkiyyət formasının abbreviaturası"
+        },
+        "name": {
+            "caption": "Ad",
+            "description": "Mülkiyyət formasının adı"
+        },
+        "fullName": {
+            "caption": "Tam ad",
+            "description": "Mülkiyyət formasının tam adı"
+        }
+    }
+}

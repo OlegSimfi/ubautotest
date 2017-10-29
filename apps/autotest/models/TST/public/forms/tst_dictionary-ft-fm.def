@@ -1,0 +1,18 @@
+// @! "do not remove comments below unless you know what you do!"
+// @isDefault "false"
+// @entity "tst_dictionary"
+// @model "TST"
+// @formType "auto"
+// @caption " sdsdsds"
+// @description "sadsa sa"
+exports.formDef = {
+	items: [
+	  { attributeName: "code" /*Code*/},
+      { attributeName: "caption" /*Caption*/},
+    { attributeName: "filterValue" /*filterValue*/},
+    { attributeName: "currencyValue" /*Currency Data*/},
+    { attributeName: "floatValue" /*Float Data*/},
+    { attributeName: "calculated" /*Назва*/},
+    { attributeName: "booleanColumn" /*Test boolean column*/}
+	]
+};

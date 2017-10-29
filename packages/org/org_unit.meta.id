@@ -1,0 +1,22 @@
+﻿{
+    "caption": "unit organisasi",
+    "description": "Daftar unit organisasi",
+    "attributes": {
+        "parentID": {
+            "caption": "Induk",
+            "description": "Induk"
+        },
+        "code": {
+            "caption": "kode internal",
+            "description": "Unit organisasi kode internal"
+        },
+        "caption": {
+            "caption": "caption",
+            "description": "caption"
+        },
+        "unitType": {
+            "caption": "Org. jenis unit",
+            "description": "Org. jenis unit"
+        }
+    }
+}

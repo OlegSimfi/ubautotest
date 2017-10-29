@@ -1,0 +1,12 @@
+﻿{
+    "caption": "Əlaqələr",
+    "description": "Əlaqələr üzrə sorğu kitabçası",
+    "attributes": {
+        "contactTypeID": {
+            "caption": "Əlaqənin tipi"
+        },
+        "value": {
+            "caption": "Əlaqə"
+        }
+    }
+}

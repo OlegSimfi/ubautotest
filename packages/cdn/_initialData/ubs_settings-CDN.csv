@@ -1,0 +1,4 @@
+settingKey;type;defaultValue;settingValue;name;description
+cdn.organization.accessAddGovByRoles;string;"admin";"admin";Comma separated list of roles;Comma separated list of roles who can add rows to `cdn_organigation` with types `cdn_orgbusinesstype.isGovAuthority`
+cdn.organization.allowAutoGenerateOKPO;boolean;"false";"false";Allow automatically generation of cdn_organization.OKPOCode value;Allow automatically generation of cdn_organization.OKPOCode value
+

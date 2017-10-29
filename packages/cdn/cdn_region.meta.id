@@ -1,0 +1,42 @@
+﻿{
+    "caption": "daerah",
+    "description": "daerah kamus",
+    "attributes": {
+        "parentAdminUnitID": {
+            "caption": "Induk",
+            "description": "Induk"
+        },
+        "code": {
+            "caption": "Kode",
+            "description": "kode internal"
+        },
+        "regionTypeID": {
+            "caption": "Mengetik",
+            "description": "Tipe daerah"
+        },
+        "name": {
+            "caption": "Nama",
+            "description": "Nama wilayah"
+        },
+        "caption": {
+            "caption": "caption",
+            "description": "caption"
+        },
+        "fullName": {
+            "caption": "Nama lengkap",
+            "description": "nama lengkap dari daerah"
+        },
+        "description": {
+            "caption": "Deskripsi",
+            "description": "Deskripsi wilayah"
+        },
+        "phoneCode": {
+            "caption": "kode telepon",
+            "description": "kode telepon daerah"
+        },
+        "centerID": {
+            "caption": "Pusat",
+            "description": "Pusat daerah"
+        }
+    }
+}

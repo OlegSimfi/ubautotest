@@ -1,0 +1,125 @@
+﻿{
+	"caption": "Внутренние подразделения",
+	"description": "Справочник внутренних подразделений",
+    "documentation":"В этом справочнике хранится перечень депаратментов. Каждый департамент по UNITY складывается в org_unit",
+	"connectionName": "",
+	"sqlAlias": "odep",
+	"cacheType": "catySession",
+	"descriptionAttribute": "caption",
+	"documentation": "",
+	"attributes": {
+		"parentID":                                                    
+		{
+			"dataType": "Entity",
+			"associatedEntity": "org_unit",
+			"caption": "Предок",
+			"description": "Предок",
+			"allowNull": true
+		},
+		"code":
+		{
+			"dataType": "String",
+			"size": 16,
+			"caption": "Внутренний код",
+			"description": "Внутренний код подразделения",
+			"allowNull": false
+		},
+		"name":
+		{
+			"dataType": "String",
+			"size": 128,
+			"caption": "Название подразделения",
+			"description": "Название без кавычек и абревиатур",
+			"allowNull": false,
+            "isMultiLang": true
+		},
+		"fullName":
+		{
+			"dataType": "String",
+			"size": 255,
+			"caption": "Полное название подразделения",
+			"description": "Полное название подразделения",
+			"allowNull": false,
+            "isMultiLang": true
+		},
+		"description":
+		{
+			"dataType": "String",
+			"size": 255,
+			"caption": "Описание подразделения",
+			"description": "Описание",
+			"allowNull": true,
+            "isMultiLang": true
+		},
+        "nameGen": {
+            "dataType": "String",
+            "size": 128,
+            "caption": "Название в родит. падеже",
+            "description": "Название без кавычек и аббревиатур в родительном падеже",
+            "allowNull": true,
+            "isMultiLang": true
+        },		
+        "nameDat": {
+            "dataType": "String",
+            "size": 128,
+            "caption": "Название в дат. падеже",
+            "description": "Название без кавычек и аббревиатур в дательном падеже",
+            "allowNull": true,
+            "isMultiLang": true
+        },
+        "fullNameGen": {
+            "dataType": "String",
+            "size": 255,
+            "caption": "Полное название в родит. падеже",
+            "description": "Полное название подразделения в родительном падеже",
+            "allowNull": true,
+            "isMultiLang": true
+        },
+        "fullNameDat": {
+            "dataType": "String",
+            "size": 255,
+            "caption": "Полное название в дат. падеже",
+            "description": "Полное название подразделения в дательном падеже",
+            "allowNull": true,
+            "isMultiLang": true
+        },		
+		"depTypeID":
+		{
+			"dataType": "Entity",
+			"associatedEntity": "cdn_deptype",
+			"caption": "Тип подразделения",
+			"description": "Тип подразделения",
+			"allowNull": true
+		},
+        "isClerical":
+        {
+            "dataType": "Boolean",
+            "caption": "Деловодное?",
+            "description": "Является ли это подразделение деловодным",
+			"defaultValue": "0"
+        },
+		"caption":
+		{
+			"dataType": "String",
+            "size": 512,
+			"caption": "Заголовок",
+			"description": "Заголовок",
+            "isMultiLang": true,
+			"allowNull": false
+		}
+	},
+	"mixins": {
+		"mStorage": {
+			"simpleAudit":true,
+			"safeDelete":true
+         },
+		"dataHistory":{},
+		"unity":{
+			"entity": "org_unit",
+			"attributeList": ["parentID","code","caption"], 
+			"defaults":{ 
+				"unitType": "DEP" 
+			} 
+		}
+	}
+}

@@ -1,0 +1,35 @@
+{
+	"caption": "Типы департаментов",
+	"description": "Справочник типов департаментов",
+	"connectionName": "",
+	"sqlAlias": "dept",
+	"cacheType": "SessionEntity",
+	"descriptionAttribute": "name",
+	"attributes": {
+		"code":
+		{
+			"dataType": "String",
+			"size": 32,
+			"caption": "Код",
+			"description": "Внутренний код типа департамента",
+			"allowNull": false,
+			"isMultiLang": false,
+			"isUnique": true
+		},
+		"name":
+		{
+			"dataType": "String",
+			"size": 100,
+			"caption": "Название",
+			"description": "Название типа департамента",
+			"allowNull": false,
+			"isMultiLang": true
+		}
+	},
+	"mixins": {
+		"mStorage": {
+			"simpleAudit":true,
+			"safeDelete":true
+	    }
+	}
+}

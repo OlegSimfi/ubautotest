@@ -1,0 +1,62 @@
+﻿{
+	"caption": "Назначения внутренней организации",
+	"description": "Справочник назначений внутренней организации",
+    "documentation":"Развязочная сущность, в которой указывается какой работник на какой штатной единице работает (назначение).Так же есть тип назначения (временное, постоянное, полставки и т.д.)",
+	"connectionName": "",
+	"sqlAlias": "empons",
+	"cacheType": "catySession",
+	"descriptionAttribute": "caption",
+	"attributes": {
+		"tabNo": {
+			"dataType": "String",
+			"size": 20,
+			"caption": "Таб. №",
+			"description": "Табельный номер",
+			"allowNull": false
+		},
+		"employeeID": {
+			"dataType": "Entity",
+			"associatedEntity": "org_employee",
+			"caption": "Сотрудник",
+			"description": "Сотрудник",
+			"allowNull": false          
+		},
+		"staffUnitID":	{
+			"dataType": "Entity",
+			"associatedEntity": "org_staffunit",
+			"caption": "Штатная единица",
+			"description": "Штатная единица внутренней организации",
+			"allowNull": false            
+		},
+		"employeeOnStaffType": {
+			"dataType": "Enum",
+			"enumGroup": "CDN_EMPLOYEEONSTAFFTYPE",
+			"caption": "Тип назначения",
+			"description": "Тип назначения",
+			"allowNull": false            
+		},						
+		"description": {
+			"dataType": "String",
+			"size": 255,
+			"caption": "Описание",
+			"description": "Описание назначения",
+			"allowNull": true,
+			"isMultiLang": true
+		},
+        "caption": {
+            "dataType": "String",
+            "size": 1024,
+            "caption": "Заголовок",
+            "description": "Заголовок",
+            "allowNull": true,
+            "isMultilang": true
+        }
+	},
+	"mixins": {
+		"mStorage": {
+			"simpleAudit":true,
+			"safeDelete":true
+        	},
+		"dataHistory":{}
+	}
+}

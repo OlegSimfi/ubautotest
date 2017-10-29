@@ -1,0 +1,23 @@
+﻿{
+    "caption": "Organization units",
+    "description": "List of organization units",
+    "documentation": "Справочник, в который по UNITY складываются организации (org_organization), департаменты (org_department) и штатные единицы (org_staffunit). Справочник самозацикленный, что позволяет строить иерархию по всем организационным единицам в одном дереве",
+    "attributes": {
+        "parentID": {
+            "caption": "Parent",
+            "description": "Parent"
+        },
+        "code": {
+            "caption": "Internal code",
+            "description": "Organization unit internal code"
+        },
+        "caption": {
+            "caption": "Caption",
+            "description": "Caption"
+        },
+        "unitType": {
+            "caption": "Org. unit type",
+            "description": "Org. unit type"
+        }
+    }
+}

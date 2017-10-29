@@ -1,0 +1,33 @@
+{
+    "caption": "Contact types",
+    "description": "Справочник типов контактов",
+    "connectionName": "",
+    "sqlAlias": "contty",
+    "cacheType": "SessionEntity",
+    "descriptionAttribute": "name",
+    "documentation": "",
+    "attributes": {
+        "code": {
+            "dataType": "String",
+            "size": 16,
+            "caption": "Code",
+            "allowNull": false,
+            "isMultiLang": false,
+			"isUnique": true
+        },
+        "name": {
+            "dataType": "String",
+            "size": 128,
+            "caption": "Name",
+            "description": "Contact type name",
+            "allowNull": false,
+            "isMultiLang": true
+        }
+    },
+    "mixins": {
+        "mStorage": {
+            "simpleAudit": true,
+            "safeDelete": true
+        }
+    }
+}

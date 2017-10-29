@@ -1,0 +1,239 @@
+{
+	"caption": "Сотрудники внешних организаций",
+	"description": "Справочник сотрудников внешних организаций",
+	"connectionName": "",
+	"sqlAlias": "emp",
+	"cacheType": "None",
+	"descriptionAttribute": "fullFIO",
+	"documentation": "",
+	"attributes": {
+		"lastName":
+		{
+			"dataType": "String",
+			"size": 128,
+			"caption": "Фамилия",
+			"description": "Фамилия сотрудника",
+			"allowNull": false,
+            "isMultiLang": true
+		},
+		"firstName":
+		{
+			"dataType": "String",
+			"size": 128,
+			"caption": "Имя",
+			"description": "Имя сотрудника",
+			"allowNull": false,
+            "isMultiLang": true
+		},
+		"middleName":
+		{
+			"dataType": "String",
+			"size": 128,
+			"caption": "Отчество",
+			"description": "Отчество сотрудника",
+			"allowNull": true,
+            "isMultiLang": true
+		},				
+		"description":
+		{
+			"dataType": "String",
+			"size": 255,
+			"caption": "Описание сотрудника внешней организации",
+			"description": "Описание",
+			"allowNull": true,
+            "isMultiLang": true
+		},
+		"sexType":
+		{
+			"dataType": "Enum",
+			"enumGroup": "CDN_SEXTYPE",
+			"caption": "Пол",
+			"description": "Пол сотрудника внешней организации",
+			"allowNull": false,
+			"defaultValue": "?"
+		},		
+		"uniqNum":
+		{
+			"dataType": "String",
+			"size": 255,
+			"caption": "Табельный номер",
+			"description": "Табельный номер сотрудника внешней организации",
+			"allowNull": true
+		},		
+		"suffix":
+		{
+			"dataType": "String",
+			"size": 30,
+			"caption": "Суффикс",
+			"description": "Суффикс",
+			"allowNull": true,
+            "isMultiLang": true
+		},			
+		"shortFIO":
+		{
+			"dataType": "String",
+			"size": 100,
+			"caption": "Краткое ФИО",
+			"description": "Пример: Фамилия И.О.",
+			"allowNull": false,
+            "isMultiLang": true
+		},			
+		"fullFIO":
+		{
+			"dataType": "String",
+			"size": 100,
+			"caption": "Полное ФИО",
+			"description": "Пример: Фамилия Имя Отчество",
+			"allowNull": false,
+            "isMultiLang": true
+		},		
+		"apply":
+		{
+			"dataType": "String",
+			"size": 100,
+			"caption": "Обращение",
+			"description": "Как обращаться к этому человеку",
+			"allowNull": true,
+            "isMultiLang": true
+		},
+		"lastNameGen":
+		{
+			"dataType": "String",
+			"size": 128,
+			"caption": "Фамилия в род. падеже",
+			"description": "Фамилия сотрудника в родительном падеже",
+			"allowNull": true,
+			"isMultiLang": true
+		},		
+		"lastNameDat":
+		{
+			"dataType": "String",
+			"size": 128,
+			"caption": "Фамилия в дат. падеже",
+			"description": "Фамилия сотрудника в дательном падеже",
+			"allowNull": true,
+			"isMultiLang": true
+		},
+		"firstNameGen":
+		{
+			"dataType": "String",
+			"size": 128,
+			"caption": "Имя в род. падеже",
+			"description": "Имя сотрудника в родительном падеже",
+			"allowNull": true,
+			"isMultiLang": true
+		},		
+		"firstNameDat":
+		{
+			"dataType": "String",
+			"size": 128,
+			"caption": "Имя в дат. падеже",
+			"description": "Имя сотрудника в дательном падеже",
+			"allowNull": true,
+			"isMultiLang": true
+		},
+		"middleNameGen":
+		{
+			"dataType": "String",
+			"size": 128,
+			"caption": "Отчество в род. падеже",
+			"description": "Отчество сотрудника в родительном падеже",
+			"allowNull": true,
+			"isMultiLang": true
+		},		
+		"middleNameDat":
+		{
+			"dataType": "String",
+			"size": 128,
+			"caption": "Отчество в дат. падеже",
+			"description": "Отчество сотрудника в дательном падеже",
+			"allowNull": true,
+			"isMultiLang": true
+		},
+		"shortFIOGen":
+		{
+			"dataType": "String",
+			"size": 256,
+			"caption": "Краткое ФИО в род. падеже",
+			"description": "Краткое ФИО в родительном падеже",
+			"allowNull": true,
+			"isMultiLang": true
+		},			
+		"shortFIODat":
+		{
+			"dataType": "String",
+			"size": 256,
+			"caption": "Краткое ФИО в дат. падеже",
+			"description": "Краткое ФИО в дательном падеже",
+			"allowNull": true,
+			"isMultiLang": true
+		},
+		"fullFIOGen":
+		{
+			"dataType": "String",
+			"size": 512,
+			"caption": "Полное ФИО в род. падеже",
+			"description": "Полное ФИО в родительном падеже",
+			"allowNull": true,
+			"isMultiLang": true
+		},
+		"fullFIODat":
+		{
+			"dataType": "String",
+			"size": 512,
+			"caption": "Полное ФИО в дат. падеже",
+			"description": "Полное ФИО в дательном падеже",
+			"allowNull": true,
+			"isMultiLang": true
+		},
+		"applyGen":
+		{
+			"dataType": "String",
+			"size": 100,
+			"caption": "Обращение в род. падеже",
+			"description": "Как обращаться к этому человеку в родительном падеже",
+			"allowNull": true,
+            "isMultiLang": true
+		},
+		"applyDat":
+		{
+			"dataType": "String",
+			"size": 100,
+			"caption": "Обращение в дат. падеже",
+			"description": "Как обращаться к этому человеку в дательном падеже",
+			"allowNull": true,
+            "isMultiLang": true
+		},		
+		"departmentID":
+		{
+			"dataType": "Entity",
+			"associatedEntity": "cdn_department",
+			"caption": "Департамент",
+			"description": "Департамент внешней организации, к которой принадлежит этот сотрудник",
+			"allowNull": true
+		},				
+		"organizationID":
+		{
+			"dataType": "Entity",
+			"associatedEntity": "cdn_organization",
+			"caption": "Организация",
+			"description": "Внешняя организация, к которой принадлежит этот сотрудник",
+			"allowNull": false
+		},
+        "addrText":
+        {
+            "dataType": "Text",
+            "caption": "Формулировка адресата",
+            "description": "Формулировка адресата, которая будет отображаться при формировании PDF образа исходящего документа",
+            "allowNull": true,
+            "isMultiLang": true
+        }
+	},
+	"mixins": {
+		"mStorage": {
+			"simpleAudit":true,
+			"safeDelete":true
+        },
+		"dataHistory":{}		
+	}
+}

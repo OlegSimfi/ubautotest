@@ -1,0 +1,89 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>&laquo;UB domain documentation&raquo;</title>
+
+    <link rel="shortcut icon" href="images/UBLogo16.ico" />
+    <link rel="icon" href="images/UBLogo32.png" type="image/png" sizes="32x32" />
+    <link rel="icon" href="images/UBLogo48.png" type="image/png" sizes="48x48" />
+    <link rel="icon" href="images/UBLogo128.png" type="image/png" sizes="128x128" />
+	<style type="text/css">
+        .entity-header{
+            color: black;
+            /*background-color: #eff4ff;*/
+            border: 0 solid #bcd3ff;
+            width: 50%;
+            font-size: 120%;
+            text-align: center;
+            /* height: 38px; */
+        }
+        .entity-header  span{
+            display: block;
+        }
+        .attribute-table{
+            color: black;
+            background-color: #205081;
+            border: 1px solid #eff4ff;
+            width: 50%;
+
+            /* height: 38px; */
+        }
+        .attribute-table-header{
+            color: black;
+            font-size: 120%;
+            background-color: #eff4ff;
+            border: 1px solid black;
+            /* height: 38px; */
+        }
+
+        .attribute-table-row{
+            border-bottom: 2px solid #bcd3ff;
+            background-color: #ffffff;
+        }
+	</style>
+</head>
+<body>
+
+<h2>Available models:</h2>
+<ul>
+{{#domain}}
+<li><a href=#model-{{modelCode}}>{{modelCode}}</a></li>
+{{/domain}}
+</ul>
+
+{{#domain}}
+<a name="model-{{modelCode}}"><h2>{{#i18n}}Model{{/i18n}} {{modelCode}}</h2></a>
+
+{{#entities}}
+<div class = "entity-header">
+  <a name={{entityCode}}> <h3>{{caption}} ({{entityCode}})</h3></a> {{description}}
+</div>
+<br> 
+{{documentation}}
+<table class = "attribute-table">
+    <thead class = "attribute-table-header">
+	    <td>{{#i18n}}Attribute{{/i18n}}</td> <td>{{#i18n}}Type{{/i18n}}</td> <td>{{#i18n}}Caption{{/i18n}}</td> <td>{{#i18n}}Description{{/i18n}}</td>
+    </thead>
+    <tbody>
+    {{#attributes}}
+    <tr class = "attribute-table-row">
+        <td>{{attrCode}}{{^allowNull}}<sup>*</sup>{{/allowNull}}</td> 
+	{{#associatedEntity}}<td><a href=#{{associatedEntity}}>{{associatedEntity}}</a></td>{{/associatedEntity}}
+	{{^associatedEntity}}<td>{{dataType}}</td>{{/associatedEntity}}
+	<td>{{caption}}</td> 
+	<td>{{description}}</td>
+    </tr>
+    {{/attributes}}
+    </tbody>
+</table>
+<br>Mixins:{{#mixins}} {{mixinCode}} {{/mixins}}
+<br>
+{{/entities}}
+{{/domain}}
+
+
+
+</body>
+</html>

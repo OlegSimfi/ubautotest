@@ -1,0 +1,26 @@
+﻿{
+    "caption": "Təşkilat tipləri",
+    "description": "Təşkilat tipləri üzrə sorğu kitabçaları",
+    "attributes": {
+        "code": {
+            "caption": "Кod",
+            "description": "Təşkilat tipinin daxili kodu"
+        },
+        "shortName": {
+            "caption": "Abreviatura",
+            "description": "Təşkilat tipinin abreviaturası"
+        },
+        "name": {
+            "caption": "Ad",
+            "description": "Təşkilat tipinin adı"
+        },
+        "fullName": {
+            "caption": "Təsvir",
+            "description": "Təşkilat tipinin təsviri"
+        },
+        "isGovAuthority": {
+            "caption": "Döv. orqanı",
+            "description": "Göstərilən təşkilatın dövlət orqanı olmasına işarə"
+        }
+    }
+}

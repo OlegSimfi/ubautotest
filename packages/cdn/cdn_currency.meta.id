@@ -1,0 +1,18 @@
+﻿{
+    "caption": "mata uang",
+    "description": "mata uang kamus",
+    "attributes": {
+        "intCode": {
+            "caption": "kode digital",
+            "description": "kode digital dari mata uang"
+        },
+        "code3": {
+            "caption": "kode 3-karakter",
+            "description": "kode 3-karakter dari mata uang"
+        },
+        "name": {
+            "caption": "Nama",
+            "description": "Nama mata uang"
+        }
+    }
+}

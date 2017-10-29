@@ -1,0 +1,55 @@
+{
+					"name": "UB",
+					"path": "./node_modules/@unitybase/ub"
+				},
+				{
+					"name": "UBA",
+					"path": "./node_modules/@unitybase/uba"
+				},
+				{
+					"name": "UBS",
+					"path": "%UB_HOME%\\node_modules\\ub_model_ubs"
+				},
+				{
+					"name": "UBQ",
+					"path": "%UB_HOME%\\node_modules\\ub_model_ubq"
+				},
+				{
+					"name": "UBM",
+					"path": "%UB_HOME%\\node_modules\\ub_model_ubm"
+				},
+				{
+					"name": "CDN",
+					"path": "%UB_HOME%\\node_modules\\ub_model_cdn"
+				},
+				{
+					"name": "ORG",
+					"path": "%UB_HOME%\\node_modules\\ub_model_org"
+				},
+				{
+					"name": "PDF",
+					"path": "%UB_HOME%\\node_modules\\ub_model_pdf"
+				},
+				{
+					"name": "WD",
+					"path": "%UB_HOME%\\node_modules\\ub_model_wd"
+					
+				},
+				/*{
+					"name": "UDISK",
+					"path": "%UB_HOME%\\node_modules\\ub_model_udisk"
+					
+				},*/
+				{
+					"name": "CI",
+					"path": "%UB_HOME%\\node_modules\\ub_model_ci"
+				},{
+					"name": "adminui",
+					"path": "%UB_HOME%\\node_modules\\ub_model_adminui"
+				},{
+					"name": "UBE",
+					"path": "%UB_HOME%\\node_modules\\ub_model_ube"
+				},{
+                    "name": "DSES",
+                    "path": "%UB_HOME%\\node_modules\\ub_model_dses"
+                }

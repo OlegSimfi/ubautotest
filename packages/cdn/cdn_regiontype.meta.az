@@ -1,0 +1,14 @@
+﻿{
+    "caption": "Region tipləri",
+    "description": "Region tipləri üzrə sorğu kitabçaları",
+    "attributes": {
+        "code": {
+            "caption": "Коd",
+            "description": "Коd"
+        },
+        "name": {
+            "caption": "Ad",
+            "description": "Region tipinin adı"
+        }
+    }
+}

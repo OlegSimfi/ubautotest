@@ -1,0 +1,27 @@
+﻿{
+	"caption": "BLOBTest",
+	"description": "Test BLOB attributes",
+	"connectionName": "",
+	"descriptionAttribute": "description",
+	"documentation": "",
+	"attributes": [
+		{
+			"name": "description",	
+			"dataType": "String",
+			"size": 255,
+			"caption": "Description"
+		},
+		{	
+			"name": "blb",
+			"dataType": "BLOB",
+			"caption": "BLOB",
+			"description": "Long BLOB value"
+		}
+	],
+	"mixins": {
+		"mStorage":	{
+			"simpleAudit": false,
+			"safeDelete" : false
+		}
+	}
+}

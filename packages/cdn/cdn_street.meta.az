@@ -1,0 +1,26 @@
+﻿{
+    "caption": "Küçələrin siyahısı",
+    "description": "Küçələrin siyahısı",
+    "attributes": {
+        "name": {
+            "caption": "Ad",
+            "description": "Küçənin adı"
+        },
+        "fullName": {
+            "caption": "Tam ad",
+            "description": "Tam ad"
+        },
+        "code": {
+            "caption": "Kod",
+            "description": "Kod"
+        },
+        "streetType": {
+            "caption": "Tip",
+            "description": "Tip"
+        },
+        "cityID": {
+            "caption": "Yaş. məntəqəsi",
+            "description": "Yaşayış məntəqəsi"
+        }
+    }
+}

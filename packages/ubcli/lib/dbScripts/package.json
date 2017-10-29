@@ -1,0 +1,12 @@
+{
+  "name": "initDB",
+  "version": "1.0.00",
+  "description": "Initialize database for UnityBase ORM",
+  "keywords": ["UB","UnityBase"],
+  "author": "pavel.mash",
+  "homepage": "https://unitybase.info",
+  "main": "./initDB.js",
+  "dependencies": {
+  },
+  "engines": {"UnityBase": ">=1.11"}
+}

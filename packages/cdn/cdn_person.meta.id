@@ -1,0 +1,118 @@
+﻿{
+    "caption": "orang fisik",
+    "description": "orang fisik kamus",
+    "attributes": {
+        "lastName": {
+            "caption": "nama keluarga",
+            "description": "Nama dari orang yang"
+        },
+        "firstName": {
+            "caption": "Nama depan",
+            "description": "Nama pertama orang"
+        },
+        "middleName": {
+            "caption": "Nama tengah",
+            "description": "Nama tengah orang"
+        },
+        "identCard": {
+            "caption": "Kartu identitas",
+            "description": "KTP orang"
+        },
+        "workPlacePos": {
+            "caption": "Tempat kerja, posisi",
+            "description": "Tempat kerja, posisi"
+        },
+        "birthDate": {
+            "caption": "Ulang tahun",
+            "description": "Ulang Tahun dari orang"
+        },
+        "description": {
+            "caption": "Deskripsi",
+            "description": "Deskripsi orang"
+        },
+        "sexType": {
+            "caption": "Seks",
+            "description": "Seks orang tersebut"
+        },
+        "suffix": {
+            "caption": "sufix",
+            "description": "Sufix dari orang"
+        },
+        "shortFIO": {
+            "caption": "Nama pendek",
+            "description": "Contoh: Antonov I.P."
+        },
+        "fullFIO": {
+            "caption": "Nama lengkap",
+            "description": "Contoh: Antonov Ivan Petrovich"
+        },
+        "apply": {
+            "caption": "Menerapkan",
+            "description": "Berlaku untuk orang"
+        },
+        "photo": {
+            "caption": "Foto",
+            "description": "foto orang"
+        },
+        "lastNameGen": {
+            "caption": "Nama terakhir di genitive",
+            "description": "nama terakhir seseorang dalam kasus genitif"
+        },
+        "lastNameDat": {
+            "caption": "Nama terakhir di datif",
+            "description": "nama terakhir seseorang dalam dativus"
+        },
+        "firstNameGen": {
+            "caption": "Nama pertama di genitive",
+            "description": "Nama pertama seseorang dalam kasus genitif"
+        },
+        "firstNameDat": {
+            "caption": "Nama pertama di datif",
+            "description": "Nama pertama seseorang dalam dativus"
+        },
+        "middleNameGen": {
+            "caption": "nama tengah di genitive",
+            "description": "nama tengah orang dalam kasus genitif"
+        },
+        "middleNameDat": {
+            "caption": "nama tengah di datif",
+            "description": "nama tengah orang di dativus"
+        },
+        "shortFIOGen": {
+            "caption": "nama pendek di genitive",
+            "description": "nama pendek seseorang dalam kasus genitif"
+        },
+        "shortFIODat": {
+            "caption": "nama pendek di datif",
+            "description": "nama pendek seseorang dalam dativus"
+        },
+        "fullFIOGen": {
+            "caption": "nama lengkap di genitive",
+            "description": "nama lengkap seseorang dalam kasus genitif"
+        },
+        "fullFIODat": {
+            "caption": "nama lengkap di datif",
+            "description": "nama lengkap seseorang dalam dativus"
+        },
+        "applyGen": {
+            "caption": "Berlaku dalam genitive",
+            "description": "Berlaku untuk orang dalam kasus genitif"
+        },
+        "applyDat": {
+            "caption": "Terapkan di datif",
+            "description": "Berlaku untuk orang yang dativus"
+        },
+        "regionID": {
+            "caption": "Wilayah",
+            "description": "wilayah orang"
+        },
+        "socialstatusID": {
+            "caption": "Status sosial",
+            "description": "posisi status sosial"
+        },
+        "categoryID": {
+            "caption": "Kategori",
+            "description": "posisi Kategori"
+        }
+    }
+}

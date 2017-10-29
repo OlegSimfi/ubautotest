@@ -1,0 +1,8 @@
+image: node:6
+  
+before_script:
+  - call npm install
+
+test:
+  script:
+  - call npm test

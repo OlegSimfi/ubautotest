@@ -1,0 +1,23 @@
+﻿{
+    "caption": "Təşkilatı vahidlər",
+    "description": "Təşkilati vahidlər üzrə sorğu kitabçası",
+    "documentation": "UNİTY üzrə təşkilat (org_organization), şöbə (org_department) və ştat vahidlərinin (org_staffunit) yığıldığı sorğu kitabçası. Sorğu kitabçasında bütün təşkilati vahidlər üzrə iyerarxiyanı bir ağacda qurmaq mümkündür",
+    "attributes": {
+        "parentID": {
+            "caption": "Əcdad",
+            "description": "Əcdad"
+        },
+        "code": {
+            "caption": "Daxili kod",
+            "description": "Təşkilati vahidin daxili kodu"
+        },
+        "caption": {
+            "caption": "Başlıq",
+            "description": "Başlıq"
+        },
+        "unitType": {
+            "caption": "Təş. vahidin tpi",
+            "description": "Təşkilati vahidin tipi"
+        }
+    }
+}

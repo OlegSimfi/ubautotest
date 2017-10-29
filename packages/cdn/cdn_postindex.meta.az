@@ -1,0 +1,17 @@
+﻿{
+    "caption": "Poçt indeksləri",
+    "description": "Poçt indeksləri",
+    "attributes": {
+        "code": {
+            "caption": "İndeks",
+            "description": "İndeks"
+        },
+        "streetID": {
+            "caption": "Küçə"
+        },
+        "description": {
+            "caption": "Təsvir",
+            "description": "Təsvir"
+        }
+    }
+}

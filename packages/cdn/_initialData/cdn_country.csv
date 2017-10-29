@@ -1,0 +1,254 @@
+name;fullName;intCode;symbol2;symbol3
+Australia;Australia;36;AU;AUS
+Austria;Austria;40;AT;AUT
+Azerbaijan;Azerbaijan;31;AZ;AZB
+Aland Islands;Aland Islands;248;AX;ALA
+Albania;Albania;8;AL;ALB
+Algeria;Algeria;12;DZ;DZA
+American Samoa;American Samoa;16;AS;ASM
+Anguilla (Brit.);Anguilla (Brit.);660;AI;AIA
+Angola;Angola;24;AO;AGO
+Andorra;Andorra;20;AD;AND
+Antarctica;Antarctica;10;AQ;ATA
+Antigua and Barbuda;Antigua and Barbuda;28;AG;ATG
+Антільські о-ви;Антільські о-ви;530;AN;ANT
+Argentina;Argentina;32;AR;ARG
+Aruba;Aruba;533;AW;ABW
+Afghanistan;Afghanistan;4;AF;AFG
+Bahamas;Bahamas;44;BS;BAS
+Bangladesh;Bangladesh;50;BD;BGD
+Barbados;Barbados;52;BB;BRB
+Bahrain;Bahrain;48;BH;BHR
+Belize;Belize;84;BZ;BLZ
+Belgium;Belgium;56;BE;BEL
+Benin;Benin;204;BJ;BEN
+Bermuda;Bermuda;60;BM;BMU
+Belarus;Belarus;112;BY;BLR
+Bulgaria;Bulgaria;100;BG;BGR
+Bolivia;Bolivia;68;BO;BOL
+Bonaire, Sint Eustatius and Saba;Bonaire, Sint Eustatius and Saba;535;BQ;BES
+Bosnia and Herzegovina;Bosnia and Herzegovina;70;BA;BIH
+Botswana;Botswana;72;BW;BOT
+Brazil;Brazil;76;BR;BRA
+British Indian Ocean Territory;British Indian Ocean Territory;86;IO;IOT
+Brunei Darussalam;Brunei Darussalam;96;BN;BRN
+Burkina Faso;Burkina Faso;854;BF;BFA
+Burundi;Burundi;108;BI;BDI
+Bhutan;Bhutan;64;BT;BTN
+Vanuatu;Vanuatu;548;VU;VUT
+Holy See (Vatican City State);Holy See (Vatican City State);336;VA;VAT
+United Kingdom;United Kingdom;826;GB;GBR
+Venezuela;Venezuela;862;VE;VEN
+Viet Nam;Viet Nam;704;VN;VNM
+British Virgin Islands;British Virgin Islands;92;VG;VGB
+US Virgin Islands;US Virgin Islands;850;VI;VIR
+Armenia;Armenia;51;AM;ARM
+Gabon;Gabon;266;GA;GAB
+Haiti;Haiti;332;HT;HTI
+Guyana;Guyana;328;GY;GUY
+Gambia;Gambia;270;GM;GMB
+Ghana;Ghana;288;GH;GHA
+Guadeloupe;Guadeloupe;312;GP;GLP
+Guatemala;Guatemala;320;GT;GTM
+French Guiana;French Guiana;254;GF;GUF
+Guinea;Guinea;324;GN;GIN
+Guinea-Bissau;Guinea-Bissau;624;GW;GNB
+Guernsey;Guernsey;831;GG;GGY
+Gibraltar;Gibraltar;292;GI;GIB
+Honduras;Honduras;340;HN;HND
+Hong Kong;Hong Kong;344;HK;HNK
+Grenada;Grenada;308;GD;GRD
+Greenland;Greenland;304;GL;GRL
+Greece;Greece;300;GR;GRC
+Georgia;Georgia;268;GE;GEO
+Guam (USA);Guam (USA);316;GU;GUM
+Denmark;Denmark;208;DK;DNK
+Jersey;Jersey;832;JE;JEY
+Djibouti;Djibouti;262;DJ;DJI
+Johnston Atoll;Johnston Atoll;396;JT;JTN
+Dominican Republic;Dominican Republic;214;DO;DOM
+Dominica;Dominica;212;DM;DMA
+Equatorial Guinea;Equatorial Guinea;226;GQ;GNQ
+Ecuador;Ecuador;218;EC;ECU
+Eritrea;Eritrea;232;ER;ERI
+Estonia;Estonia;233;EE;EST
+Ethiopia;Ethiopia;230;ET;ETH
+Egypt;Egypt;818;EG;EGY
+Yemen;Yemen;886;YE;YEM
+Zambia;Zambia;894;ZM;ZMB
+Western Sahara;Western Sahara;732;EN;ESH
+Zimbabwe;Zimbabwe;716;ZW;ZWE
+Israel;Israel;376;IL;ISL
+India;India;356;IN;IND
+Indonesia;Indonesia;360;ID;IDN
+Iraq;Iraq;368;IQ;IRQ
+Iran;Iran;364;IR;IRN
+Ireland;Ireland;372;IE;IRL
+Iceland;Iceland;352;IS;IS
+Spain;Spain;724;ES;ESP
+Italy;Italy;380;IT;ITA
+Jordan;Jordan;400;JO;JOR
+Cape Verde;Cape Verde;132;CV;CPV
+Kazakhstan;Kazakhstan;398;KZ;KAZ
+Cayman Islands;Cayman Islands;136;KY;CYM
+Cambodia;Cambodia;116;KH;KHM
+Cameroon;Cameroon;120;CM;CMR
+Canada;Canada;124;CA;CAN
+Qatar;Qatar;634;QA;QAT
+Kenya;Kenya;404;KE;KEN
+Kyrgyzstan;Kyrgyzstan;417;KG;KGZ
+China;China;156;CN;CHN
+Cyprus;Cyprus;196;CY;CYP
+Kiribati;Kiribati;296;KI;KIR
+Korea, Democratic People's Republic of;Korea, Democratic People's Republic of;408;KP;PRK
+Cocos (Keeling) Islands;Cocos (Keeling) Islands;166;CC;CCK
+Colombia;Colombia;170;CO;COL
+Comoros;Comoros;174;KM;COM
+Congo;Congo;178;CG;COG
+Democratic Republic of the Congo;Democratic Republic of the Congo;180;CD;COD
+Korea, Republic of;Korea, Republic of;410;KR;KOR
+Costa Rica;Costa Rica;188;CR;CRI
+Ivory Coast;Ivory Coast;384;CI;CIV
+Cuba;Cuba;192;CU;CUB
+Kuwait;Kuwait;414;KW;KWT
+Cook Islands;Cook Islands;184;CK;COK
+Curacao;Curacao;531;CW;CUW
+Lao People's Democratic Republic;Lao People's Democratic Republic;418;LA;LAO
+Latvia;Latvia;428;LV;LVA
+Lesotho;Lesotho;426;LS;LSO
+Lithuania;Lithuania;440;LT;LTU
+Liberia;Liberia;430;LR;LBR
+Lebanon;Lebanon;422;LB;LBN
+Libya;Libya;434;LY;LBY
+Liechtenstein;Liechtenstein;438;LI;LIE
+Luxembourg;Luxembourg;442;LU;LUX
+Mauritius;Mauritius;480;MU;MUS
+Mauritania;Mauritania;478;MR;MRT
+Madagascar;Madagascar;450;MG;MDG
+Mayotte;Mayotte;175;YT;MYT
+Macao;Macao;446;MO;MAK
+Macedonia, the Former Yugoslav Republic of;Macedonia, the Former Yugoslav Republic of;807;MK;MKD
+Malawi;Malawi;454;MW;MWI
+Malaysia;Malaysia;458;MY;MYS
+United States Minor Outlying Islands;United States Minor Outlying Islands;581;UM;UMI
+Mali;Mali;466;ML;MLI
+Maldives;Maldives;462;MV;MDV
+Malta;Malta;470;MT;MLT
+Northern Mariana Islands;Northern Mariana Islands;580;MP;MNP
+Morocco;Morocco;504;MA;MAR
+Martinique;Martinique;474;MQ;MTQ
+Marshall Islands;Marshall Islands;584;MH;MHL
+Mexico;Mexico;484;MX;MEX
+Isle of Man;Isle of Man;833;IM;IMY
+Мідуей о-ви;Мідуей о-ви;488;MI;MID
+Micronesia, Federated States of;Micronesia, Federated States of;583;FM;FSM
+Mozambique;Mozambique;508;MZ;MOZ
+Moldova;Moldova;498;MD;MDA
+Monaco;Monaco;492;MC;MCO
+Mongolia;Mongolia;496;MN;MNG
+Montserrat;Montserrat;500;MS;MSR
+Myanmar;Myanmar;104;MM;MMR
+Namibia;Namibia;516;NA;NAM
+Nauru;Nauru;520;NR;NRU
+Nepal;Nepal;524;NP;NPL
+Niger;Niger;562;NE;NER
+Nigeria;Nigeria;566;NG;NGA
+Netherlands;Netherlands;528;NL;NLD
+New Zealand;New Zealand;558;NI;NIC
+Germany;Germany;276;DE;DEU
+Niue;Niue;570;NU;NIU
+New Zealand;New Zealand;554;NZ;NZL
+New Caledonia;New Caledonia;540;NC;NCL
+Norway;Norway;578;NO;NOR
+Norfolk Island;Norfolk Island;574;NF;NFK
+United Arab Emirates;United Arab Emirates;784;AE;ARE
+Oman;Oman;512;OM;OMN
+Bouvet Island;Bouvet Island;74;BV;BVT
+Heard Island and McDonald Islands;Heard Island and McDonald Islands;334;XM;XMD
+Christmas Island;Christmas Island;162;CX;CXR
+Pakistan;Pakistan;586;PK;PAK
+Palau (USA);Palau (USA);585;PW;PLW
+Palestine;Palestine;275;PS;PSE
+Panama;Panama;591;PA;PAN
+Papua New Guinea;Papua New Guinea;598;PG;PNG
+South Africa;South Africa;710;ZA;ZAF
+Paraguay;Paraguay;600;PY;PRY
+Peru;Peru;604;PE;PER
+South Georgia and the South Sandwich Islands;South Georgia and the South Sandwich Islands;239;GS;SGS
+South Sudan;South Sudan;728;SS;SSD
+Pitcairn (Brit.);Pitcairn (Brit.);612;PN;PCN
+Poland;Poland;616;PL;POL
+Portugal;Portugal;620;PT;PRT
+Puerto Rico;Puerto Rico;630;PR;PRI
+Reunion;Reunion;638;RE;REU
+Russian Federation;Russian Federation;643;RU;RUS
+Rwanda;Rwanda;646;RW;RWA
+Romania;Romania;642;RO;ROM
+Saint Kitts and Nevis;Saint Kitts and Nevis;659;KN;KNA
+Saint Pierre and Miquelon;Saint Pierre and Miquelon;666;PM;SPM
+El Salvador;El Salvador;222;SV;SLV
+Samoa;Samoa;882;WS;WSM
+Sao Tome and Principe;Sao Tome and Principe;678;ST;STP
+San Marino;San Marino;674;SM;SMR
+Saudi Arabia;Saudi Arabia;682;SA;SAU
+Swaziland;Swaziland;748;SZ;SWZ
+Saint Helena;Saint Helena;654;SH;SHN
+Seychelles;Seychelles;690;SC;SYC
+Saint Barthelemy;Saint Barthelemy;652;BL;BLM
+Senegal;Senegal;686;SN;SEN
+Saint Martin (French part);Saint Martin (French part);663;MF;MAF
+Saint Vincent and the Grenadines;Saint Vincent and the Grenadines;670;VC;VCT
+Saint Lucia;Saint Lucia;662;LC;LCA
+Serbia;Serbia;688;RS;SRB
+Singapore;Singapore;702;SG;SGP
+Sint Maarten (Ned.);Sint Maarten (Ned.);534;SX;SXM
+Syrian Arab Republic;Syrian Arab Republic;760;SY;SYR
+Slovakia;Slovakia;703;SK;SVK
+Slovenia;Slovenia;705;SI;SVN
+Solomon Islands;Solomon Islands;90;SB;SLB
+Somalia;Somalia;706;SO;SOM
+Sudan;Sudan;736;SD;SDN
+Suriname;Suriname;740;SR;SUR
+United States;United States;840;US;USA
+Sierra Leone;Sierra Leone;694;SL;SLE
+Tajikistan;Tajikistan;762;TJ;TJK
+Thailand;Thailand;764;TH;THA
+Taiwan;Taiwan;158;TW;TWN
+Tanzania;Tanzania;834;TZ;TZA
+Turks and Caicos Islands;Turks and Caicos Islands;796;TC;TCA
+Timor-Leste;Timor-Leste;626;TL;TLS
+Togo;Togo;768;TG;TGO
+Tokelau;Tokelau;772;TK;TKL
+Tonga;Tonga;776;TO;TON
+Trinidad and Tobago;Trinidad and Tobago;780;TT;TTO
+Tuvalu;Tuvalu;798;TV;TUV
+Tunisia;Tunisia;788;TN;TUN
+Turkey;Turkey;792;TR;TUR
+Turkmenistan;Turkmenistan;795;TM;TKM
+Uganda;Uganda;800;UG;UGA
+Hungary;Hungary;348;HU;HUN
+Uzbekistan;Uzbekistan;860;UZ;UZB
+Ukraine;Ukraine;804;UA;UKR
+Wallis and Futuna;Wallis and Futuna;876;WF;WLF
+Uruguay;Uruguay;858;UY;URY
+Faroe Islands;Faroe Islands;234;FO;FRO
+Fiji;Fiji;242;FJ;FJI
+Philippines;Philippines;608;PH;PHL
+Finland;Finland;246;FI;FIN
+Falkland Islands (Malvinas);Falkland Islands (Malvinas);238;FK;FLK
+Metropolitan France;Metropolitan France;249;FX;FXX
+French Southern Territories;French Southern Territories;260;TF;ATF
+French Polynesia;French Polynesia;258;PF;PYF
+France;France;250;FR;FRA
+Croatia;Croatia;191;HR;HRV
+Central African Republic;Central African Republic;140;CF;CAF
+Chad;Chad;148;TD;TCD
+Czech Republic;Czech Republic;203;CZ;CZH
+Chile;Chile;152;CL;CHL
+Montenegro;Montenegro;499;ME;MNE
+Switzerland;Switzerland;756;CH;CHE
+Sweden;Sweden;752;SE;SWE
+Svalbard and Jan Mayen;Svalbard and Jan Mayen;744;SJ;SJM
+Sri Lanka;Sri Lanka;144;LK;LKA
+Jamaica;Jamaica;388;JM;JAM
+Japan;Japan;392;JP;JPN

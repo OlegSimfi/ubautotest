@@ -1,0 +1,21 @@
+﻿{
+    "caption": "Diaqramlar",
+    "description": "Diaqramlar",
+    "attributes": {
+        "orgunitID": {
+            "caption": "Kök"
+        },
+        "caption": {
+            "caption": "Ad",
+            "description": "Ad"
+        },
+        "isdefault": {
+            "caption": "Susmaya görə",
+            "description": "Susmaya görə"
+        },
+        "document": {
+            "caption": "Orqanoqram",
+            "description": "Orqanoqram"
+        }
+    }
+}
